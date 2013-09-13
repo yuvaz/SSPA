@@ -41,6 +41,7 @@ html, body, .wcm {
 }
 /** Sepa Transfer Styles **/
 .easybanking .bnppf_sendmoney{
+	/*width:963px;*/
 	background:#ffffff;
 }
 .easybanking .bnppf_sendmoney_header{
@@ -99,11 +100,17 @@ html, body, .wcm {
 	padding:0 0 30px 0;
 	font-weight:normal;
 }
-.easybanking .from_field{
+.easybanking .sepa_fields{
 	width:100%;
+	display:inline-block;
+	padding-bottom:30px;
 }
 .easybanking .sepa_labels{ width:20%; padding:10px 0; float:left;}
-.bnppf_input_control{ width:60%;}
+.sendmoney_details{ float:left; width:60%;}
+.field_error_message{ padding-bottom:12px; color:red;}
+.selected-item{ padding-top:12px; color:#CCC;}
+.field_error{ margin-top:28px;}
+/* From Row */
 .bnppf_input_field {
 	position: relative;
 	z-index: 1;
@@ -144,45 +151,45 @@ html, body, .wcm {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
+.bnppf_dropdown_content {
+  max-height: 200px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 .bnppf_dropdown_box [data-selectable] {
   overflow: hidden;
   cursor: pointer;
+  padding: 5px 8px;
+  border-bottom:1px solid #ccc;
 }
-
-
-
-
-
-
-
-
-
-.bnppf_dropdown_box,.bnppf_input_field,.bnppf_input_field input {
-  font-family: inherit;
-  font-size: 13px;
-  -webkit-font-smoothing: inherit;
-  line-height: 18px;
+.bnppf_dropdown_box [data-selectable]:hover{ background:#E6E6E6;}
+.bnppf_dropdown_box .optgroup-header {
   color: #303030;
+  cursor: default;
+  background:#A6CAF0;
+  border-bottom: 1px solid #CCC;
+  font-size: 0.85em;
+  font-weight: bold;
+  padding: 5px 8px;
+}
+.bnppf_dropdown_box .optgroup {
+  padding-top: 4px;
+  border-top: 1px solid #f0f0f0;
 }
 
-.bnppf_input_field,.bnppf_input_field.focus {
-  display: inline-block;
+.bnppf_dropdown_box .optgroup:first-child {
+  border-top: 0 none;
+}
+/* Drop box behaviour */
+.bnppf_input_control .bnppf_input_field,
+.bnppf_input_control .bnppf_input_field input {
+  cursor: pointer;
+}
+
+.bnppf_input_control .bnppf_input_field.focus,
+.bnppf_input_control .bnppf_input_field.focus input {
   cursor: text;
-  background: #ffffff;
 }
-
-.bnppf_input_field.disabled,.bnppf_input_field.disabled * {
-  cursor: default !important;
-}
-.bnppf_input_field > * {
-  display: -moz-inline-stack;
-  display: inline-block;
-  *display: inline;
-  vertical-align: baseline;
-  zoom: 1;
-}
-
-
 .bnppf_input_field > input {
   max-width: 100% !important;
   max-height: none !important;
@@ -201,62 +208,24 @@ html, body, .wcm {
 .bnppf_input_field > input:focus {
   outline: none !important;
 }
-
-
-
-
-.bnppf_dropdown_box [data-selectable]{ border-bottom:1px solid #ccc;}
-.bnppf_dropdown_box [data-selectable] .highlight {
-  background: rgba(125, 168, 208, 0.2);
-  -webkit-border-radius: 1px;
-     -moz-border-radius: 1px;
-          border-radius: 1px;
-}
-
-.bnppf_dropdown_box [data-selectable],.optgroup-header {
-  padding: 5px 8px;
-}
-
-.optgroup-header {
-  border-bottom: 1px solid #CCC;
-}
-
-.bnppf_dropdown_box .optgroup-header {
+.bnppf_dropdown_box,.bnppf_input_field,.bnppf_input_field input {
+  font-family: inherit;
+  font-size: 13px;
+  -webkit-font-smoothing: inherit;
+  line-height: 18px;
   color: #303030;
-  cursor: default;
-  background: #ffffff;
 }
-
-.bnppf_dropdown_box .active {
-  color: #495c68;
-  background-color: #f5fafd;
+.bnppf_input_field.disabled,.bnppf_input_field.disabled * {
+  cursor: default !important;
 }
-
-.bnppf_dropdown_box .active.create {
-  color: #495c68;
+.bnppf_input_field > * {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  vertical-align: baseline;
+  zoom: 1;
 }
-
-.bnppf_dropdown_box .create {
-  color: rgba(48, 48, 48, 0.5);
-}
-
-.bnppf_dropdown_content {
-  max-height: 200px;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-.bnppf_input_control .bnppf_input_field,
-.bnppf_input_control .bnppf_input_field input {
-  cursor: pointer;
-}
-
-.bnppf_input_control .bnppf_input_field.focus,
-.bnppf_input_control .bnppf_input_field.focus input {
-  cursor: text;
-}
-
-.bnppf_input_control .bnppf_input_field:after {
+.dropdown_arrow:after {
   position: absolute;
   top: 50%;
   right: 15px;
@@ -270,50 +239,8 @@ html, body, .wcm {
   content: ' ';
 }
 
-.bnppf_input_control .bnppf_input_field.dropdown-active:after {
-  margin-top: -4px;
-  border-color: transparent transparent #808080 transparent;
-  border-width: 0 5px 5px 5px;
-}
-
-.bnppf_input_control .bnppf_input_field.disabled {
-  background-color: #fafafa;
-  opacity: 0.5;
-}
-
-
-
-
-.bnppf_dropdown_box .optgroup-header {
-  font-size: 0.85em;
-  font-weight: bold;
-}
-
-.bnppf_dropdown_box .optgroup {
-  padding-top: 4px;
-  border-top: 1px solid #f0f0f0;
-}
-
-.bnppf_dropdown_box .optgroup:first-child {
-  border-top: 0 none;
-}
 
 
 
 
 
-
-@media all and (max-width: 480px){
-	.easybanking .bnppf_sendmoney_header strong{width:50% !important;}
-}
-@media all and (max-width: 719px){
-	.easybanking .bnppf_sendmoney_header strong{font-size:1.25em; width:70%;}
-	.easybanking .sepa_steps{ float:none;}
-	.easybanking .sepa_steps__digit{ float:right;}
-	.easybanking .sepa_steps__text{ float:left;}
-	.easybanking .sepa_steps__digit li{ padding:10px 14px; margin-left:10px;}
-	.easybanking .sepa_steps__text li{ margin-left:0; text-align:left;}
-	.easybanking .sepa_steps__text span{ display:inline-block; float:left;}
-	.easybanking .sepa_steps__text p{ float:left;}
-	.sepa_steps__text li:nth-child(2), .sepa_steps__text li:nth-child(3){ display:none;}
-}
