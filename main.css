@@ -1,5 +1,24 @@
-#showHidePagebus {
-	display: none;
+/** Font imports ttf,eot,woff,svg **/
+@font-face {
+	font-family: 'BnppSans-l';
+	src: url("../css/fonts/bnpp_sans_light-webfont.eot");
+	src: url("../css/fonts/bnpp_sans_light-webfont.eot?#iefix") format("eot"), url("../css/fonts/bnpp_sans_light-webfont.woff") format("woff"), url("../css/fonts/bnpp_sans_light-webfont.ttf") format("truetype"), url("../css/fonts/bnpp_sans_light-webfont.svg#BnppSans-l") format("svg");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'BnppSans-r';
+	src: url("../css/fonts/bnpp_sans-webfont.eot");
+	src: url("../css/fonts/bnpp_sans-webfont.eot?#iefix") format("eot"), url("../css/fonts/bnpp_sans-webfont.woff") format("woff"), url("../css/fonts/bnpp_sans-webfont.ttf") format("truetype"), url("../css/fonts/bnpp_sans-webfont.svg#BnppSans-r") format("svg");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'BnppSans-b';
+	src: url("../css/fonts/bnpp_sans_bold-webfont.eot");
+	src: url("../css/fonts/bnpp_sans_bold-webfont.eot?#iefix") format("eot"), url("../css/fonts/bnpp_sans_bold-webfont.woff") format("woff"), url("../css/fonts/bnpp_sans_bold-webfont.ttf") format("truetype"), url("../css/fonts/bnpp_sans_bold-webfont.svg#BnppSans-b") format("svg");
+	font-style: normal;
+	font-weight: normal;
 }
  @-ms-viewport {
  width: device-width;
@@ -26,7 +45,7 @@ html, body, .wcm {
 	background: -ms-linear-gradient(top, #eef1f5 0%, #dde3e6 100%);
 	background: linear-gradient(to bottom, #eef1f5 0%, #dde3e6 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eef1f5', endColorstr='#dde3e6', GradientType=0 );
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: 'BnppSans-l', sans-serif;
 }
 .easybanking .wrapper{
 	width: 100%;
@@ -44,7 +63,7 @@ html, body, .wcm {
 	line-height:28px;
 	font-size:16px;
 	padding:16px 20px;
-	font-family: 'HelloType-b', sans-serif;
+	font-family: 'BnppSans-l', sans-serif;
 	cursor:pointer;
 	display:inline-block;
 }
@@ -111,8 +130,9 @@ html, body, .wcm {
 	display:inline-block;
 	text-align:center;
 	color:#d12668;
-	font-family:'HelloType-b', sans-serif;
-	margin-left:32px;
+	font-family:'BnppSans-r', sans-serif;
+	margin-left:35px;
+	font-size:0.875em;
 }
 .easybanking .sepa_steps__text span{ 
 	display:none;
@@ -130,13 +150,15 @@ html, body, .wcm {
 	width:80%;
 	padding:0 0 30px 0;
 	font-weight:normal;
+	font-family:'BnppSans-l', sans-serif;
+	font-size:0.875em;
 }
 .easybanking .sepa_fields{
 	width:100%;
 	display:inline-block;
 	padding-bottom:30px;
 }
-.easybanking .sepa_labels{ width:20%; padding:10px 0; float:left;}
+.easybanking .sepa_labels{ width:20%; padding:10px 0; float:left;font-family: 'BnppSans-r', sans-serif; font-size:1em;}
 .sendmoney_details{ float:left; width:60%;}
 .field_error_message{ padding-bottom:12px; color:red; display:none;}
 .selected-item{ padding-top:12px; color:#CCC;}
@@ -299,60 +321,4 @@ button{ border:0; float:right;}
 
 
 
-@font-face {
-	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot');
-	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-		url('fonts/icomoon.woff') format('woff'),
-		url('fonts/icomoon.ttf') format('truetype'),
-		url('fonts/icomoon.svg#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-/* Use the following CSS code if you want to use data attributes for inserting your icons */
-[data-icon]:before {
-	font-family: 'icomoon';
-	content: attr(data-icon);
-	speak: none;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-/* Use the following CSS code if you want to have a class per icon */
-/*
-Instead of a list of all class selectors,
-you can use the generic selector below, but it's slower:
-[class*="icon-"] {
-*/
-.icon-arrow-right {
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: bold;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-}
-.icon-arrow-right:before {
-	content: "\232a";
-}
-.icon-arrow-left {
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: bold;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-}
-.icon-arrow-left:before {
-	content: "\2329";
-}
 
