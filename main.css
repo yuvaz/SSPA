@@ -39,6 +39,34 @@ html, body, .wcm {
 	width:100%;
 	display:block;
 }
+/* Button standard */
+.bnppf_btn{
+	line-height:28px;
+	font-size:16px;
+	padding:16px 20px;
+	font-family: 'HelloType-b', sans-serif;
+	cursor:pointer;
+	display:inline-block;
+}
+.btn_primary{
+	background:#009966;
+	color:#ffffff;
+}
+.btn_primary:hover{
+	background:#008578;
+}
+.btn_secondary{
+	background:#d2d8e1;
+}
+.btn_secondary:hover{
+	background:#bec6d0;
+}
+.bnppf_btn_arrow_right, .arrow-left{
+	padding-right:15px;
+}
+.arrow-right, .bnppf_btn_arrow_left{
+	padding-left:15px;
+}
 /** Sepa Transfer Styles **/
 .easybanking .bnppf_sendmoney{
 	/*width:963px;*/
@@ -66,6 +94,9 @@ html, body, .wcm {
 }
 .easybanking .sepa_steps__digit li{
 	border-radius:120px;
+	-webkit-border-radius:120px;
+	-moz-border-radius:120px;
+	-o-border-radius:120px;
 	border:2px solid #d12668; 
 	text-align:center; 
 	display:inline-block; 
@@ -243,8 +274,9 @@ html, body, .wcm {
   border-width: 5px 5px 0 5px;
   content: ' ';
 }
-
-
+.next_navigation{ display:inline-block; width:100%;}
+button{ border:0; float:right;}
+.active_step li:nth-child(1){ color:#ffffff; border-color:#ffffff;}
 @media all and (max-width: 480px){
 	.easybanking .bnppf_sendmoney_header strong{width:50% !important;}
 }
