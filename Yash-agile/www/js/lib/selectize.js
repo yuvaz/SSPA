@@ -440,7 +440,7 @@
 	
 			width = measureString(value, $input) + 4;
 			if (width !== $input.width()) {
-				$input.width(width);
+				//$input.width(width);
 				$input.triggerHandler('resize');
 			}
 		};
@@ -552,16 +552,16 @@
 			classes           = self.$input.attr('class') || '';
 	
 			$wrapper          = $('<div>').addClass(settings.wrapperClass);
-			$control          = $('<div>').addClass(settings.inputClass).addClass('account_select').appendTo($wrapper);
+			$control          = $('<div>').addClass(settings.inputClass).addClass('dropdown_arrow').addClass('input_dropdown').appendTo($wrapper);
 			$control_input    = $('<input type="text">').appendTo($control).attr('tabindex', tab_index);
 			$dropdown_parent  = $(settings.dropdownParent || $wrapper);
 			$dropdown         = $('<div>').addClass(settings.dropdownClass).hide().appendTo($dropdown_parent);
 			$dropdown_content = $('<div>').addClass(settings.dropdownContentClass).appendTo($dropdown);
 	
-			$wrapper.css({
-				width: self.$input[0].style.width,
-				display: self.$input.css('display')
-			});
+			//$wrapper.css({
+				//width: self.$input[0].style.width,
+				//display: self.$input.css('display')
+			//});
 	
 			if (self.plugins.names.length) {
 				classes_plugins = 'plugin-' + self.plugins.names.join(' plugin-');

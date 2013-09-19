@@ -4,15 +4,29 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, user-scalable=false;">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <title>Sepa Transfer</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/selectize.default.css">
     <script src="js/lib/sinon.js"></script>
     <script src="js/stubs/fake-server.js"></script>
     <script data-main="js/app" src="js/lib/require.js"></script>
     <script data-main="js/app" src="js/lib/iscroll.js"></script>
+     <script data-main="js/app" src="js/jquery-1.9.1.js"></script>
+<script src="js/bootstrap-datepicker.js" type="text/javascript"></script> 
+   <script>
+		$(function(){
+			var endDate = new Date();
+				endDate.setDate(endDate.getDate() + 365);
+			$('.yash').datepicker({
+				format: 'dd/mm/yyyy',
+				weekStart:1,
+				startDate:new Date(),
+				endDate: endDate,
+				autoclose:true
+			});
+		});
+	</script>
 </head>
 
 <body>
@@ -54,26 +68,72 @@
                                             </div>
                                             <div class="selected-item">
                                             	<span class="iban-label"></span>
-                                                <span></span>
+                                                <span>-</span>
                                                 <span class="amount-label"></span>
                                             </div>
                                         </div>
                                         
                                     </div>
-                                    <div class="sepa_fields">
+                                    <div class="sepa_fields amount_field">
                                     	<label for="select-account" class="sepa_labels">Amount*</label>
                                          <div class="sendmoney_details">
                                             <div class="bnppf_input_control">
-                                                <div class="bnppf_input_field">
+                                                <div class="bnppf_input_field input_dropdown">
                                                     <input type="text"/>
                                                     <span>EUR</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="sepa_fields to_field">
+                                        <label for="select-account" class="sepa_labels">To*</label>
+                                        <div class="sendmoney_details">
+                                            	<p class="field_error_message">Please select the valid account</p>
+                                            <div class="details_content">
+                                            	<select  class="select-account" placeholder="Type in alias, ..."></select>
+                                            </div>
+                                            <div class="selected-item">
+                                            	<span class="iban-label"></span>
+                                                <span>-</span>
+                                                <span class="amount-label"></span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             	<div class="bnppf_sendmoney_content__inner">
                                 	<div class="details-content">
+                                    	<div class="sepa_fields date_picker">
+                                            <label for="select-account" class="sepa_labels">Date</label>
+                                            <div class="sendmoney_details">
+                                                    <p class="field_error_message">Please select the valid account</p>
+                                                <div class="bnppf_input_control" style="position:relative">
+                                                    <div class="bnppf_input_field input_dropdown">
+                                                        <input type="text" class="yash" value="" placeholder="DD/MM/YYYY"/>
+                                                      
+                                                       <span aria-hidden="true" class="icon-calendar-2"></span>
+                                                    </div>
+                                            	</div>
+                                         	</div>
+                                    	</div>
+                                        <div class="sepa_fields message_field">
+                                            <label for="select-message" class="sepa_labels">Message</label>
+                                            <div class="sendmoney_details">
+                                                    <p class="field_error_message">Please select the valid account</p>
+                                                <div class="bnppf_input_control">
+                                                	<div class="details_content">
+                                                       <select class="select-message"></select>
+                                                    </div>
+                                                    <div class="selected_message--type">
+                                                    	<div class="bnppf_input_field input_dropdown">
+                                                    		<input class="" placeholder="+++ ---/----/----- +++"/>
+                                                        </div>
+                                                        <div class="bnppf_text_area">
+                                                        	<textarea></textarea>
+                                                        </div>
+                                                    </div>
+                                            	</div>
+                                         	</div>
+                                    	</div>
                                     </div>
                                 </div>
                                 <div class="bnppf_sendmoney_content__inner">
