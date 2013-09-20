@@ -66,6 +66,7 @@ html{}
 	font-family: 'BnppSans-r', sans-serif;
 	cursor:pointer;
 	display:inline-block;
+	line-height:0.77em;
 }
 .btn_primary{
 	background:#009966;
@@ -100,11 +101,12 @@ html{}
 	padding:30px 30px 20px 30px;
 }
 .easybanking .bnppf_sendmoney_header strong{
-	font-size: 2.25em;
+	font-size: 2.77em;
 	float: left;
-	font-family: 'HelloType-b', sans-serif;
+	font-family: 'BnppSans-l', sans-serif;
 	text-transform: uppercase;
 	font-weight: 300; color:white;
+	line-height:1em;
 }
 .easybanking .sepa_steps{
 	float:right;
@@ -118,9 +120,11 @@ html{}
 	border:2px solid #d12668; 
 	text-align:center; 
 	display:inline-block; 
-	padding:14px 21px; 
+	padding:13px 18px; 
 	font-family:'BnppSans-r', sans-serif;
 	margin-left:28px; color:#d12668;
+	font-size:1.54em;
+	line-height:1em;
 }
 .easybanking .sepa_steps__text{
 	margin-top:10px;
@@ -131,7 +135,7 @@ html{}
 	color:#d12668;
 	font-family:'BnppSans-r', sans-serif;
 	margin-left:35px;
-	font-size:0.875em;
+	font-size:1.077em;
 }
 .easybanking .sepa_steps__text span{ 
 	display:none;
@@ -286,7 +290,8 @@ html{}
   vertical-align: baseline;
   zoom: 1;
 }
-.bnppf_input_field span{ float:right; color:#252429;border-left: 1px solid #d8dbde;padding-left: 12px;}
+.bnppf_input_field span{ float:right; color:#252429;border-left: 1px solid #d8dbde;padding-left: 12px;position:absolute; right:12px; top:9px; z-index:-999;}
+.amount_field .bnppf_input_field span{ padding-top:3px;}
 .input_dropdown{ height:44px;}
 .dropdown_arrow:after {
   position: absolute;
@@ -316,7 +321,7 @@ button{ border:0; float:right;}
 /* Styles for Date picker */
 .date_picker input{ width:100%;}
 .date_picker .bnppf_input_field{ width:50%;}
-.date_picker span{ position:absolute; right:12px; top:8px; z-index:-999;}
+.date_picker span{}
 input[type="text"]:focus {
   border-color: rgba(82, 168, 236, 0.8);
   outline: 0;
@@ -336,7 +341,8 @@ input[type="text"]:focus {
 .datepicker {
   top: 0;
   left: 0;
-  margin-top: 1px;
+  margin-top: 16px;
+  margin-left:50px;
   width:300px;
 }
 .datepicker > div {
@@ -454,6 +460,13 @@ input[type="text"]:focus {
 .bnppf_text_area textarea:focus{ border-color:#ccc;;}
 @media all and (max-width: 320px){ .easybanking .bnppf_sendmoney_header strong{font-size: 0.875em; width:auto;}}
 @media all and (max-width: 719px){
+	.easybanking .bnppf_sendmoney_header strong{font-size: 1.38em; width:auto;}
+	.easybanking .sepa_steps__digit li{ font-size:1.08em; margin-left:10px; padding:10px 14px;}
+	.easybanking .bnppf_sendmoney_header_inner{ padding:20px 10px;}
+	.easybanking .sepa_steps__digit{ float:right;}
+	.easybanking .sepa_steps__text li{ position:absolute; top:40px; left:10px; margin:0;}
+	.easybanking .sepa_steps__text li:nth-child(2), .easybanking .sepa_steps__text li:nth-child(3){ display:none;}
+	/*
 	.easybanking .bnppf_sendmoney_header_inner{ padding:20px;}
 	.easybanking .sepa_steps{ float:none;}
 	.easybanking .sepa_steps__digit{ float:right;}
@@ -462,7 +475,7 @@ input[type="text"]:focus {
 	.easybanking .sepa_steps__text li{ margin-left:0; text-align:left;}
 	.easybanking .sepa_steps__text span{ display:inline-block; float:left;}
 	.easybanking .sepa_steps__text p{ float:left;}
-	.sepa_steps__text li:nth-child(2), .sepa_steps__text li:nth-child(3){ display:none;}
+	*/
 	.easybanking .bnppf_sendmoney_content__inner h5{ width:100%;}
 	.easybanking .bnppf_sendmoney_content__inner{ padding:20px;}
 	.easybanking .bnppf_sendmoney_content__inner h5{ padding:0;}
@@ -474,8 +487,6 @@ input[type="text"]:focus {
 	.date_picker .bnppf_input_field{ width:100%;}
 	.date_picker .bnppf_input_field > input{ width:100%;}
 }
-@media all and (min-width: 321px) and (max-width: 480px){.easybanking .bnppf_sendmoney_header strong{width:60%;}}
-@media all and (min-width: 481px) and (max-width: 719px){.easybanking .bnppf_sendmoney_header strong{font-size:1.25em; width:70%;}}
 
 
 @font-face {
