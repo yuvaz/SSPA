@@ -167,7 +167,7 @@ html{}
 .field_error_message{ padding-bottom:12px; color:red; display:none;}
 .selected-item{ padding-top:12px; color:#CCC; display:none;}
 .field_error label{ margin-top:35px;}
-.show_active{ display:block;}
+.show_active{ display:block !important;}
 /* From Row */
 .error_summary{ width:80%; margin-left:20%;}
 .bnppf_input_control{width: 100.1%;}
@@ -249,6 +249,7 @@ html{}
 .bnppf_input_control .bnppf_input_field input {
   cursor: pointer;
 }
+.easybanking .sepa_fields.message_field{ padding-bottom:0;}
 .message_field .bnppf_input_field.focus input, .message_field .bnppf_input_field input{ left:-1600px !important;}
 .bnppf_input_control .bnppf_input_field.focus,
 .bnppf_input_control .bnppf_input_field.focus input {
@@ -455,7 +456,8 @@ input[type="text"]:focus {
   width: 16px;
   height: 16px;
 }
-.bnppf_text_area{ width:99.7%;}
+.bnppf_text_area{ width:99.7%; display:none; margin-top:30px;}
+.structured_message{ display:none; margin-top:30px;}
 .bnppf_text_area textarea{ width:100%; border:1px solid #ccc;resize:vertical; padding:0; margin:0; font-size:16px;}
 .bnppf_text_area textarea:focus{ border-color:#ccc;;}
 @media all and (max-width: 320px){ .easybanking .bnppf_sendmoney_header strong{font-size: 0.875em; width:auto;}}
@@ -466,16 +468,6 @@ input[type="text"]:focus {
 	.easybanking .sepa_steps__digit{ float:right;}
 	.easybanking .sepa_steps__text li{ position:absolute; top:40px; left:10px; margin:0;}
 	.easybanking .sepa_steps__text li:nth-child(2), .easybanking .sepa_steps__text li:nth-child(3){ display:none;}
-	/*
-	.easybanking .bnppf_sendmoney_header_inner{ padding:20px;}
-	.easybanking .sepa_steps{ float:none;}
-	.easybanking .sepa_steps__digit{ float:right;}
-	.easybanking .sepa_steps__text{ float:left; margin:0;}
-	.easybanking .sepa_steps__digit li{ padding:5px 12px; margin-left:10px;}
-	.easybanking .sepa_steps__text li{ margin-left:0; text-align:left;}
-	.easybanking .sepa_steps__text span{ display:inline-block; float:left;}
-	.easybanking .sepa_steps__text p{ float:left;}
-	*/
 	.easybanking .bnppf_sendmoney_content__inner h5{ width:100%;}
 	.easybanking .bnppf_sendmoney_content__inner{ padding:20px;}
 	.easybanking .bnppf_sendmoney_content__inner h5{ padding:0;}
