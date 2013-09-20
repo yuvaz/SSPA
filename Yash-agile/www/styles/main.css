@@ -101,7 +101,7 @@ html{}
 	padding:30px 30px 20px 30px;
 }
 .easybanking .bnppf_sendmoney_header strong{
-	font-size: 2.77em;
+	font-size: 36px;
 	float: left;
 	font-family: 'BnppSans-l', sans-serif;
 	text-transform: uppercase;
@@ -123,8 +123,7 @@ html{}
 	padding:13px 18px; 
 	font-family:'BnppSans-r', sans-serif;
 	margin-left:28px; color:#d12668;
-	font-size:1.54em;
-	line-height:1em;
+	font-size:20px;
 }
 .easybanking .sepa_steps__text{
 	margin-top:10px;
@@ -135,7 +134,7 @@ html{}
 	color:#d12668;
 	font-family:'BnppSans-r', sans-serif;
 	margin-left:35px;
-	font-size:1.077em;
+	font-size:14px;
 }
 .easybanking .sepa_steps__text span{ 
 	display:none;
@@ -162,14 +161,18 @@ html{}
 	padding-bottom:30px;
 }
 .easybanking .sepa_fields.to_field{ padding-bottom:0px;}
-.easybanking .sepa_labels{ width:20%; padding:10px 0; float:left;font-family: 'BnppSans-r', sans-serif; font-size:1.23em;}
+.easybanking .sepa_labels{ width:20%; padding:10px 0; float:left;font-family: 'BnppSans-r', sans-serif; font-size:16px; color:#252429;}
 .sendmoney_details{ float:left; width:60%;}
-.field_error_message{ padding-bottom:12px; color:red; display:none;}
-.selected-item{ padding-top:12px; color:#CCC; display:none;}
+.field_error_message{ padding-bottom:12px; color: #e53012; display:none;}
+.selected-item{ padding-top:12px; color:#f4f5f6; display:none;}
 .field_error label{ margin-top:35px;}
+.field_error .field_error_message{ display:block !important;}
 .show_active{ display:block !important;}
+.to_field .show_active{ display:inline-block;}
+.icon_sendmoney{ background:url(../images/sendmoney_icon.png) no-repeat; padding:8px 23px; margin-left:20px;}
 /* From Row */
 .error_summary{ width:80%; margin-left:20%;}
+.error_summary .field_error_message{ display:block;}
 .bnppf_input_control{width: 100.1%;}
 .bnppf_input_field {
 	position: relative;
@@ -183,7 +186,9 @@ html{}
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	cursor:pointer;
+	height:44px;
 }
+.field_error .bnppf_input_field{ border:1px solid #e53012;}
 .bnppf_input_field.dropdown-active.dropdown-active:after {
   margin-top: -4px;
   border-color: transparent transparent #252429 transparent;
@@ -221,26 +226,32 @@ html{}
 .bnppf_dropdown_box [data-selectable] {
   overflow: hidden;
   cursor: pointer;
-  padding: 12px;
+  padding:8px 12px;
   border-bottom:1px solid #ccc;
 }
 /*.bnppf_dropdown_box [data-selectable]:hover{ background:#E6E6E6;}*/
+.bnppf_dropdown_box .main-group{ background:#f4f5f6; padding:8px 12px 6px 12px; border-bottom:1px solid #f4f5f6; border-top:1px solid #f4f5f6;}
 .bnppf_dropdown_box .optgroup-header {
-  color: #303030;
+  color: #76767b;
   cursor: default;
   /*background:#A6CAF0;*/
   border-bottom: 1px solid #CCC;
-  font-size: 0.85em;
+  font-size: 14px;
   font-weight: bold;
   padding: 5px 8px;
+  font-family: 'BnppSans-l', sans-serif;
 }
 .bnppf_dropdown_box .optgroup {
   padding-top: 4px;
   border-top: 1px solid #f0f0f0;
 }
-.optgroup-iban{ color:#009966; font-size:0.875em;font-family: 'BnppSans-r', sans-serif;}
+.to_field .bnppf_dropdown_box .optgroup { padding:0;}
+.to_field .bnppf_dropdown_box .optgroup-header,.to_field .bnppf_dropdown_box [data-selectable]{ padding-left:24px;}
+.optgroup-iban{ color:#009966; font-size:14px;font-family: 'BnppSans-r', sans-serif;}
 .optgroup-iban:hover{ color:#008578; text-decoration:underline;}
-.optgroup-amount{ float:right;font-size:0.875em; color:#76767b;}
+.optgroup-amount{ float:right;font-size:14px; color:#76767b;}
+.optgroup-name{font-size:14px; color:#76767b;}
+.optgroup-amount span{ padding:0 3px;}
 .bnppf_dropdown_box .optgroup:first-child {
   border-top: 0 none;
 }
@@ -250,6 +261,7 @@ html{}
   cursor: pointer;
 }
 .easybanking .sepa_fields.message_field{ padding-bottom:0;}
+.message_field .bnppf_input_field input{ width:100%;}
 .message_field .bnppf_input_field.focus input, .message_field .bnppf_input_field input{ left:-1600px !important;}
 .bnppf_input_control .bnppf_input_field.focus,
 .bnppf_input_control .bnppf_input_field.focus input {
@@ -292,8 +304,9 @@ html{}
   zoom: 1;
 }
 .bnppf_input_field span{ float:right; color:#252429;border-left: 1px solid #d8dbde;padding-left: 12px;position:absolute; right:12px; top:9px; z-index:-999;}
-.amount_field .bnppf_input_field span{ padding-top:3px;}
+.amount_field .bnppf_input_field span{ padding-top:3px; color:#76767b;}
 .input_dropdown{ height:44px;}
+.dropdown_arrow{ background:url(../images/dropdown_strip) no-repeat right 40px center;}
 .dropdown_arrow:after {
   position: absolute;
   top: 50%;
@@ -354,17 +367,17 @@ input[type="text"]:focus {
   margin: 0;
   border-spacing:0;
 }
-.datepicker table thead tr:first-child th{ border:0;padding:8px 0;}
+.datepicker table thead tr:first-child th{ border:0;padding:8px 0;font-family:'BnppSans-r', sans-serif; font-size:16px;}
 .datepicker table thead tr th:last-child{ border-right:1px solid #d8dbde;}
-.datepicker td{ width:40px; height:36px; border-right:1px solid #d8dbde;border-bottom:1px solid #d8dbde; text-align:center;}
+.datepicker td{ width:40px; height:36px; border-right:1px solid #d8dbde;border-bottom:1px solid #d8dbde; text-align:center;font-family:'BnppSans-r', sans-serif; font-size:16px;}
 .datepicker th {
   text-align: center;
   width: 20px;
   height: 20px;
-  border-bottom:1px solid #d8dbde;border-top:1px solid #d8dbde; padding:12px 0 4px 0;
+  border-bottom:1px solid #d8dbde;border-top:1px solid #d8dbde; padding:12px 0 4px 0;font-family:'BnppSans-l', sans-serif; font-size:14px;
 }
 .datepicker td.day:hover {
-  background: #e5e9ef;
+  background: #f4f5f6;
   cursor: pointer;
 }
 .datepicker td.day.disabled {
@@ -373,7 +386,7 @@ input[type="text"]:focus {
 .datepicker td.old,
 .datepicker td.new {
   color: #252429;
-  background:#f4f4f6;
+  background:#e5e9ef;
 }
 .datepicker td.active,
 .datepicker td.active:hover {
@@ -463,7 +476,7 @@ input[type="text"]:focus {
 @media all and (max-width: 320px){ .easybanking .bnppf_sendmoney_header strong{font-size: 0.875em; width:auto;}}
 @media all and (max-width: 719px){
 	.easybanking .bnppf_sendmoney_header strong{font-size: 1.38em; width:auto;}
-	.easybanking .sepa_steps__digit li{ font-size:1.08em; margin-left:10px; padding:10px 14px;}
+	.easybanking .sepa_steps__digit li{ font-size:1.08em; margin-left:10px; padding:8px 14px;}
 	.easybanking .bnppf_sendmoney_header_inner{ padding:20px 10px;}
 	.easybanking .sepa_steps__digit{ float:right;}
 	.easybanking .sepa_steps__text li{ position:absolute; top:40px; left:10px; margin:0;}
@@ -472,12 +485,13 @@ input[type="text"]:focus {
 	.easybanking .bnppf_sendmoney_content__inner{ padding:20px;}
 	.easybanking .bnppf_sendmoney_content__inner h5{ padding:0;}
 	.sendmoney_details{ width:100%;}
-	.field_error{ margin:0;}
+	.field_error, .field_error label{ margin:0;}
 	.easybanking .sepa_fields{ padding-bottom:20px;}
 	.easybanking .sepa_labels{ padding:0 0 8px 0;}
 	.bnppf_input_field > input{ width:85%;}
 	.date_picker .bnppf_input_field{ width:100%;}
 	.date_picker .bnppf_input_field > input{ width:100%;}
+	.error_summary{ margin:0;}
 }
 
 

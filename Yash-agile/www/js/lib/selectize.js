@@ -403,7 +403,7 @@
 			e = e || window.event || {};
 	
 			if (e.metaKey || e.altKey) return;
-			if ($input.data('grow') === false) return;
+			if ($input.data('grow') === true) return;
 	
 			value = $input.val();
 			if (e.type && e.type.toLowerCase() === 'keydown') {
@@ -557,7 +557,6 @@
 			$dropdown_parent  = $(settings.dropdownParent || $wrapper);
 			$dropdown         = $('<div>').addClass(settings.dropdownClass).hide().appendTo($dropdown_parent);
 			$dropdown_content = $('<div>').addClass(settings.dropdownContentClass).appendTo($dropdown);
-	
 			//$wrapper.css({
 				//width: self.$input[0].style.width,
 				//display: self.$input.css('display')

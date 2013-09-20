@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <title>Sepa Transfer</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
     <script src="js/lib/sinon.js"></script>
     <script src="js/stubs/fake-server.js"></script>
     <script data-main="js/app" src="js/lib/require.js"></script>
@@ -39,6 +39,7 @@
                                 <div class="bnppf_sendmoney_header_inner">
                                     <div class="top clearfix">
                                        <strong>Send Money</strong>
+                                       <span class="icon_sendmoney"></span>
                                        <div class="sepa_steps active_step">
                                           <ul class="sepa_steps__digit">
                                             <li>1</li>
@@ -124,10 +125,12 @@
                                                        <select class="select-message"></select>
                                                     </div>
                                                     <div class="selected_message--type">
-                                                    	<div class="bnppf_input_field input_dropdown">
-                                                    		<input class="" placeholder="+++ ---/----/----- +++"/>
+                                                    	<p class="field_error_message">Please select the valid account</p>
+                                                    	<div class="bnppf_input_field input_dropdown structured_message">
+                                                    		<input type="text" placeholder="+++ ---/----/----- +++"/>
                                                         </div>
                                                         <div class="bnppf_text_area">
+                                                        <p class="field_error_message">Please select the valid account</p>
                                                         	<textarea></textarea>
                                                         </div>
                                                     </div>
