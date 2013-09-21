@@ -1,3 +1,8 @@
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
 /** Font imports ttf,eot,woff,svg **/
 @font-face {
 	font-family: 'BnppSans-l';
@@ -20,6 +25,9 @@
 	font-style: normal;
 	font-weight: normal;
 }
+::selection {
+background: #f1f6f7;
+}
  @-ms-viewport {
  width: device-width;
 }
@@ -30,7 +38,6 @@ html, body, .wcm {
 	width: 100%;
 	height: 100%;
 }
-html{}
 .easybanking{
 	width: 100%;
 	height: 100%;
@@ -51,9 +58,9 @@ html{}
 .easybanking .wrapper{
 	width: 100%;
 	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
+	position:absolute;
+	left:0;
+	top:0;
 }
 .easybanking .top{
 	width:100%;
@@ -164,16 +171,16 @@ html{}
 .easybanking .sepa_labels{ width:20%; padding:10px 0; float:left;font-family: 'BnppSans-r', sans-serif; font-size:16px; color:#252429;}
 .sendmoney_details{ float:left; width:60%;}
 .field_error_message{ padding-bottom:12px; color: #e53012; display:none;}
-.selected-item{ padding-top:12px; color:#f4f5f6; display:none;}
+.selected-item{ padding-top:12px; color:#76767b; display:none;}
 .field_error label{ margin-top:35px;}
 .field_error .field_error_message{ display:block !important;}
 .show_active{ display:block !important;}
-.to_field .show_active{ display:inline-block;}
-.icon_sendmoney{ background:url(../images/sendmoney_icon.png) no-repeat; padding:8px 23px; margin-left:20px;}
+.to_field .show_active{ display:inline-block!important;}
+.icon_sendmoney{ background:url(./images/sendmoney_icon.png) no-repeat; padding:8px 23px; margin-left:20px;}
 /* From Row */
 .error_summary{ width:80%; margin-left:20%;}
 .error_summary .field_error_message{ display:block;}
-.bnppf_input_control{width: 100.1%;}
+.bnppf_input_control{width: 100%;}
 .bnppf_input_field {
 	position: relative;
 	z-index: 1;
@@ -217,6 +224,9 @@ html{}
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+		  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 .bnppf_dropdown_content {
   max-height: 200px;
@@ -229,8 +239,15 @@ html{}
   padding:8px 12px;
   border-bottom:1px solid #ccc;
 }
+.bnppf_dropdown_box [data-selectable] .highlight {
+background: #f4f5f6;
+-webkit-border-radius: 1px;
+-moz-border-radius: 1px;
+border-radius: 1px;
+ font-family: 'BnppSans-r', sans-serif;
+}
 /*.bnppf_dropdown_box [data-selectable]:hover{ background:#E6E6E6;}*/
-.bnppf_dropdown_box .main-group{ background:#f4f5f6; padding:8px 12px 6px 12px; border-bottom:1px solid #f4f5f6; border-top:1px solid #f4f5f6;}
+.bnppf_dropdown_box .main-group{ background:#f4f5f6; padding:8px 12px 6px 12px; border-bottom:1px solid #d8dbde;}
 .bnppf_dropdown_box .optgroup-header {
   color: #76767b;
   cursor: default;
@@ -241,18 +258,20 @@ html{}
   padding: 5px 8px;
   font-family: 'BnppSans-l', sans-serif;
 }
-.bnppf_dropdown_box .optgroup {
+/*.bnppf_dropdown_box .optgroup {
   padding-top: 4px;
   border-top: 1px solid #f0f0f0;
-}
+}*/
 .to_field .bnppf_dropdown_box .optgroup { padding:0;}
 .to_field .bnppf_dropdown_box .optgroup-header,.to_field .bnppf_dropdown_box [data-selectable]{ padding-left:24px;}
+.to_field .selected_amount {display:none;}
 .optgroup-iban{ color:#009966; font-size:14px;font-family: 'BnppSans-r', sans-serif;}
 .optgroup-iban:hover{ color:#008578; text-decoration:underline;}
 .optgroup-amount{ float:right;font-size:14px; color:#76767b;}
 .optgroup-name{font-size:14px; color:#76767b;}
 .optgroup-amount span{ padding:0 3px;}
 .bnppf_dropdown_box .optgroup:first-child {
+	padding-top:3px;
   border-top: 0 none;
 }
 /* Drop box behaviour */
@@ -306,7 +325,7 @@ html{}
 .bnppf_input_field span{ float:right; color:#252429;border-left: 1px solid #d8dbde;padding-left: 12px;position:absolute; right:12px; top:9px; z-index:-999;}
 .amount_field .bnppf_input_field span{ padding-top:3px; color:#76767b;}
 .input_dropdown{ height:44px;}
-.dropdown_arrow{ background:url(../images/dropdown_strip) no-repeat right 40px center;}
+.dropdown_arrow{ background:url(./images/dropdown_strip.png) no-repeat right 40px center;}
 .dropdown_arrow:after {
   position: absolute;
   top: 50%;
@@ -330,8 +349,8 @@ button{ border:0; float:right;}
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	cursor:pointer;}
-	
-	
+
+
 /* Styles for Date picker */
 .date_picker input{ width:100%;}
 .date_picker .bnppf_input_field{ width:50%;}
@@ -492,6 +511,7 @@ input[type="text"]:focus {
 	.date_picker .bnppf_input_field{ width:100%;}
 	.date_picker .bnppf_input_field > input{ width:100%;}
 	.error_summary{ margin:0;}
+	.icon_sendmoney{ display:none;}
 }
 
 
