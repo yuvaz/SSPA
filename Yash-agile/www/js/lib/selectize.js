@@ -26,7 +26,7 @@
 }(this, function($, Sifter, MicroPlugin) {
 	'use strict';
 
-	/*var highlight = function($element, pattern) {
+	var highlight = function($element, pattern) {
 		if (typeof pattern === 'string' && !pattern.length) return;
 		var regex = (typeof pattern === 'string') ? new RegExp(pattern, 'i') : pattern;
 	
@@ -56,7 +56,7 @@
 		return $element.each(function() {
 			highlight(this);
 		});
-	};*/
+	};
 	
 	var MicroEvent = function() {};
 	MicroEvent.prototype = {
