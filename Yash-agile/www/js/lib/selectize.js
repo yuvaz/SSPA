@@ -440,7 +440,7 @@
 	
 			width = measureString(value, $input) + 4;
 			if (width !== $input.width()) {
-				//$input.width(width);
+				$input.width(width);
 				$input.triggerHandler('resize');
 			}
 		};

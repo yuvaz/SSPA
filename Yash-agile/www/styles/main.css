@@ -273,6 +273,7 @@ border-radius: 1px;
 .bnppf_dropdown_box .optgroup:first-child {
 	padding-top:3px;
   border-top: 0 none;
+  
 }
 /* Drop box behaviour */
 .bnppf_input_control .bnppf_input_field,
@@ -322,7 +323,8 @@ border-radius: 1px;
   vertical-align: baseline;
   zoom: 1;
 }
-.bnppf_input_field span{ float:right; color:#252429;border-left: 1px solid #d8dbde;padding-left: 12px;position:absolute; right:12px; top:9px; z-index:-999;}
+.bnppf_input_field span{ float:right; color:#252429;border-left: 1px solid #d8dbde;padding-left: 12px;position:absolute; right:12px; top:9px; z-index:-999; background:white;}
+.amount_field .bnppf_input_field input{ width:100%;}
 .amount_field .bnppf_input_field span{ padding-top:3px; color:#76767b;}
 .input_dropdown{ height:44px;}
 .dropdown_arrow{ background:url(./images/dropdown_strip.png) no-repeat right 40px center;}
@@ -494,7 +496,7 @@ input[type="text"]:focus {
 .structured_message{ display:none;}
 .bnppf_text_area textarea{ width:100%; border:1px solid #ccc;resize:vertical; padding:0; margin:0; font-size:16px;}
 .bnppf_text_area textarea:focus{ border-color:#ccc;;}
-@media all and (max-width: 320px){ .easybanking .bnppf_sendmoney_header strong{font-size: 0.875em; width:auto;}}
+@media all and (max-width: 480px){}
 @media all and (max-width: 719px){
 	.easybanking .bnppf_sendmoney_header strong{font-size: 1.38em; width:auto;}
 	.easybanking .sepa_steps__digit li{ font-size:1.08em; margin-left:10px; padding:8px 14px;}
@@ -510,7 +512,6 @@ input[type="text"]:focus {
 	.easybanking .sepa_fields{ padding-bottom:20px;}
 	.select_type{ padding-bottom:20px;}
 	.easybanking .sepa_labels{ padding:0 0 8px 0;}
-	.bnppf_input_field > input{ width:85%;}
 	.date_picker .bnppf_input_field{ width:100%;}
 	.date_picker .bnppf_input_field > input{ width:100%;}
 	.error_summary{ margin:0;}
