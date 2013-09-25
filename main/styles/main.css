@@ -26,13 +26,13 @@ caption, th, td {
 	font-weight: normal;
 }
 ::selection {
-background: #f1f6f7;
+background: red;
 }
  @-ms-viewport {
  width: device-width;
 }
 * {
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0)!important;;
 }
 html, body, .wcm {
 	width: 100%;
@@ -283,7 +283,6 @@ border-radius: 1px;
 }
 .easybanking .sepa_fields.message_field{ padding-bottom:0;}
 .message_field .bnppf_input_field input{ width:100%;}
-.message_field .selected_nomessage .bnppf_input_field.focus input, .message_field .selected_nomessage .bnppf_input_field input{ display:none;}
 .bnppf_input_control .bnppf_input_field.focus,
 .bnppf_input_control .bnppf_input_field.focus input {
   cursor: text;
@@ -303,7 +302,7 @@ border-radius: 1px;
   height:22px;
 }
 
-.bnppf_input_field > input:focus {
+input:focus {
   outline: none !important;
   height:auto;
 }
@@ -491,13 +490,12 @@ input[type="text"]:focus {
   width: 16px;
   height: 16px;
 }
-.select_type{ padding-bottom:30px;}
-.select_type.selected_nomessage{ padding:0;}
-.bnppf_text_area{ width:99.7%; display:none; margin-top:30px;}
-.structured_message{ display:none;}
-.bnppf_text_area textarea{ width:100%; border:1px solid #ccc;resize:vertical; padding:0; margin:0; font-size:16px;}
-.bnppf_text_area textarea:focus{ border-color:#ccc;;}
-@media all and (max-width: 480px){}
+.select_message__type input[type="text"]{ display:none;}
+.select_message__struct, .select_message__free, .select_message__euro{ margin-top:30px; display:none;}
+.select_message__struct input{ height:44px;}
+.bnppf_text_area{ width:99.7%;}
+.bnppf_text_area textarea{ width:100%; border:1px solid #ccc;resize:vertical;font-size:16px;}
+.bnppf_text_area textarea:focus{ border-color:#ccc;}
 @media all and (max-width: 719px){
 	.easybanking .bnppf_sendmoney_header strong{font-size: 1.38em; width:auto;}
 	.easybanking .sepa_steps__digit li{ font-size:1.08em; margin-left:10px; padding:8px 14px;}
@@ -506,7 +504,7 @@ input[type="text"]:focus {
 	.easybanking .sepa_steps__text li{ position:absolute; top:40px; left:10px; margin:0;}
 	.easybanking .sepa_steps__text li:nth-child(2), .easybanking .sepa_steps__text li:nth-child(3){ display:none;}
 	.easybanking .bnppf_sendmoney_content__inner h5{ width:100%;}
-	.easybanking .bnppf_sendmoney_content__inner{ padding:20px;}
+	.easybanking .bnppf_sendmoney_content__inner{ padding:10px;}
 	.easybanking .bnppf_sendmoney_content__inner h5{ padding:0;}
 	.sendmoney_details{ width:100%;}
 	.field_error, .field_error label{ margin:0;}

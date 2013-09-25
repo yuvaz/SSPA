@@ -107,7 +107,7 @@
                                             <label for="select-account" class="sepa_labels">Date</label>
                                             <div class="sendmoney_details">
                                                     <p class="field_error_message">Please select the valid account</p>
-                                                <div class="bnppf_input_control" style="position:relative">
+                                                <div class="bnppf_input_control">
                                                     <div class="bnppf_input_field input_dropdown">
                                                         <input type="text" class="yash" value="" placeholder="DD/MM/YYYY"/>
                                                       
@@ -116,25 +116,31 @@
                                             	</div>
                                          	</div>
                                     	</div>
-                                        <div class="sepa_fields message_field">
+                                        <div class="sepa_fields message_field select_message">
                                             <label for="select-message" class="sepa_labels">Message</label>
                                             <div class="sendmoney_details">
-                                                <div class="bnppf_input_control">
-                                                	<div class="details_content select_type selected_nomessage">
-                                                       <select class="select-message"></select>
-                                                    </div>
-                                                    <div class="selected_message--type">
-                                                    	<p class="field_error_message struct_error" style="display:block;">Please select the valid account</p>
-                                                    	<div class="bnppf_input_field input_dropdown structured_message" style="display:block">
-                                                    		<input type="text" placeholder="+++ ---/----/----- +++"/>
-                                                        </div>
-                                                    </div>
-                                                    <!--<div class="bnppf_text_area" style="display:block;">
-                                                        <p class="field_error_message" style="display:block;">Please select the valid account</p>
-                                                        	<textarea></textarea>
-                                                    </div>-->
-                                            	</div>
-                                         	</div>
+                                            	<!-- Input -->
+                                            	<div class="details_content select_message__type">
+                                                	<select class="select-message">
+                                                    	<option value="1" selected="selected"></option>
+                                                    </select>
+                                                </div>
+                                                <!-- Struct Message -->
+                                                <div class="select_message__struct">
+                                                	<p class="field_error_message struct_error">Please select the valid account</p>
+                                                    <input class="bnppf_input_field"></input>
+                                                </div>
+                                                <!-- free Message -->
+                                                <div class="bnppf_text_area select_message__free">
+                                                	<p class="field_error_message freemessage_error show_active">Please select the valid account</p>
+                                                    <textarea></textarea>
+                                                </div>
+                                                <!-- Euro Message -->
+                                                <div class="bnppf_text_area select_message__euro">
+                                                	<p class="field_error_message struct_error show_active">Please select the valid account</p>
+                                                    <textarea></textarea>
+                                                </div>
+                                            </div>
                                     	</div>
                                     </div>
                                 </div>
