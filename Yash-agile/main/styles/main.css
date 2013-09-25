@@ -114,7 +114,6 @@ html, body, .wcm {
 	text-transform: uppercase;
 	font-weight: 300; color:white;
 	line-height:1em;
-	min-width:100px;
 }
 .easybanking .sepa_steps{
 	float:right;
@@ -174,6 +173,8 @@ html, body, .wcm {
 .field_error_message{ padding-bottom:12px; color: #e53012; display:none;}
 .selected-item{ padding-top:12px; color:#76767b; display:none;}
 .field_error label{ margin-top:35px;}
+.message_field.field_error label{ margin-top:0px;}
+.message_field.field_error .bnppf_input_field:nth-child(1){ border:1px solid #d8dbde}
 .field_error .field_error_message{ display:block !important;}
 .show_active{ display:block !important;}
 .to_field .show_active{ display:inline-block!important;}
@@ -491,7 +492,7 @@ input[type="text"]:focus {
   height: 16px;
 }
 .select_message__type input[type="text"]{ display:none;}
-.select_message__struct, .select_message__free, .select_message__euro{ margin-top:30px; display:none;}
+.select_message__1, .select_message__2, .select_message__3{ margin-top:30px; display:none;}
 .select_message__struct input{ height:44px;}
 .bnppf_text_area{ width:99.7%;}
 .bnppf_text_area textarea{ width:100%; border:1px solid #ccc;resize:vertical;font-size:16px;}
