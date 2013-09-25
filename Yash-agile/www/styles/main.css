@@ -114,6 +114,7 @@ html, body, .wcm {
 	text-transform: uppercase;
 	font-weight: 300; color:white;
 	line-height:1em;
+	min-width:100px;
 }
 .easybanking .sepa_steps{
 	float:right;
