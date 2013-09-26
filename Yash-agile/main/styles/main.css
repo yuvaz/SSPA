@@ -55,6 +55,7 @@ html, body, .wcm {
 	background: linear-gradient(to bottom, #eef1f5 0%, #dde3e6 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eef1f5', endColorstr='#dde3e6', GradientType=0 );
 	font-family: 'BnppSans-l', sans-serif;
+	color:#252429;
 }
 .easybanking .wrapper{
 	width: 100%;
@@ -170,7 +171,7 @@ html, body, .wcm {
 	padding-bottom:30px;
 }
 .easybanking .sepa_fields.to_field{ padding-bottom:0px;}
-.easybanking .sepa_labels{ width:20%; padding:10px 0; float:left;font-family: 'BnppSans-r', sans-serif; font-size:16px; color:#252429;}
+.easybanking .sepa_labels{ width:20%; padding:10px 0; float:left;font-family: 'BnppSans-r', sans-serif; font-size:16px; }
 .sendmoney_details{ float:left; width:60%;}
 .field_error_message{ padding-bottom:12px; color: #e53012; display:none;}
 .selected-item{ padding-top:12px; color:#76767b; display:none;}
@@ -326,7 +327,7 @@ input:focus, textarea:focus {
   vertical-align: baseline;
   zoom: 1;
 }
-.bnppf_input_field span{ float:right; color:#252429;border-left: 1px solid #d8dbde;padding-left: 12px;position:absolute; right:12px; top:9px; z-index:-999; background:white;}
+.bnppf_input_field span{ float:right; border-left: 1px solid #d8dbde;padding-left: 12px;position:absolute; right:12px; top:9px; z-index:-999; background:white;}
 .amount_field .bnppf_input_field input{ width:100%;}
 .amount_field .bnppf_input_field span{ padding-top:3px; color:#76767b;}
 .input_dropdown{ height:44px;}
@@ -408,7 +409,7 @@ input[type="text"]:focus {
 }
 .datepicker td.old,
 .datepicker td.new {
-  color: #252429;
+  
   background:#e5e9ef;
 }
 .datepicker td.active,
@@ -496,7 +497,7 @@ input[type="text"]:focus {
 .select_message__structured, .select_message__freetext, .select_message__eurostructured{ margin-top:30px; display:none;}
 .select_message__struct input{ height:44px;}
 .bnppf_text_area{ width:100%;}
-.bnppf_text_area textarea{ width:100%; border:1px solid #ccc;resize:vertical;font-size:16px; padding:6px; box-sizing:border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; border-radius:0px;-webkit-border-radius:0px; -moz-border-radius:0px; -webkit-appearance:none;}
+.bnppf_text_area textarea{ width:100%; border:1px solid #ccc;resize:vertical;font-size:16px; padding:6px; box-sizing:border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; border-radius:0px;-webkit-border-radius:0px; -moz-border-radius:0px; -webkit-appearance:none; color:#76767b;}
 .bnppf_text_area textarea:focus{ border-color:#ccc;}
 .bnppf_text_area .text_count{ float:right; color:#76767b; padding:6px 0;}
 .bnppf_text_area .text_count span{ padding-left:4px;}
@@ -609,6 +610,7 @@ you can use the generic selector below, but it's slower:
 	text-transform: none;
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
+	color:#252429;
 }
 .icon-calendar-2:before {
 	font-size:22px;
