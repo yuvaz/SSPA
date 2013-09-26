@@ -495,8 +495,8 @@ input[type="text"]:focus {
 .select_message__type input[type="text"]{ display:none;}
 .select_message__structured, .select_message__freetext, .select_message__eurostructured{ margin-top:30px; display:none;}
 .select_message__struct input{ height:44px;}
-.bnppf_text_area{ width:99.7%;}
-.bnppf_text_area textarea{ width:98%; border:1px solid #ccc;resize:vertical;font-size:16px; padding:6px;}
+.bnppf_text_area{ width:100%;}
+.bnppf_text_area textarea{ width:100%; border:1px solid #ccc;resize:vertical;font-size:16px; padding:6px; box-sizing:border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;}
 .bnppf_text_area textarea:focus{ border-color:#ccc;}
 .bnppf_text_area .text_count{ float:right; color:#76767b;}
 .bnppf_text_area .text_count span{ padding-left:4px;}
