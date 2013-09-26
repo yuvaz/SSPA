@@ -498,7 +498,7 @@ input[type="text"]:focus {
 .bnppf_text_area{ width:100%;}
 .bnppf_text_area textarea{ width:100%; border:1px solid #ccc;resize:vertical;font-size:16px; padding:6px; box-sizing:border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; border-radius:0px;-webkit-border-radius:0px; -moz-border-radius:0px; -webkit-appearance:none;}
 .bnppf_text_area textarea:focus{ border-color:#ccc;}
-.bnppf_text_area .text_count{ float:right; color:#76767b;}
+.bnppf_text_area .text_count{ float:right; color:#76767b; padding:6px 0;}
 .bnppf_text_area .text_count span{ padding-left:4px;}
 @media all and (max-width: 719px){
 	.easybanking .bnppf_sendmoney_header strong{font-size: 1.38em; width:auto; min-width:106px; white-space:no-wrap;}
