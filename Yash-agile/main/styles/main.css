@@ -117,6 +117,7 @@ html, body, .wcm {
 	font-weight: 300; color:white;
 	line-height:1em;
 	min-width:212px;
+	white-space:no-wrap;
 }
 .easybanking .sepa_steps{
 	float:right;
@@ -502,7 +503,7 @@ input[type="text"]:focus {
 .bnppf_text_area .text_count{ float:right; color:#76767b; padding:6px 0;}
 .bnppf_text_area .text_count span{ padding-left:4px;}
 @media all and (max-width: 719px){
-	.easybanking .bnppf_sendmoney_header strong{font-size: 1.38em; width:auto; min-width:106px; white-space:no-wrap;}
+	.easybanking .bnppf_sendmoney_header strong{font-size: 1.38em; width:auto; min-width:106px;}
 	.easybanking .sepa_steps__digit li{ font-size:1.08em; margin-left:10px; padding:8px 14px;}
 	.easybanking .bnppf_sendmoney_header_inner{ padding:20px 10px;}
 	.easybanking .sepa_steps__digit{ float:right;}
@@ -520,7 +521,6 @@ input[type="text"]:focus {
 	.date_picker .bnppf_input_field > input{ width:100%;}
 	.error_summary{ margin:0;}
 	.icon_sendmoney{ display:none;}
-	.bnppf_text_area textarea{ width:97%;}
 }
 
 
