@@ -26,7 +26,7 @@ caption, th, td {
 	font-weight: normal;
 }
 ::selection {
-background: red;
+background: #eef1f5;
 }
  @-ms-viewport {
  width: device-width;
