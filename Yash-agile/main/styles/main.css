@@ -304,7 +304,7 @@ border-radius: 1px;
   height:22px;
 }
 
-input:focus {
+input:focus, textarea:focus {
   outline: none !important;
   height:auto;
 }
@@ -493,12 +493,13 @@ input[type="text"]:focus {
   height: 16px;
 }
 .select_message__type input[type="text"]{ display:none;}
-.select_message__1, .select_message__2, .select_message__3{ margin-top:30px; display:none;}
+.select_message__structured, .select_message__freetext, .select_message__eurostructured{ margin-top:30px; display:none;}
 .select_message__struct input{ height:44px;}
 .bnppf_text_area{ width:99.7%;}
-.bnppf_text_area textarea{ width:100%; border:1px solid #ccc;resize:vertical;font-size:16px;}
+.bnppf_text_area textarea{ width:98%; border:1px solid #ccc;resize:vertical;font-size:16px; padding:6px;}
 .bnppf_text_area textarea:focus{ border-color:#ccc;}
-.bnppf_text_area .text_count{ float:right;}
+.bnppf_text_area .text_count{ float:right; color:#76767b;}
+.bnppf_text_area .text_count span{ padding-left:4px;}
 @media all and (max-width: 719px){
 	.easybanking .bnppf_sendmoney_header strong{font-size: 1.38em; width:auto; min-width:106px;}
 	.easybanking .sepa_steps__digit li{ font-size:1.08em; margin-left:10px; padding:8px 14px;}
@@ -518,6 +519,7 @@ input[type="text"]:focus {
 	.date_picker .bnppf_input_field > input{ width:100%;}
 	.error_summary{ margin:0;}
 	.icon_sendmoney{ display:none;}
+	.bnppf_text_area textarea{ width:97%;}
 }
 
 
