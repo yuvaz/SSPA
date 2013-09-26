@@ -198,7 +198,7 @@ html, body, .wcm {
 	cursor:pointer;
 	height:44px;
 }
-.field_error .bnppf_input_field{ border:1px solid #e53012;}
+.field_error .bnppf_input_field, .field_error .bnppf_text_area textarea{ border:1px solid #e53012;}
 .bnppf_input_field.dropdown-active.dropdown-active:after {
   margin-top: -4px;
   border-color: transparent transparent #252429 transparent;
