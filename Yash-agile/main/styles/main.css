@@ -33,6 +33,7 @@ background: red;
 }
 * {
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0)!important;;
+	-ms-touch-action:none !important;
 }
 html, body, .wcm {
 	width: 100%;
@@ -329,7 +330,7 @@ input:focus, textarea:focus {
 .amount_field .bnppf_input_field input{ width:100%;}
 .amount_field .bnppf_input_field span{ padding-top:3px; color:#76767b;}
 .input_dropdown{ height:44px;}
-.dropdown_arrow{ background:url(./images/dropdown_strip.png) no-repeat right 40px center;}
+.dropdown_arrow{ background:url(./images/dropdown_strip.png) no-repeat right center;}
 .dropdown_arrow:after {
   position: absolute;
   top: 50%;
@@ -501,7 +502,7 @@ input[type="text"]:focus {
 .bnppf_text_area .text_count{ float:right; color:#76767b;}
 .bnppf_text_area .text_count span{ padding-left:4px;}
 @media all and (max-width: 719px){
-	.easybanking .bnppf_sendmoney_header strong{font-size: 1.38em; width:auto; min-width:106px;}
+	.easybanking .bnppf_sendmoney_header strong{font-size: 1.38em; width:auto; min-width:106px; white-space:no-wrap;}
 	.easybanking .sepa_steps__digit li{ font-size:1.08em; margin-left:10px; padding:8px 14px;}
 	.easybanking .bnppf_sendmoney_header_inner{ padding:20px 10px;}
 	.easybanking .sepa_steps__digit{ float:right;}
