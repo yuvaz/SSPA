@@ -497,6 +497,7 @@ input[type="text"]:focus {
 .bnppf_text_area{ width:99.7%;}
 .bnppf_text_area textarea{ width:100%; border:1px solid #ccc;resize:vertical;font-size:16px;}
 .bnppf_text_area textarea:focus{ border-color:#ccc;}
+.bnppf_text_area .text_count{ float:right;}
 @media all and (max-width: 719px){
 	.easybanking .bnppf_sendmoney_header strong{font-size: 1.38em; width:auto;}
 	.easybanking .sepa_steps__digit li{ font-size:1.08em; margin-left:10px; padding:8px 14px;}
