@@ -274,6 +274,7 @@ border-radius: 1px;
 .optgroup-iban{ color:#009966; font-size:14px;font-family: 'BnppSans-r', sans-serif;}
 .optgroup-iban:hover{ color:#008578; text-decoration:underline;}
 .optgroup-amount{ float:right;font-size:14px; color:#76767b;}
+.bnppf_dropdown_box [data-selectable] .optgroup-amount .highlight{ background:#ffffff; font-family: 'BnppSans-l', sans-serif; padding:0;}
 .optgroup-name{font-size:14px; color:#76767b;}
 .optgroup-amount span{ padding:0 3px;}
 .bnppf_dropdown_box .optgroup:first-child {
@@ -292,6 +293,8 @@ border-radius: 1px;
 .bnppf_input_control .bnppf_input_field.focus input {
   cursor: text;
 }
+.input_dropdown:focus,
+.bnppf_input_field.focus{ border:1px solid #008578;}
 .bnppf_input_field > input {
   max-width: 100% !important;
   max-height: none !important;
