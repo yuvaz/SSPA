@@ -3,6 +3,9 @@ caption, th, td {
   font-weight: normal;
   vertical-align: middle;
 }
+button{ border:0;}
+.f_left{ float:left;}
+.f_right{ float:right;}
 /** Font imports ttf,eot,woff,svg **/
 @font-face {
 	font-family: 'BnppSans-l';
@@ -252,7 +255,6 @@ background: #f4f5f6;
 border-radius: 1px;
  font-family: 'BnppSans-r', sans-serif;
 }
-/*.bnppf_dropdown_box [data-selectable]:hover{ background:#E6E6E6;}*/
 .bnppf_dropdown_box .main-group{ background:#f4f5f6; padding:8px 12px 6px 12px; border-bottom:1px solid #d8dbde;}
 .bnppf_dropdown_box .optgroup-header {
   color: #76767b;
@@ -349,8 +351,8 @@ input:focus, textarea:focus {
   border-width: 5px 5px 0 5px;
   content: ' ';
 }
-.next_navigation{ display:inline-block; width:100%;}
-button{ border:0; float:right;}
+.navigation_btns{ width:100%; display:inline-block;}
+.right_navigation_btn, .left_navigation_btn{ display:inline-block;}
 .active_step li:nth-child(1){ color:#ffffff; border-color:#ffffff;}
 .bnppf_input__datePicker{ height:44px;padding: 11px 12px;
 	overflow: hidden;
