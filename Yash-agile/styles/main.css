@@ -94,11 +94,14 @@ html, body, .wcm {
 	background:#bec6d0;
 }
 .bnppf_btn_arrow_right, .arrow-left{
-	padding-right:15px;
+	padding-right:9px;
 }
 .arrow-right, .bnppf_btn_arrow_left{
 	padding-left:15px;
 }
+/** Links Model **/
+.lnk_primary{ font-size:16px;font-family: 'BnppSans-r', sans-serif; color:#009966; margin-right: 40px;}
+.lnk_primary:hover{ color:#008578;}
 /** Sepa Transfer Styles **/
 .easybanking .bnppf_sendmoney{
 	/*width:963px;*/
@@ -171,9 +174,16 @@ html, body, .wcm {
 }
 .easybanking .sepa_fields{
 	width:100%;
-	display:inline-block;
+	display:table;
 	padding-bottom:30px;
 }
+.sepa_confirm_fields{ width:100%; display:table; padding:20px 0;font-size:18px; border-bottom:1px solid #ccc;}
+.confirm_content p, .confirm_content span{ font-size:18px; display:table; float:left;}
+.sepa_confirm_labels{ width:20%;float:left;font-family: 'BnppSans-r', sans-serif;}
+.confirmation_details{ float:left; width:60%;}
+.sendmoney_confirmation .sepa_confirm_fields:nth-child(1){ padding-top:10px;}
+.confirm_lastchild{ padding-bottom:0; border:none;}
+
 .easybanking .sepa_fields.to_field{ padding-bottom:0px;}
 .easybanking .sepa_labels{ width:20%; padding:10px 0; float:left;font-family: 'BnppSans-r', sans-serif; font-size:16px; }
 .sendmoney_details{ float:left; width:60%;}
@@ -295,8 +305,6 @@ border-radius: 1px;
 .bnppf_input_control .bnppf_input_field.focus input {
   cursor: text;
 }
-.input_dropdown:focus,
-.bnppf_input_field.focus{ border:1px solid #008578;}
 .bnppf_input_field > input {
   max-width: 100% !important;
   max-height: none !important;
@@ -351,7 +359,7 @@ input:focus, textarea:focus {
   border-width: 5px 5px 0 5px;
   content: ' ';
 }
-.navigation_btns{ width:100%; display:inline-block;}
+.navigation_btns{ width:100%; display: table;}
 .right_navigation_btn, .left_navigation_btn{ display:inline-block;}
 .active_step li:nth-child(1){ color:#ffffff; border-color:#ffffff;}
 .bnppf_input__datePicker{ height:44px;padding: 11px 12px;
