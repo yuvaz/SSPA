@@ -1,11 +1,17 @@
 caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
+	text-align: left;
+	font-weight: normal;
+	vertical-align: middle;
 }
-button{ border:0;}
-.f_left{ float:left;}
-.f_right{ float:right;}
+button {
+	border: 0;
+}
+.f_left {
+	float: left;
+}
+.f_right {
+	float: right;
+}
 /** Font imports ttf,eot,woff,svg **/
 @font-face {
 	font-family: 'BnppSans-l';
@@ -29,24 +35,25 @@ button{ border:0;}
 	font-weight: normal;
 }
 ::selection {
-background: #eef1f5;
+	background: #eef1f5;
 }
  @-ms-viewport {
  width: device-width;
 }
 * {
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0)!important;;
-	-ms-touch-action:none !important;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0)!important;
+	;
+	-ms-touch-action: none !important;
 }
 html, body, .wcm {
 	width: 100%;
 	height: 100%;
 }
-.easybanking{
+.easybanking {
 	width: 100%;
 	height: 100%;
 	font-size: 13px;
-	line-height:18px;
+	line-height: 18px;
 	-webkit-user-select: none !important;
 	-webkit-text-size-adjust: none;
 	background: #eef1f5;
@@ -56,154 +63,229 @@ html, body, .wcm {
 	background: -o-linear-gradient(top, #eef1f5 0%, #dde3e6 100%);
 	background: -ms-linear-gradient(top, #eef1f5 0%, #dde3e6 100%);
 	background: linear-gradient(to bottom, #eef1f5 0%, #dde3e6 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eef1f5', endColorstr='#dde3e6', GradientType=0 );
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eef1f5', endColorstr='#dde3e6', GradientType=0 );
 	font-family: 'BnppSans-l', sans-serif;
-	color:#252429;
+	color: #252429;
 }
-.easybanking .wrapper{
+.easybanking .wrapper {
 	width: 100%;
 	height: 100%;
-	position:absolute;
-	left:0;
-	top:0;
 }
-.easybanking .top{
-	width:100%;
-	display:block;
+.easybanking .top {
+	width: 100%;
+	display: block;
 }
 /* Button standard */
-.bnppf_btn{
-	font-size:16px;
-	padding:14px 20px;
+ .easybanking .bnppf_btn {
+	font-size: 16px;
+	padding: 14px 20px;
 	font-family: 'BnppSans-r', sans-serif;
-	cursor:pointer;
-	display:inline-block;
-	line-height:0.77em;
+	cursor: pointer;
+	display: inline-block;
+	line-height: 0.77em;
 }
-.btn_primary{
-	background:#009966;
-	color:#ffffff;
+.easybanking .btn_primary {
+	background: #009966;
+	color: #ffffff;
 }
-.btn_primary:hover{
-	background:#008578;
+.easybanking .btn_primary:hover {
+	background: #008578;
 }
-.btn_secondary{
-	background:#d2d8e1;
+.easybanking .btn_secondary {
+	background: #d2d8e1;
 }
-.btn_secondary:hover{
-	background:#bec6d0;
+.easybanking .btn_secondary:hover {
+	background: #bec6d0;
 }
-.bnppf_btn_arrow_right, .arrow-left{
-	padding-right:9px;
+.easybanking .bnppf_btn_arrow_right, .easybanking .arrow-left {
+	padding-right: 9px;
 }
-.arrow-right, .bnppf_btn_arrow_left{
-	padding-left:15px;
+.easybanking .arrow-right, .easybanking .bnppf_btn_arrow_left {
+	padding-left: 15px;
 }
 /** Links Model **/
-.lnk_primary{ font-size:16px;font-family: 'BnppSans-r', sans-serif; color:#009966; margin-right: 40px;}
-.lnk_primary:hover{ color:#008578;}
+.easybanking .lnk_primary {
+	font-size: 16px;
+	font-family: 'BnppSans-r', sans-serif;
+	color: #009966;
+	margin-right: 40px;
+	cursor: pointer;
+}
+.easybanking .lnk_primary:hover {
+	color: #008578;
+}
 /** Sepa Transfer Styles **/
-.easybanking .bnppf_sendmoney{
+.easybanking .bnppf_sendmoney {
 	/*width:963px;*/
-	background:#ffffff;
+	background: #ffffff;
 }
-.easybanking .bnppf_sendmoney_header{
-	width:100%;
-	background:#861a61;
+.easybanking .bnppf_sendmoney_header {
+	width: 100%;
+	background: #861a61;
 }
-.easybanking .bnppf_sendmoney_header_inner{ 
-	position:relative; 
-	padding:30px 30px 20px 30px;
+.easybanking .bnppf_sendmoney_header_inner {
+	position: relative;
+	padding: 30px 30px 20px 30px;
 }
-.easybanking .bnppf_sendmoney_header strong{
+.easybanking .bnppf_sendmoney_header strong {
 	font-size: 36px;
 	float: left;
 	font-family: 'BnppSans-l', sans-serif;
 	text-transform: uppercase;
-	font-weight: 300; color:white;
-	line-height:1em;
-	min-width:212px;
-	white-space:no-wrap;
+	font-weight: 300;
+	color: white;
+	line-height: 1em;
+	min-width: 212px;
+	white-space: no-wrap;
 }
-.easybanking .sepa_steps{
-	float:right;
-	display:block;
+.easybanking .sepa_steps {
+	float: right;
+	display: block;
 }
-.easybanking .sepa_steps__digit li{
-	border-radius:120px;
-	-webkit-border-radius:120px;
-	-moz-border-radius:120px;
-	-o-border-radius:120px;
-	border:2px solid #d12668; 
-	text-align:center; 
-	display:inline-block; 
-	padding:13px 18px; 
-	font-family:'BnppSans-r', sans-serif;
-	margin-left:28px; color:#d12668;
-	font-size:20px;
+.easybanking .sepa_steps__digit li {
+	border-radius: 120px;
+	-webkit-border-radius: 120px;
+	-moz-border-radius: 120px;
+	-o-border-radius: 120px;
+	border: 2px solid #d12668;
+	text-align: center;
+	display: inline-block;
+	padding: 13px 18px;
+	font-family: 'BnppSans-r', sans-serif;
+	margin-left: 28px;
+	color: #d12668;
+	font-size: 20px;
 }
-.easybanking .sepa_steps__text{
-	margin-top:10px;
+.easybanking .sepa_steps__text {
+	margin-top: 10px;
 }
-.easybanking .sepa_steps__text li{
-	display:inline-block;
-	text-align:center;
-	color:#d12668;
-	font-family:'BnppSans-r', sans-serif;
-	margin-left:35px;
-	font-size:14px;
+.easybanking .sepa_steps__text li {
+	display: inline-block;
+	text-align: center;
+	color: #d12668;
+	font-family: 'BnppSans-r', sans-serif;
+	margin-left: 35px;
+	font-size: 14px;
 }
-.easybanking .sepa_steps__text span{ 
-	display:none;
+.easybanking .sepa_steps__text span {
+	display: none;
 }
-
-.easybanking .bnppf_sendmoney_content{
-	width:100%;
+.easybanking .bnppf_sendmoney_content {
+	width: 100%;
 }
-.easybanking .bnppf_sendmoney_content__inner{
-	padding:30px;
-	border-bottom:1px solid #d2d5da;
+.easybanking .bnppf_sendmoney_content__inner {
+	padding: 30px;
+	border-bottom: 1px solid #d2d5da;
 }
-.easybanking .bnppf_sendmoney_content__inner h5{
-	text-align:right;
-	width:80%;
-	padding:0 0 30px 0;
-	font-weight:normal;
-	font-family:'BnppSans-l', sans-serif;
-	font-size:1.08em;
+.easybanking .bnppf_sendmoney_content__inner h5 {
+	text-align: right;
+	width: 80%;
+	padding: 0 0 30px 0;
+	font-weight: normal;
+	font-family: 'BnppSans-l', sans-serif;
+	font-size: 1.08em;
 }
-.easybanking .sepa_fields{
-	width:100%;
-	display:table;
-	padding-bottom:30px;
+.easybanking .sepa_fields {
+	width: 100%;
+	display: table;
+	padding-bottom: 30px;
 }
-.sepa_confirm_fields{ width:100%; display:table; padding:20px 0;font-size:18px; border-bottom:1px solid #ccc;}
-.confirm_content p, .confirm_content span{ font-size:18px; display:table; float:left;}
-.sepa_confirm_labels{ width:20%;float:left;font-family: 'BnppSans-r', sans-serif;}
-.confirmation_details{ float:left; width:60%;}
-.sendmoney_confirmation .sepa_confirm_fields:nth-child(1){ padding-top:10px;}
-.confirm_lastchild{ padding-bottom:0; border:none;}
-
-.easybanking .sepa_fields.to_field{ padding-bottom:0px;}
-.easybanking .sepa_labels{ width:20%; padding:10px 0; float:left;font-family: 'BnppSans-r', sans-serif; font-size:16px; }
-.sendmoney_details{ float:left; width:60%;}
-.field_error_message{ padding-bottom:12px; color: #e53012; display:none;}
-.selected-item{ padding-top:12px; color:#76767b; display:none;}
-.field_error label{ margin-top:35px;}
-.message_field.field_error label{ margin-top:0px;}
-.message_field.field_error .bnppf_input_field:nth-child(1){ border:1px solid #d8dbde}
-.field_error .field_error_message{ display:block !important;}
-.show_active{ display:block !important;}
-.to_field .show_active{ display:inline-block!important;}
-.icon_sendmoney{ background:url(./images/sendmoney_icon.png) no-repeat; padding:8px 23px; margin-left:20px;}
+.sepa_confirm_fields {
+	width: 100%;
+	display: table;
+	padding: 20px 0;
+	font-size: 18px;
+	border-bottom: 1px solid #ccc;
+}
+.confirm_content p, .confirm_content span {
+	font-size: 18px;
+	display: table;
+	float: left;
+	line-height: 22px;
+}
+.confirm_content span {
+	margin-right: 4px;
+}
+.confirm_amount span {
+margin-left: 4px;
+}
+.sepa_confirm_labels {
+	width: 20%;
+	float: left;
+	font-family: 'BnppSans-r', sans-serif;
+}
+.confirmation_details {
+	float: left;
+	width: 60%;
+}
+.sendmoney_confirmation .sepa_confirm_fields:nth-child(1) {
+	padding-top: 10px;
+}
+.confirm_lastchild {
+	padding-bottom: 0;
+	border: none;
+}
+.easybanking .sepa_fields.to_field {
+	padding-bottom: 0px;
+}
+.easybanking .sepa_labels {
+	width: 20%;
+	padding: 10px 0;
+	float: left;
+	font-family: 'BnppSans-r', sans-serif;
+	font-size: 16px;
+}
+.sendmoney_details {
+	float: left;
+	width: 60%;
+}
+.field_error_message {
+	padding-bottom: 12px;
+	color: #e53012;
+	display: none;
+}
+.selected-item {
+	padding-top: 12px;
+	color: #76767b;
+	display: none;
+}
+.field_error label {
+	margin-top: 35px;
+}
+.message_field.field_error label {
+	margin-top: 0px;
+}
+.message_field.field_error .bnppf_input_field:nth-child(1) {
+	border: 1px solid #d8dbde
+}
+.field_error .field_error_message {
+	display: block !important;
+}
+.show_active {
+	display: block !important;
+}
+.to_field .show_active {
+	display: inline-block!important;
+}
+.icon_sendmoney {
+	background: url(./images/sendmoney_icon.png) no-repeat;
+	padding: 8px 23px;
+	margin-left: 20px;
+}
 /* From Row */
-.error_summary{ width:80%; margin-left:20%;}
-.error_summary .field_error_message{ display:block;}
-.bnppf_input_control{width: 100%;}
+.error_summary {
+	width: 80%;
+	margin-left: 20%;
+}
+.error_summary .field_error_message {
+	display: block;
+}
+.bnppf_input_control {
+	width: 100%;
+}
 .bnppf_input_field {
 	position: relative;
 	z-index: 1;
-	display: inline-block;
 	width: 100%;
 	padding: 11px 12px;
 	overflow: hidden;
@@ -211,343 +293,478 @@ html, body, .wcm {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	cursor:pointer;
-	height:44px;
+	cursor: pointer;
+	height: 44px;
 }
-.field_error .bnppf_input_field, .field_error .bnppf_text_area textarea{ border:1px solid #e53012;}
-.bnppf_input_field.dropdown-active.dropdown-active:after {
-  margin-top: -4px;
-  border-color: transparent transparent #252429 transparent;
-  border-width: 0 5px 5px 5px;
+.field_error .bnppf_input_field, .field_error textarea {
+	border: 1px solid #e53012 !important;
+}
+.bnppf_input_field.dropdown-active:after {
+	margin-top: -4px;
+	border-color: transparent transparent #252429 transparent;
+	border-width: 0 5px 5px 5px;
 }
 .bnppf_input_field::after {
-  display: block;
-  clear: left;
-  content: ' ';
+	display: block;
+	clear: left;
+	content: ' ';
 }
-.bnppf_input_field.dropdown-active::before{
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: block;
-  height: 1px;
-  content: ' ';
+.bnppf_input_field.dropdown-active::before {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: block;
+	height: 1px;
+	content: ' ';
 }
 .bnppf_dropdown_box {
-  position: absolute;
-  z-index: 10;
-  margin: -1px 0 0 0;
-  background: #ffffff;
-  border: 1px solid #d0d0d0;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-		  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	position: absolute;
+	z-index: 10;
+	margin: -1px 0 0 0;
+	background: #ffffff;
+	border: 1px solid #d0d0d0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 .bnppf_dropdown_content {
-  max-height: 200px;
-  overflow-x: hidden;
-  overflow-y: auto;
+	max-height: 200px;
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 .bnppf_dropdown_box [data-selectable] {
-  overflow: hidden;
-  cursor: pointer;
-  padding:8px 12px;
-  border-bottom:1px solid #ccc;
+	overflow: hidden;
+	cursor: pointer;
+	padding: 8px 12px;
+	border-bottom: 1px solid #ccc;
 }
-.bnppf_dropdown_box [data-selectable] .highlight {
-background: #f4f5f6;
--webkit-border-radius: 1px;
--moz-border-radius: 1px;
-border-radius: 1px;
- font-family: 'BnppSans-r', sans-serif;
-}
-.bnppf_dropdown_box .main-group{ background:#f4f5f6; padding:8px 12px 6px 12px; border-bottom:1px solid #d8dbde;}
-.bnppf_dropdown_box .optgroup-header {
-  color: #76767b;
-  cursor: default;
-  /*background:#A6CAF0;*/
-  border-bottom: 1px solid #CCC;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 5px 8px;
-  font-family: 'BnppSans-l', sans-serif;
-}
-/*.bnppf_dropdown_box .optgroup {
-  padding-top: 4px;
-  border-top: 1px solid #f0f0f0;
-}*/
-.to_field .bnppf_dropdown_box .optgroup { padding:0;}
-.to_field .bnppf_dropdown_box .optgroup-header,.to_field .bnppf_dropdown_box [data-selectable]{ padding-left:24px;}
-.to_field .selected_amount {display:none;}
-.optgroup-iban{ color:#009966; font-size:14px;font-family: 'BnppSans-r', sans-serif;}
-.optgroup-iban:hover{ color:#008578; text-decoration:underline;}
-.optgroup-amount{ float:right;font-size:14px; color:#76767b;}
-.bnppf_dropdown_box [data-selectable] .optgroup-amount .highlight{ background:#ffffff; font-family: 'BnppSans-l', sans-serif; padding:0;}
-.optgroup-name{font-size:14px; color:#76767b;}
-.optgroup-amount span{ padding:0 3px;}
-.bnppf_dropdown_box .optgroup:first-child {
-	padding-top:3px;
-  border-top: 0 none;
-  
-}
-/* Drop box behaviour */
-.bnppf_input_control .bnppf_input_field,
-.bnppf_input_control .bnppf_input_field input {
-  cursor: pointer;
-}
-.easybanking .sepa_fields.message_field{ padding-bottom:0;}
-.message_field .bnppf_input_field input{ width:100%;}
-.bnppf_input_control .bnppf_input_field.focus,
-.bnppf_input_control .bnppf_input_field.focus input {
-  cursor: text;
-}
-.bnppf_input_field > input {
-  max-width: 100% !important;
-  max-height: none !important;
-  min-height: 0 !important;
-  padding: 0 !important;
-  margin: 0 1px !important;
-  text-indent: 0 !important;
-  background: none !important;
-  border: 0 none !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
-  -webkit-user-select: auto !important;
-  height:22px;
+.easybanking .highlight {
+	background: #f4f5f6;
+	font-family: 'BnppSans-r', sans-serif;
 }
 
+.bnppf_dropdown_box .main-group {
+	background: #f4f5f6;
+	padding: 8px 12px 6px 12px;
+	border-bottom: 1px solid #d8dbde;
+}
+.bnppf_dropdown_box .optgroup-header {
+	color: #76767b;
+	cursor: default;
+	/*background:#A6CAF0;*/
+	border-bottom: 1px solid #d8dbde;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 5px 8px;
+	font-family: 'BnppSans-l', sans-serif;
+}
+
+
+.to_field .bnppf_dropdown_box .optgroup {
+	padding: 0;
+}
+.to_field .bnppf_dropdown_box .optgroup-header, .to_field .bnppf_dropdown_box [data-selectable] {
+	padding-left: 24px;
+}
+.to_field .selected_amount {
+	display: none;
+}
+.optgroup-iban {
+	color: #009966;
+	font-size: 14px;
+	line-height:18px;
+	font-family: 'BnppSans-r', sans-serif;
+	display:inline-block;
+}
+.optgroup-iban:hover {
+	color: #008578;
+	text-decoration: underline;
+}
+.optgroup-amount {
+	float: right;
+	font-size: 14px;
+	color: #76767b;
+	display:inline-block;
+	line-height:18px;
+}
+.easybanking .optgroup-amount .highlight {
+	background: #ffffff;
+	font-family: 'BnppSans-l', sans-serif;
+	padding: 0;
+}
+.optgroup-name {
+	font-size: 14px;
+	color: #76767b;
+}
+.optgroup-amount span {
+	padding: 0 3px;
+}
+.bnppf_dropdown_box .optgroup:first-child {
+	padding-top: 3px;
+	border-top: 0 none;
+}
+/* Drop box behaviour */
+.bnppf_input_control .bnppf_input_field, .bnppf_input_control .bnppf_input_field input {
+	cursor: pointer;
+}
+.easybanking .sepa_fields.message_field {
+	padding-bottom: 0;
+}
+.message_field .bnppf_input_field input {
+	width: 100%;
+}
+.bnppf_input_control .bnppf_input_field.focus, .bnppf_input_control .bnppf_input_field.focus input {
+	cursor: text;
+}
+.bnppf_input_field > input {
+	max-width: 100% !important;
+	max-height: none !important;
+	min-height: 0 !important;
+	padding: 0 !important;
+	margin: 0 1px !important;
+	text-indent: 0 !important;
+	background: none !important;
+	border: 0 none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	-webkit-user-select: auto !important;
+	height: 22px;
+}
 input:focus, textarea:focus {
-  outline: none !important;
-  height:auto;
+	outline: none !important;
+	height: auto;
 }
-.bnppf_dropdown_box,.bnppf_input_field,.bnppf_input_field input {
-  font-family: inherit;
-  -webkit-font-smoothing: inherit;
-  color: #76767b;
-  font-size:16px;
-  line-height:22px;
+.bnppf_dropdown_box, .bnppf_input_field, .bnppf_input_field input {
+	font-family: inherit;
+	-webkit-font-smoothing: inherit;
+	color: #76767b;
+	font-size: 16px;
+	line-height: 22px;
 }
-.bnppf_input_field.disabled,.bnppf_input_field.disabled * {
-  cursor: default !important;
+.bnppf_input_field.disabled, .bnppf_input_field.disabled * {
+	cursor: default !important;
 }
 .bnppf_input_field > * {
-  display: -moz-inline-stack;
-  display: inline-block;
-  *display: inline;
-  vertical-align: baseline;
-  zoom: 1;
+	display: -moz-inline-stack;
+	display: inline-block;
+ *display: inline;
+	vertical-align: baseline;
+	zoom: 1;
 }
-.bnppf_input_field span{ float:right; border-left: 1px solid #d8dbde;padding-left: 12px;position:absolute; right:12px; top:9px; z-index:-999; background:white;}
-.amount_field .bnppf_input_field input{ width:100%;}
-.amount_field .bnppf_input_field span{ padding-top:3px; color:#76767b;}
-.input_dropdown{ height:44px;}
-.dropdown_arrow{ background:url(./images/dropdown_strip.png) no-repeat right center;}
+.bnppf_input_field span {
+	float: right;
+	border-left: 1px solid #d8dbde;
+	padding-left: 12px;
+	position: absolute;
+	right: 12px;
+	top: 9px;
+	z-index: -999;
+	background: white;
+}
+.amount_field .bnppf_input_field input {
+	width: 100%;
+}
+.amount_field .bnppf_input_field span {
+	padding-top: 3px;
+	color: #76767b;
+}
+.input_dropdown {
+	height: 44px;
+}
+.dropdown_arrow {
+	background: url(./images/dropdown_strip.png) no-repeat right center;
+}
 .dropdown_arrow:after {
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  display: block;
-  width: 0;
-  height: 0;
-  margin-top: -3px;
-  border-color: #252429 transparent transparent transparent;
-  border-style: solid;
-  border-width: 5px 5px 0 5px;
-  content: ' ';
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	display: block;
+	width: 0;
+	height: 0;
+	margin-top: -3px;
+	border-color: #252429 transparent transparent transparent;
+	border-style: solid;
+	border-width: 5px 5px 0 5px;
+	content: ' ';
 }
-.navigation_btns{ width:100%; display: table;}
-.right_navigation_btn, .left_navigation_btn{ display:inline-block;}
-.active_step li:nth-child(1){ color:#ffffff; border-color:#ffffff;}
-.bnppf_input__datePicker{ height:44px;padding: 11px 12px;
+.navigation_btns {
+	width: 100%;
+	display: table;
+}
+.right_navigation_btn, .left_navigation_btn {
+	display: table;
+}
+.active_step {
+	color: #ffffff !important;
+	border-color: #ffffff !important;
+}
+
+.active_step_text{ color:#ffffff !important;}
+.bnppf_input__datePicker {
+	height: 44px;
+	padding: 11px 12px;
 	overflow: hidden;
 	border: 1px solid #d8dbde;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	cursor:pointer;}
-
-
+	cursor: pointer;
+}
 /* Styles for Date picker */
-.date_picker input{ width:100%;}
-.date_picker .bnppf_input_field{ width:50%;}
-.date_picker span{}
+.date_picker input {
+	width: 100%;
+}
+.date_picker .bnppf_input_field {
+	width: 50%;
+}
+.date_picker span {
+}
 input[type="text"]:focus {
-  border-color: rgba(82, 168, 236, 0.8);
-  outline: 0;
-  outline: thin dotted \9;
-  /* IE6-9 */
+	border-color: rgba(82, 168, 236, 0.8);
+	outline: 0;
+	outline: thin dotted \9;/* IE6-9 */
 }
 .dropdown-menu {
-  position: absolute;
-  z-index: 1000;
-  display: none;
-  min-width: 160px;
-  list-style: none;
-  background-color: #ffffff;
-  border-left: 1px solid #ccc;
-  border-top: 1px solid #ccc;
+	position: absolute;
+	z-index: 1000;
+	display: none;
+	min-width: 160px;
+	list-style: none;
+	background-color: #ffffff;
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc;
 }
 .datepicker {
-  top: 0;
-  left: 0;
-  margin-top: -17px;
-  width:300px;
+	top: 0;
+	left: 0;
+	margin-top: -17px;
+	width: 300px;
 }
 .datepicker > div {
-  display: none;
+	display: none;
 }
 .datepicker table {
-  width: 100%;
-  margin: 0;
-  border-spacing:0;
+	width: 100%;
+	margin: 0;
+	border-spacing: 0;
 }
-.datepicker table thead tr:first-child th{ border:0;padding:8px 0;font-family:'BnppSans-r', sans-serif; font-size:16px;}
-.datepicker table thead tr th:last-child{ border-right:1px solid #d8dbde;}
-.datepicker td{ width:40px; height:36px; border-right:1px solid #d8dbde;border-bottom:1px solid #d8dbde; text-align:center;font-family:'BnppSans-r', sans-serif; font-size:16px;}
+.datepicker table thead tr:first-child th {
+	border: 0;
+	padding: 8px 0;
+	font-family: 'BnppSans-r', sans-serif;
+	font-size: 16px;
+}
+.datepicker table thead tr th:last-child {
+	border-right: 1px solid #d8dbde;
+}
+.datepicker td {
+	width: 40px;
+	height: 36px;
+	border-right: 1px solid #d8dbde;
+	border-bottom: 1px solid #d8dbde;
+	text-align: center;
+	font-family: 'BnppSans-r', sans-serif;
+	font-size: 16px;
+}
 .datepicker th {
-  text-align: center;
-  width: 20px;
-  height: 20px;
-  border-bottom:1px solid #d8dbde;border-top:1px solid #d8dbde; padding:12px 0 4px 0;font-family:'BnppSans-l', sans-serif; font-size:14px;
+	text-align: center;
+	width: 20px;
+	height: 20px;
+	border-bottom: 1px solid #d8dbde;
+	border-top: 1px solid #d8dbde;
+	padding: 12px 0 4px 0;
+	font-family: 'BnppSans-l', sans-serif;
+	font-size: 14px;
 }
 .datepicker td.day:hover {
-  background: #f4f5f6;
-  cursor: pointer;
+	background: #f4f5f6;
+	cursor: pointer;
 }
 .datepicker td.day.disabled {
-  color:#999;
+	color: #999;
 }
-.datepicker td.old,
-.datepicker td.new {
-  
-  background:#e5e9ef;
+.datepicker td.old, .datepicker td.new {
+	background: #e5e9ef;
 }
-.datepicker td.active,
-.datepicker td.active:hover {
-  color: #ffffff;
-  background:#009e83;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+.datepicker td.active, .datepicker td.active:hover {
+	color: #ffffff;
+	background: #009e83;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
-.datepicker td.active:hover,
-.datepicker td.active:hover:hover,
-.datepicker td.active:focus,
-.datepicker td.active:hover:focus,
-.datepicker td.active:active,
-.datepicker td.active:hover:active,
-.datepicker td.active.active,
-.datepicker td.active:hover.active,
-.datepicker td.active.disabled,
-.datepicker td.active:hover.disabled,
-.datepicker td.active[disabled],
-.datepicker td.active:hover[disabled] {
-  color: #ffffff;
-  background-color: #009e83;
-  *background-color: #003bb3;
+.datepicker td.active:hover, .datepicker td.active:hover:hover, .datepicker td.active:focus, .datepicker td.active:hover:focus, .datepicker td.active:active, .datepicker td.active:hover:active, .datepicker td.active.active, .datepicker td.active:hover.active, .datepicker td.active.disabled, .datepicker td.active:hover.disabled, .datepicker td.active[disabled], .datepicker td.active:hover[disabled] {
+	color: #ffffff;
+	background-color: #009e83;
+ *background-color: #003bb3;
 }
-.datepicker td.active:active,
-.datepicker td.active:hover:active,
-.datepicker td.active.active,
-.datepicker td.active:hover.active {
-  background-color: #003399 \9;
+.datepicker td.active:active, .datepicker td.active:hover:active, .datepicker td.active.active, .datepicker td.active:hover.active {
+	background-color: #003399 \9;
 }
 .datepicker td span {
-  display: block;
-  width: 47px;
-  height: 54px;
-  line-height: 54px;
-  float: left;
-  margin: 2px;
-  cursor: pointer;
+	display: block;
+	width: 47px;
+	height: 54px;
+	line-height: 54px;
+	float: left;
+	margin: 2px;
+	cursor: pointer;
 }
 .datepicker td span:hover {
-  background: #eeeeee;
+	background: #eeeeee;
 }
 .datepicker td span.active {
-  color: #ffffff;
-  background:#009e83;
-  color: #fff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	color: #ffffff;
+	background: #009e83;
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
-.datepicker td span.active:hover,
-.datepicker td span.active:focus,
-.datepicker td span.active:active,
-.datepicker td span.active.active,
-.datepicker td span.active.disabled,
-.datepicker td span.active[disabled] {
-  color: #ffffff;
-  background-color: #0044cc;
-  *background-color: #003bb3;
+.datepicker td span.active:hover, .datepicker td span.active:focus, .datepicker td span.active:active, .datepicker td span.active.active, .datepicker td span.active.disabled, .datepicker td span.active[disabled] {
+	color: #ffffff;
+	background-color: #0044cc;
+ *background-color: #003bb3;
 }
-.datepicker td span.active:active,
-.datepicker td span.active.active {
-  background-color: #003399 \9;
+.datepicker td span.active:active, .datepicker td span.active.active {
+	background-color: #003399 \9;
 }
 .datepicker td span.old {
-  color: #999999;
+	color: #999999;
 }
 .datepicker th.switch {
-  width: 145px;
+	width: 145px;
 }
-.datepicker th.next,
-.datepicker th.prev {
-  font-size: 21px;
+.datepicker th.next, .datepicker th.prev {
+	font-size: 21px;
 }
 .datepicker thead tr:first-child th {
-  cursor: pointer;
+	cursor: pointer;
 }
-.datepicker thead tr:first-child tdr:first-child{ border-top: 1px solid #d8dbde;}
-.input-append.date .add-on i,
-.input-prepend.date .add-on i {
-  display: block;
-  cursor: pointer;
-  width: 16px;
-  height: 16px;
+.datepicker thead tr:first-child tdr:first-child {
+	border-top: 1px solid #d8dbde;
 }
-.select_message__type input[type="text"]{ display:none;}
-.select_message__structured, .select_message__freetext, .select_message__eurostructured{ margin-top:30px; display:none;}
-.select_message__struct input{ height:44px;}
-.bnppf_text_area{ width:100%;}
-.bnppf_text_area textarea{ width:100%; border:1px solid #ccc;resize:vertical;font-size:16px; padding:6px; box-sizing:border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; border-radius:0px;-webkit-border-radius:0px; -moz-border-radius:0px; -webkit-appearance:none; color:#76767b;}
-.bnppf_text_area textarea:focus{ border-color:#ccc;}
-.bnppf_text_area .text_count{ float:right; color:#76767b; padding:6px 0;}
-.bnppf_text_area .text_count span{ padding-left:4px;}
-@media all and (max-width: 719px){
-	.easybanking .bnppf_sendmoney_header strong{font-size: 1.38em; width:auto; min-width:106px;}
-	.easybanking .sepa_steps__digit li{ font-size:1.08em; margin-left:10px; padding:8px 14px;}
-	.easybanking .bnppf_sendmoney_header_inner{ padding:20px 10px;}
-	.easybanking .sepa_steps__digit{ float:right;}
-	.easybanking .sepa_steps__text li{ position:absolute; top:40px; left:10px; margin:0;}
-	.easybanking .sepa_steps__text li:nth-child(2), .easybanking .sepa_steps__text li:nth-child(3){ display:none;}
-	.easybanking .bnppf_sendmoney_content__inner h5{ width:100%;}
-	.easybanking .bnppf_sendmoney_content__inner{ padding:10px;}
-	.easybanking .bnppf_sendmoney_content__inner h5{ padding:0;}
-	.sendmoney_details{ width:100%;}
-	.field_error, .field_error label{ margin:0;}
-	.easybanking .sepa_fields{ padding-bottom:20px;}
-	.select_type{ padding-bottom:20px;}
-	.easybanking .sepa_labels{ padding:0 0 8px 0;}
-	.date_picker .bnppf_input_field{ width:100%;}
-	.date_picker .bnppf_input_field > input{ width:100%;}
-	.error_summary{ margin:0;}
-	.icon_sendmoney{ display:none;}
+.input-append.date .add-on i, .input-prepend.date .add-on i {
+	display: block;
+	cursor: pointer;
+	width: 16px;
+	height: 16px;
 }
-
-
+.select_message__type input[type="text"] {
+	display: none;
+}
+.select_message__structured, .select_message__freetext, .select_message__eurostructured {
+	margin-top: 30px;
+	display: none;
+}
+.select_message__struct input {
+	height: 44px;
+}
+.bnppf_text_area {
+	width: 100%;
+}
+.bnppf_text_area textarea {
+	width: 100%;
+	border: 1px solid #ccc;
+	resize: vertical;
+	font-size: 16px;
+	padding: 6px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-appearance: none;
+	color: #76767b;
+}
+.bnppf_text_area textarea:focus {
+	border-color: #ccc;
+}
+.bnppf_text_area .text_count {
+	float: right;
+	color: #76767b;
+	padding: 6px 0;
+}
+.bnppf_text_area .text_count span {
+	padding-left: 4px;
+}
+@media all and (max-width: 719px) {
+.easybanking .bnppf_sendmoney_header strong {
+	font-size: 1.38em;
+	width: auto;
+	min-width: 106px;
+}
+.easybanking .sepa_steps__digit li {
+	font-size: 1.08em;
+	margin-left: 10px;
+	padding: 8px 14px;
+}
+.easybanking .bnppf_sendmoney_header_inner {
+	padding: 20px 10px;
+}
+.easybanking .sepa_steps__digit {
+	float: right;
+}
+.easybanking .sepa_steps__text li {
+	position: absolute;
+	top: 40px;
+	left: 10px;
+	margin: 0;
+}
+.easybanking .sepa_steps__text li:nth-child(2), .easybanking .sepa_steps__text li:nth-child(3) {
+	display: none;
+}
+.easybanking .bnppf_sendmoney_content__inner h5 {
+	width: 100%;
+}
+.easybanking .bnppf_sendmoney_content__inner {
+	padding: 10px;
+}
+.easybanking .bnppf_sendmoney_content__inner h5 {
+	padding: 0;
+}
+.sendmoney_details {
+	width: 100%;
+}
+.field_error, .field_error label {
+	margin: 0;
+}
+.easybanking .sepa_fields {
+	padding-bottom: 20px;
+}
+.select_type {
+	padding-bottom: 20px;
+}
+.easybanking .sepa_labels {
+	padding: 0 0 8px 0;
+}
+.date_picker .bnppf_input_field {
+	width: 100%;
+}
+.date_picker .bnppf_input_field > input {
+	width: 100%;
+}
+.error_summary {
+	margin: 0;
+}
+.icon_sendmoney {
+	display: none;
+}
+.sepa_confirm_labels {
+	width: 30%;
+}
+.lnk_primary {
+	margin-right: 20px;
+}
+}
 @font-face {
 	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot');
-	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-		url('fonts/icomoon.woff') format('woff'),
-		url('fonts/icomoon.ttf') format('truetype'),
-		url('fonts/icomoon.svg#icomoon') format('svg');
+	src: url('fonts/icomoon.eot');
+	src: url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),  url('fonts/icomoon.woff') format('woff'),  url('fonts/icomoon.ttf') format('truetype'),  url('fonts/icomoon.svg#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
-
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before {
 	font-family: 'icomoon';
@@ -560,7 +777,6 @@ input[type="text"]:focus {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
 /* Use the following CSS code if you want to have a class per icon */
 /*
 Instead of a list of all class selectors,
@@ -606,11 +822,8 @@ you can use the generic selector below, but it's slower:
 }
 @font-face {
 	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot');
-	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-		url('fonts/icomoon.woff') format('woff'),
-		url('fonts/icomoon.ttf') format('truetype'),
-		url('fonts/icomoon.svg#icomoon') format('svg');
+	src: url('fonts/icomoon.eot');
+	src: url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),  url('fonts/icomoon.woff') format('woff'),  url('fonts/icomoon.ttf') format('truetype'),  url('fonts/icomoon.svg#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -623,9 +836,9 @@ you can use the generic selector below, but it's slower:
 	text-transform: none;
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
-	color:#252429;
+	color: #252429;
 }
 .icon-calendar-2:before {
-	font-size:22px;
+	font-size: 22px;
 	content: "\e000";
 }
