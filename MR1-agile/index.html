@@ -5,8 +5,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 	<title>Sepa Transfer</title>
-	<link rel="stylesheet" href="styles/normalize.css">
-	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/reset.css">
+	<link rel="stylesheet" href="styles/fonticon.css">
+    <link rel="stylesheet" href="styles/brand.css">
+    <link rel="stylesheet" href="styles/pattern-lib.css">
 	<script src="js/lib/sinon.js"></script>
 	<script src="js/stubs/fake-server.js"></script>
 	<script data-main="js/app" src="js/lib/require.js"></script>
@@ -56,7 +58,7 @@
             <!-- Sepa Content -->
               <div class="bnppf_sendmoney_content">
               <!-- Sepa Enter details -->
-                <div class="sendmoney_enterdetails">
+                <div class="sendmoney_enterdetails" style="display:none;">
                   <div class="bnppf_sendmoney_content__inner">
                     <h5>*Mandatory fields</h5>
                     <div class="error_summary"> </div>
@@ -136,62 +138,63 @@
                     </div>
                   </div>
                   <div class="bnppf_sendmoney_content__inner">
-                  	<div class="navigation_btns">
-                        <div class="right_navigation_btn f_right">
-                          <button class="bnppf_btn btn_primary bnppf_btn_arrow_right">Next<i class="icon-arrow-right arrow-right"></i></button>
-                        </div>
+                    <div class="next_navigation">
+                      <button class="bnppf_btn btn_primary bnppf_btn_arrow_right">Next<i class="icon-arrow-right arrow-right"></i></button>
                     </div>
                   </div>
                 </div>
               <!-- Sepa Confirmation -->
-              <div class="sendmoney_confirmation" style="display:none;">
+              <div class="sendmoney_confirmation">
+              	<form>
               	 <div class="bnppf_sendmoney_content__inner">
-                  	<div class="sepa_fields confirm_content confirm_from">
-                    	<label class="sepa_labels">From</label>
-                        <div class="sendmoney_details">
+                  	<div class="sepa_confirm_fields confirm_content confirm_from">
+                    	<label class="sepa_confirm_labels">From</label>
+                        <div class="confirmation_details">
                         	<p>Albert Garnier</p>
                             <span>,</span>
                             <p>BE12 3456 7890 1234</p>	
                         </div>
                     </div>
-                    <div class="sepa_fields confirm_content confirm_amount">
-                    	<label class="sepa_labels">Amount</label>
-                        <div class="sendmoney_details">
+                    <div class="sepa_confirm_fields confirm_content confirm_amount">
+                    	<label class="sepa_confirm_labels">Amount</label>
+                        <div class="confirmation_details">
                         	<p>10.283,00</p>
                             <span>EUR</span>	
                         </div>
                     </div>
-                    <div class="sepa_fields confirm_content confirm_to">
-                    	<label class="sepa_labels">To</label>
-                        <div class="sendmoney_details">
+                    <div class="sepa_confirm_fields confirm_content confirm_to">
+                    	<label class="sepa_confirm_labels">To</label>
+                        <div class="confirmation_details">
                         	<p>Albert Garnier</p>
                             <span>,</span>
                             <p>BE12 3456 7890 1234</p>	
                         </div>
                     </div>
-                    <div class="sepa_fields confirm_content confirm_date">
-                    	<label class="sepa_labels">Date</label>
-                        <div class="sendmoney_details">
+                    <div class="sepa_confirm_fields confirm_content confirm_date">
+                    	<label class="sepa_confirm_labels">Date</label>
+                        <div class="confirmation_details">
                         	<p>10.09.2013</p>	
                         </div>
                     </div>
-                    <div class="sepa_fields confirm_content confirm_from">
-                    	<label class="sepa_labels">Message</label>
-                        <div class="sendmoney_details">
+                    <div class="sepa_confirm_fields confirm_content confirm_message confirm_lastchild">
+                    	<label class="sepa_confirm_labels">Message</label>
+                        <div class="confirmation_details">
                         	<p>Albert Garnier</p>	
                         </div>
                     </div>
                  </div>
                  <div class="bnppf_sendmoney_content__inner">
-                 	<div class="navigation_btns" style="width:100%; display:inline-block;">
+                 	<div class="navigation_btns">
                         <div class="left_navigation_btn f_left">
                             <button class="bnppf_btn btn_secondary">Edit</button>
                         </div>
                         <div class="right_navigation_btn f_right">
-                            <button class="bnppf_btn btn_primary bnppf_btn_arrow_left">Confirm</button>
+                        	<span class="lnk_primary">Cancel</span>
+                            <button class="bnppf_btn btn_primary bnppf_btn_arrow_right">Confirm<i class="icon-arrow-right arrow-right"></i></button>
                         </div>
                     </div>
                  </div>
+                 </form>
               </div>
               </div>
             </div>
