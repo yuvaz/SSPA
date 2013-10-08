@@ -1,10 +1,15 @@
 @font-face {
 	font-family: 'icomoon';
-	src: url('fonts/icomoon.eot');
-	src: url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),  url('fonts/icomoon.woff') format('woff'),  url('fonts/icomoon.ttf') format('truetype'),  url('fonts/icomoon.svg#icomoon') format('svg');
+	src:url('fonts/icomoon.eot');
+}
+@font-face {
+	font-family: 'icomoon';
+	src: url(data:application/font-woff;charset=utf-8;base64,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) format('woff'),
+		 url(data:application/x-font-ttf;charset=utf-8;base64,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) format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
+
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before {
 	font-family: 'icomoon';
@@ -17,68 +22,28 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+
 /* Use the following CSS code if you want to have a class per icon */
 /*
 Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="icon-"] {
 */
-.icon-arrow-right {
+.icon-arrow-right, .icon-calendar-2 {
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
-	font-weight: bold;
+	font-weight: normal;
 	font-variant: normal;
 	text-transform: none;
+	line-height: 1;
 	-webkit-font-smoothing: antialiased;
+	color:#000000;
 }
 .icon-arrow-right:before {
-	content: "\232a";
-}
-.icon-arrow-left {
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: bold;
-	font-variant: normal;
-	text-transform: none;
-	-webkit-font-smoothing: antialiased;
-}
-.icon-arrow-left:before {
-	content: "\2329";
-}
-.icon-calendar {
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-}
-.icon-calendar:before {
-	content: "\25a2";
-}
-@font-face {
-	font-family: 'icomoon';
-	src: url('fonts/icomoon.eot');
-	src: url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),  url('fonts/icomoon.woff') format('woff'),  url('fonts/icomoon.ttf') format('truetype'),  url('fonts/icomoon.svg#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-.icon-calendar-2 {
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	color: #252429;
+	content: "\21";
 }
 .icon-calendar-2:before {
-	font-size: 22px;
-	content: "\e000";
+	font-size:22px;
+	content: "\22";
 }
