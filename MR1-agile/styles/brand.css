@@ -1,22 +1,22 @@
 /** Font imports ttf,eot,woff,svg **/
 @font-face {
 	font-family: 'BnppSans-l';
-	src: url("../styles/fonts/bnpp_sans_light-webfont.eot");
-	src: url("../styles/fonts/bnpp_sans_light-webfont.eot?#iefix") format("eot"), url("../styles/fonts/bnpp_sans_light-webfont.woff") format("woff"), url("../styles/fonts/bnpp_sans_light-webfont.ttf") format("truetype"), url("../styles/fonts/bnpp_sans_light-webfont.svg#BnppSans-l") format("svg");
+	src: url("../css/fonts/bnpp_sans_light-webfont.eot");
+	src: url("../css/fonts/bnpp_sans_light-webfont.eot?#iefix") format("eot"), url("../css/fonts/bnpp_sans_light-webfont.woff") format("woff"), url("../css/fonts/bnpp_sans_light-webfont.ttf") format("truetype"), url("../css/fonts/bnpp_sans_light-webfont.svg#BnppSans-l") format("svg");
 	font-style: normal;
 	font-weight: normal;
 }
 @font-face {
 	font-family: 'BnppSans-r';
-	src: url("../styles/fonts/bnpp_sans-webfont.eot");
-	src: url("../styles/fonts/bnpp_sans-webfont.eot?#iefix") format("eot"), url("../styles/fonts/bnpp_sans-webfont.woff") format("woff"), url("../styles/fonts/bnpp_sans-webfont.ttf") format("truetype"), url("../styles/fonts/bnpp_sans-webfont.svg#BnppSans-r") format("svg");
+	src: url("../css/fonts/bnpp_sans-webfont.eot");
+	src: url("../css/fonts/bnpp_sans-webfont.eot?#iefix") format("eot"), url("../css/fonts/bnpp_sans-webfont.woff") format("woff"), url("../css/fonts/bnpp_sans-webfont.ttf") format("truetype"), url("../css/fonts/bnpp_sans-webfont.svg#BnppSans-r") format("svg");
 	font-style: normal;
 	font-weight: normal;
 }
 @font-face {
 	font-family: 'BnppSans-b';
-	src: url("../styles/fonts/bnpp_sans_bold-webfont.eot");
-	src: url("../styles/fonts/bnpp_sans_bold-webfont.eot?#iefix") format("eot"), url("../styles/fonts/bnpp_sans_bold-webfont.woff") format("woff"), url("../styles/fonts/bnpp_sans_bold-webfont.ttf") format("truetype"), url("../styles/fonts/bnpp_sans_bold-webfont.svg#BnppSans-b") format("svg");
+	src: url("../css/fonts/bnpp_sans_bold-webfont.eot");
+	src: url("../css/fonts/bnpp_sans_bold-webfont.eot?#iefix") format("eot"), url("../css/fonts/bnpp_sans_bold-webfont.woff") format("woff"), url("../css/fonts/bnpp_sans_bold-webfont.ttf") format("truetype"), url("../css/fonts/bnpp_sans_bold-webfont.svg#BnppSans-b") format("svg");
 	font-style: normal;
 	font-weight: normal;
 }
@@ -147,7 +147,7 @@ html, body, .wcm {
 .easybanking .bnppf_input_field > * {
 	display: -moz-inline-stack;
 	display: inline-block;
- *display: inline;
+    *display: inline;
 	vertical-align: baseline;
 	zoom: 1;
 }
@@ -571,16 +571,16 @@ html, body, .wcm {
 	line-height: 13px;
 	font-size:1.14em;
 }
-.easybanking .field_error .field_error_message {
+.easybanking .field_error .field_error_message, .easybanking .error_summary .field_error_message {
 	display: block;
 }
 .easybanking .field_error .bnppf_input_field, .easybanking .field_error .bnppf_text_area textarea {
 	border: 1px solid #e53012;
 }
-.easybanking .field_error label {
+.easybanking .field_error .sepa_labels {
 	margin-top: 35px;
 }
-.easybanking .message_field.field_error label {
+.easybanking .message_field.field_error .sepa_labels {
 	margin-top: 0px;
 }
 .easybanking .message_field.field_error .bnppf_input_field:nth-child(1) {
@@ -738,7 +738,7 @@ html, body, .wcm {
 .easybanking .sendmoney_details {
 	width: 100%;
 }
-.easybanking .field_error, .easybanking .field_error label {
+.easybanking .field_error, .easybanking .field_error .sepa_labels {
 	margin: 0;
 }
 .easybanking .sepa_fields {
@@ -760,3 +760,4 @@ html, body, .wcm {
 	padding-bottom: 20px;
 }
 }
+
