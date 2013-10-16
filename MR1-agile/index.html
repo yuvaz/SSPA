@@ -5,10 +5,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 	<title>Sepa Transfer</title>
-	<link rel="stylesheet" href="styles/reset.css">
-	<link rel="stylesheet" href="styles/fonticon.css">
-    <link rel="stylesheet" href="styles/brand.css">
-    <link rel="stylesheet" href="styles/pattern-lib.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/fonticon.css">
+    <link rel="stylesheet" href="css/brand.css">
+    <link rel="stylesheet" href="css/pattern-lib.css">
+    <link rel="stylesheet" href="css/datepicker.css">
 	<script src="js/lib/sinon.js"></script>
 	<script src="js/stubs/fake-server.js"></script>
 	<script data-main="js/app" src="js/lib/require.js"></script>
@@ -19,7 +20,7 @@
 		$(function(){
 			var endDate = new Date();
 				endDate.setDate(endDate.getDate() + 365);
-			$('.yash').datepicker({
+			$('.trig_datepicker').datepicker({
 				format: 'dd.mm.yyyy',
 				weekStart:1,
 				startDate:new Date(),
@@ -103,7 +104,7 @@
                           <p class="field_error_message">Please select the valid account</p>
                           <div class="bnppf_input_control">
                             <div class="bnppf_input_field input_dropdown">
-                              <input type="text" class="yash" value="" placeholder="DD/MM/YYYY"/>
+                              <input type="text" class="trig_datepicker" value="" placeholder="DD/MM/YYYY"/>
                               <span aria-hidden="true" class="icon-calendar-2"></span> </div>
                           </div>
                         </div>
