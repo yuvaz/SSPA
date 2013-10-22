@@ -277,20 +277,30 @@ html, body, .wcm {
 .sendmoney_result__info p{ font-size:16px; margin-top:4px;}
 .sendmoney_result__content{ width:100%; display:inline-table;}
 .sendmoney_result__content_inner{width:33.333333%; float:left;}
-.result_content{ padding:14px 30px 14px 30px; text-align:center;border-left:1px dotted #d8dbde;}
-.icon-personnage{ font-size:60px; color:#d2d8e1;}
+.result_content{ padding:14px 30px 14px 30px; text-align:center;border-right:1px dotted #d8dbde;}
+.icon-personnage, .icon-send_money_icon{ font-size:60px; color:#d2d8e1; display:inline-block;}
+.icon-circle_done{ font-size:30px; color:#85b909;position: relative;top: 3px;right: 13px;}
 .resultfrom_info{ margin-top:25px; font-size:18px; line-height:26px;}
 .resultfrom_info label{font-family: 'BnppSans-r', sans-serif; display:block;}
+.result_btn.navigation_btns{ width:auto; float:right;}
+.result_btn div:first-child{ margin-right:10px;}
+.result_navigation{ display:inline-block; width:100%;}
 /* action Icons */
 .action_icons{ float:right;}
 .action_icons__global{ border-left:1px dotted #d8dbde; font-size:22px; padding:0 16px 0 20px;}
 .action_icons .action_icons__global:first-child{ border:none;}
-
+@media all and (max-width: 480px) {
+	.result_btn.navigation_btns{ width:100%;}
+	.result_btn div:first-child{ margin-bottom:10px;}
+	.result_btn div, .result_btn button{ width:100%;}
+}
 @media all and (max-width: 767px) {
 	.sendmoney_result h2{ font-size:18px; line-height:18px;}
 	.sendmoney_result__content_inner{ width:100%;}
-	.result_content{ text-align:left; padding:12px 0; border-bottom:1px solid #d8dbde !important; border-left:none; width:100%; display:table;}
+	.result_content{ text-align:left; padding:12px 0; border-bottom:1px solid #d8dbde; border-right:none; width:100%; display:table;}
 	.icon-personnage{ float:right; font-size:40px;}
+	.icon-send_money_icon{ position:absolute; right:25px;font-size:40px;}
+	.icon-circle_done{ float:right; font-size:25px; top:16px; right:0px;}
 	.resultfrom_info{ margin:0; line-height:22px;}
 	.resultfrom_info label{ width:25%; float:left;}
 	.resultfrom_content{ width:55%; float:left;}

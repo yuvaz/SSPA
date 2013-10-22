@@ -1393,3 +1393,17 @@
 	});
 
 }( window.jQuery ));
+
+$(function(){
+			var endDate = new Date();
+				endDate.setDate(endDate.getDate() + 365);
+			$('.trig_datepicker').datepicker({
+				format: 'dd.mm.yyyy',
+				weekStart:1,
+				startDate:new Date(),
+				endDate: endDate,
+				autoclose:true
+			});
+			
+			
+		});

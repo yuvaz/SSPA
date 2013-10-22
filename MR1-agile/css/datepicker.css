@@ -1,5 +1,5 @@
 /* Date Picker */
-.easybanking .bnppf_input__datePicker {
+ .bnppf_input__datePicker {
 	height: 44px;
 	padding: 11px 12px;
 	overflow: hidden;
@@ -9,10 +9,11 @@
 	box-sizing: border-box;
 	cursor: pointer;
 }
-.easybanking .date_picker input {
+.icon-calendar-2{ font-size:22px; color:#252429; z-index:999 !important;}
+ .date_picker input {
 	width: 100%;
 }
-.easybanking .date_picker .bnppf_input_field {
+ .date_picker .bnppf_input_field {
 	width: 50%;
 }
 /* Date picker UI will append to the WCM need to discuss regarding branding*/

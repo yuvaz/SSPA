@@ -17,7 +17,22 @@
 	<script data-main="js/app" src="js/jquery-1.9.1.js"></script>
 	<script src="js/bootstrap-datepicker.js" type="text/javascript"></script>
 	<script>
-		
+		$(document).ready(function(){
+			$('#health_tab1').css('display','none');
+             $(".healthcoverage_tabs li").click(function() {
+				if($(this).index() != 2)
+					displayCoverageBalanceAlert = false;
+         			var selected_tab = $(this).find("a").attr("href");
+         			if(selected_tab != "#")
+         			{
+						$(".healthcoverage_tabs li").removeClass('active');
+						$(this).addClass("active");
+						$(".healthcoverage_tab_content").hide();
+						$(selected_tab).fadeIn();
+         			}
+                 return false;
+             });
+         });
 	</script>
 	</head>
 
@@ -78,12 +93,21 @@
                     <div class="sepa_fields to_field field_error">
                       <div class="sepa_labels"><label for="select-account">To</label><span>*</span></label></div>
                       <div class="sendmoney_details">
-                        <p class="field_error_message">Please select the valid Account</p>
-                        <div class="details_content">
-                          <select  class="select-account" placeholder="Type in alias, ...">
-                          </select>
+                        
+                        <ul class="healthcoverage_tabs">
+                           <li class="active"><a href="#health_tab1">Known benefeciary</a></li>
+                           <li><a href="#health_tab2">Unknown benefeciary</a></li>
+                        </ul>
+                        <div class="tabs_health_content_container">
+                           <div id="health_tab1" class="healthcoverage_tab_content">
+                              <div class="summary_header">yash</div>
+                           </div>
+                           <div id="health_tab2" class="healthcoverage_tab_content">
+                              <div class="summary_header">yashraj</div>
+                           </div>
+                           
                         </div>
-                        <div class="selected-item"> <span class="iban-label"></span> <span>-</span> <span class="amount-label"></span> </div>
+                        
                       </div>
                     </div>
                   </div>
