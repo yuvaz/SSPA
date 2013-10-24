@@ -1,4 +1,5 @@
 /** Font imports ttf,eot,woff,svg **/
+
 @font-face {
 	font-family: 'BnppSans-l';
 	src: url("../css/fonts/bnpp_sans_light-webfont.eot");
@@ -289,10 +290,30 @@ html, body, .wcm {
 .action_icons{ float:right;}
 .action_icons__global{ border-left:1px dotted #d8dbde; font-size:22px; padding:0 16px 0 20px;}
 .action_icons .action_icons__global:first-child{ border:none;}
+
+/** Unknown **/
+.eb_tabs{ width:100%;margin:0; padding:0; display:table;}
+.eb_tabs .eb_tab_txt span{ text-decoration:none; color:red; padding:19px 20px 16px 20px; text-transform:uppercase; font-size:16px;text-align:center; display:block;}
+.tab_fst{ margin-right:6px;}
+.eb_tab_txt{ width:186px;border:1px solid #d2d8e1; float:left; cursor:pointer;border-bottom: none;}
+.eb_tab_txt.active{ position:relative;top:1px; background:#ffffff; color:#252429;}
+.eb_tab_txt.active span{ color:#242529;}
+.tabs_eb_content_container{ float:left; width:100%;}
+.eb_tab_content{border:1px solid #d2d8e1; }
+.eb_tab_content__inner{ padding:20px 12px;}
+.eb_unknown_content{ display:table; width:100%;}
+.eb_unknown_input{ width:50%; float:left;}
+.unknown_name{margin-right:8px;}
+.unknown_iban{ margin-left:8px;}
+.unknown_alias{ width:100%;}
+.save_benefeciary__text{ margin-left:4px; font-size:16px;}
+.unknown_labels {font-family: 'BnppSans-l', sans-serif;font-size: 16px; padding-bottom:10px; display:block;}
 @media all and (max-width: 480px) {
+	.eb_tab_txt{ width:146px;}
 	.result_btn.navigation_btns{ width:100%;}
 	.result_btn div:first-child{ margin-bottom:10px;}
 	.result_btn div, .result_btn button{ width:100%;}
+	.eb_tabs .eb_tab_txt span{ font-size:14px;}
 }
 @media all and (max-width: 767px) {
 	.sendmoney_result h2{ font-size:18px; line-height:18px;}
@@ -304,5 +325,9 @@ html, body, .wcm {
 	.resultfrom_info{ margin:0; line-height:22px;}
 	.resultfrom_info label{ width:25%; float:left;}
 	.resultfrom_content{ width:55%; float:left;}
+	.unknown_name, .unknown_iban{margin: 0;}
+	.eb_unknown_input{ width:100%;}
+	.tab_fst{ margin-right:4px;}
 }
 @media print { .action_icons, .sepa_steps__digit{ display:none;}}
+
