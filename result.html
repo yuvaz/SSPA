@@ -28,6 +28,13 @@
 				autoclose:true
 			});
 		});
+		function printDiv(divName){
+			 var printContents = document.getElementById(divName).innerHTML;
+			 var originalContents = document.body.innerHTML;
+			 document.body.innerHTML = printContents;
+			 window.print();
+			 document.body.innerHTML = originalContents;
+		 }
 	</script>
 	</head>
 
@@ -197,12 +204,12 @@
                  </form>
               </div>
               <!-- Sepa result -->
-              	<div class="sendmoney_result">
+              	<div class="sendmoney_result" id="printableArea">
                 	<div class="sendmoney_result__info bnppf_sendmoney_content__inner">
                     	<h2>Money will be sent</h2>
                         <div class="action_icons">
-                        	<span class="action_icons__global icon-print"></span>
-                            <span class="action_icons__global icon-print"></span>
+                        	<span class="action_icons__global icon-print" onclick="printDiv('printableArea')"></span>
+                            <span class="action_icons__global icon-pdf"></span>
                             <span class="action_icons__global icon-print"></span>
                         </div>
                         <p>22.03.2013</p>
@@ -223,7 +230,7 @@
                             </div>
                             <div class="sendmoney_result__content_inner">
                                 <div class="result_content">
-                                	<p class="icon-send_money_icon"></p><span class="icon-circle_done"></span>
+                                	<p class="icon-send_money_icon"></p><span class="icon-circle_done" data-tip="yash"></span>
                                     <div class="resultfrom_info">
                                         <label>Amount</label>
                                         <div class="resultfrom_content">
@@ -248,7 +255,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="bnppf_sendmoney_content__inner">
+                    <div class="bnppf_sendmoney_content__inner no_print">
                     	<div class="result_navigation">
                         <div class="result_btn navigation_btns">
                              <div class="right_navigation_btn f_left">
