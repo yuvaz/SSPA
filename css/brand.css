@@ -149,7 +149,7 @@ html, body, .wcm {
 
 /** Dropdown, Inputbox & Textarea **/
 .easybanking .bnppf_input_field {
-  border: 1px solid #d8dbde; }
+  border: 1px solid #d8dbde; background:#ffffff; }
 
 .easybanking .bnppf_dropdown_box, .easybanking .bnppf_input_field, .easybanking .bnppf_input_field input {
   font-family: inherit;
@@ -468,16 +468,25 @@ html, body, .wcm {
 
 /* ucr */
 .sendmoney_ucr{background:#f4f5f9; width:100%;}
-.ucr_title{ font-size:24px;}
-.ucr_details {
-  font-size: 16px;
-  border-bottom: 1px solid #d8dbde;width: 100%;
-  display: table;
-  padding: 20px 0; position:relative; }
+.ucr_title{ font-size:24px; padding-bottom:12px; line-height:24px;}
+.ucr_details {font-size: 16px;border-bottom: 1px solid #d8dbde;width: 100%;display: table;padding: 20px 0; position:relative; }
 .ucr_details__numbering{width:16px; float:left;}
-.ucr_details__content{ display: inline-table; width:94%;}
-.ucr_code{display:table; float:left;}
-.ucr_code__input{width:auto; display:inline-block;}
+.ucr_details__content{width:94%; display:table;}
+.ucr_details__content span{ margin-right:10px;}
+.ucr_details__content p:first-child{ font-family:'BnppSans-r', sans-serif;}
+.ucr_code{display:table; float:left; margin-right:12px;text-align:center;}
+.ucr_code p:nth-child(2){ font-size:12px; line-height:6px; padding-top:10px;}
+.ucr_code__input{width:auto; display:inline-block; width:auto !important; color:#186495 !important;}
+.ucr_signature{ display:inline-block; }
+.bnppf_input_field.ucr_signature__input{ width:250px;}
+.ucr_signature__input input{ width:100%;}
+.last-child{ padding-bottom: 0;border: none; }
+.ucr_content{ padding:12px 0;}
+.ucr_content__challenge{ display:inline-block; width:100%; padding-top:10px;}
+.ucr_challenge__content{ display:-webkit-box;}
+.ucr_action_content{ font-family:'BnppSans-r', sans-serif;}
+.ucr_action_1content{ position:relative; top:-2px;}
+
 
 @media all and (max-width: 480px) {
   .eb_tab_txt {
@@ -493,7 +502,11 @@ html, body, .wcm {
     width: 100%; }
 
   .eb_tabs .eb_tab_txt span {
-    font-size: 14px; } }
+    font-size: 14px; } 
+	.ucr_challenge__code{ width:100%; display:table;}
+	.ucr_action_1content{ top:-6px; line-height:30px;}
+	.fontcon-M2:before{ top:40px;}
+}
 @media all and (max-width: 767px) {
   .easybanking .bnppf_sendmoney_header strong {
     font-size: 18px;
@@ -556,6 +569,12 @@ html, body, .wcm {
     width: 100%; }
 
   .tab_fst {
-    margin-right: 3px; } }
+    margin-right: 3px; } 
+	/* UCR */
+	.ucr_signature{ width:100%;}
+	.ucr_challenge__content{ display:table; width:100%;}
+	.ucr_details__content p:first-child{ padding-bottom:12px;}
+	.ucr_content__challenge, .ucr_content{ padding-top:0;}
+}
 @media print {
    }

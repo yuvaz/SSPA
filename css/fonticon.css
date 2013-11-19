@@ -34,6 +34,7 @@
 	font-size:30px;
 	position:relative;
 	top:8px;
+	color:#138e57;
 }
 .fontcon-twitter:before {
 	content: "\e603";
@@ -73,6 +74,7 @@
 	font-size:36px;
 	position:absolute;
 	top:10px;
+	color:#186495;
 }
 .fontcon-M1:before {
 	content: "\e60f";
