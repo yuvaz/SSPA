@@ -487,6 +487,19 @@ html, body, .wcm {
 .ucr_action_content{ font-family:'BnppSans-r', sans-serif;}
 .ucr_action_1content{ position:relative; top:-2px;}
 
+/* Error Messages */
+.alert_messages{ width:100%; color:#ffffff; display:none;}
+.alert_messages__inner{ padding:20px;}
+.alert_messages__inner p{ float:left; font-size:16px;}
+.messages_warning{background:#f66900;}
+.messages_error, .messages_severity{ background:#e53012;}
+.messages_information{ background:#138ee4;}
+.messages_authentication{ background:rgba(255,255,255,0.8);}
+.icon_dismiss{ float:right; cursor:pointer;}
+.icon_dismiss:hover{ background:#666666; padding:2px;}
+.fade.in{ opacity:1;}
+.fade{opacity: 0;-webkit-transition: opacity .15s linear;transition: opacity .15s linear;}
+
 
 @media all and (max-width: 480px) {
   .eb_tab_txt {
