@@ -1,0 +1,217 @@
+@font-face {
+  font-family: 'BnppSans-l';
+  src: url("../css/fonts/bnpp_sans_light-webfont.eot");
+  src: url("../css/fonts/bnpp_sans_light-webfont.eot?#iefix") format("eot"), url("../css/fonts/bnpp_sans_light-webfont.woff") format("woff"), url("../css/fonts/bnpp_sans_light-webfont.ttf") format("truetype"), url("../css/fonts/bnpp_sans_light-webfont.svg#BnppSans-l") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'BnppSans-r';
+  src: url("../css/fonts/bnpp_sans-webfont.eot");
+  src: url("../css/fonts/bnpp_sans-webfont.eot?#iefix") format("eot"), url("../css/fonts/bnpp_sans-webfont.woff") format("woff"), url("../css/fonts/bnpp_sans-webfont.ttf") format("truetype"), url("../css/fonts/bnpp_sans-webfont.svg#BnppSans-r") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'BnppSans-b';
+  src: url("../css/fonts/bnpp_sans_bold-webfont.eot");
+  src: url("../css/fonts/bnpp_sans_bold-webfont.eot?#iefix") format("eot"), url("../css/fonts/bnpp_sans_bold-webfont.woff") format("woff"), url("../css/fonts/bnpp_sans_bold-webfont.ttf") format("truetype"), url("../css/fonts/bnpp_sans_bold-webfont.svg#BnppSans-b") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+/* Resets */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+button {
+  border: 0;
+}
+
+.f_left {
+  float: left;
+}
+
+.f_right {
+  float: right;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+  -ms-touch-action: none !important;
+}
+
+/* Body styles */
+html, body, .wcm {
+  width: 100%;
+  height: 100%;
+}
+
+.easybanking {
+  width: 100%;
+  height: 100%;
+  font-size: 0.875em;
+  line-height: 1.35em;
+  -webkit-user-select: none !important;
+  -webkit-text-size-adjust: none;
+  background: #eef1f5;
+  font-family: 'BnppSans-l', sans-serif;
+  color: #252429;
+}
+
+.easybanking .wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+
+/*Login page*/
+.authentication{ background:url(../images/login_background.png)repeat;display:table;width: 100%;height:100%;}
+.bnnpf_authentication__content{font-size: 16px;}
+.bnnpf_content__identification{float: left;min-height: 100px;width:360px;}
+.bnppf_content__information{float: left;width: 360px;min-height:265px;}
+.bnppf_contract_information{ float: left;min-height: 100px;width: 346px; }
+.bnpp_user_info_field{display:block;height: 83px;padding-top: 25px;padding-left: 14px;}
+.user_details_view{border:1px solid #d8dbde;overflow:auto; height:120px;background: #ffffff;position: relative;z-index: 1; display:none;}
+.user_known_fields{border-bottom:1px solid #d8dbde; padding:15px 15px 15px 10px;}
+.bnppf_user_text_inner{font-family: 'BnppSans-r', sans-serif;color:#252429;}
+.bnppf_user_text{padding-bottom:10px;}
+.bnpp_known_fields_data{padding:5px 0px 5px 0px !important;display:table;width:100%;}
+.bnppf_user_text span{background:url(../images/close.jpg)no-repeat; display:inline-block;float:right; height:20px; width:20px;}
+.user_txt,.user_content{font-size:14px;}
+.bnpp_known_profile_details{height: 95px;}
+.identification_field_container{margin:0!important;}
+.info_text{ font-size:18px;color: #ffffff;}
+.bnppf_information__text p{line-height: 20px;word-spacing: 4;min-height: 150px;}
+.bnppf_information__url a{text-align:right;margin:62px 0 0;color: #ffffff; float:right;padding-bottom: 30px;}
+.btn_active_state{background: rgba(255,255,255,0.3);color: #252429;}
+.btn_non_active_state{background: rgba(255,255,255,.8);color: #231f20;opacity:0.3;}
+.bnppf_identification_btn{border:none;cursor:pointer;word-spacing:1; margin:30px 0;}
+.bnpp_container_btn{border:none;cursor:pointer;word-spacing:1; margin:30px 0;}
+.btn_identification{width:200px;}
+.identification_header {  padding: 0px 0 25px;font-family: 'BnppSans-r', sans-serif;color:#000000; opacity:0.7; font-size:16px;}
+.identification_fields{padding-bottom:12px;}
+.identification_fields_alias{margin:25px 0 0 0;}
+.bnppf_input_field input {width: 100%;}
+.bnpp-error-input{border: 1px solid #e53012;}
+.field_error_message{ display:block;}
+.save_profile{padding-top: 13px;}
+.save_profile__check input{display: inline-block;vertical-align: middle; float:left;}
+.save_profile label{ padding-top:1px;color:#231f20; opacity:0.5; font-family: 'BnppSans-r', sans-serif;display: inline-block;}
+.bnpp_error_list{margin-left:16px;}
+.f_right{ float:right; } 
+.f_left{ float:left; }
+.identification_labels{font-family: 'BnppSans-r',sans-serif;color:#242529;padding: 0 0 8px;width: 100%;  }
+.identification_labels span{position:relative;right:4px;}
+.bnpp_known_fields{padding:0 0 12px;display:table;width:100%;}
+.bnpp_known_fields_label{width: 40%;vertical-align: top;margin-right: 10px;float: left;}
+.bnpp_known_fields_content{width: 56%;}
+/*.bnpp_identification_details{ background:#ffffff;}-This style will be given for bnppf_input_field in sepa.css*/
+.bnpp_field_error{border:1px solid #e53012;}/* this class is added to bnpp_identification_details class for getting border color red when error message pops up*/
+/*Login page End*/
+/*Ucr Screen*/
+.bnppf_label_field {position: relative;z-index: 1;width: 100%;overflow: hidden;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing:border-box;cursor: pointer;color:#138ee4;font-family: 'BnppSans-r', sans-serif;margin:0 !important;}
+.bnppf_label_field  p{ padding:0;}
+.bnppf_identification_outer{background: rgba(255,255,255,.4);padding: 30px;font-size:16px; }
+p{display: block;-webkit-margin-before: 0em !important;-webkit-margin-after: 0em  !important;-webkit-margin-start: 0px;-webkit-margin-end: 0px}
+.bnppf_information__url{ display: table; width: 100%;}
+/*select contract*/
+.bnppf_select_contract li{list-style:none;height:55px;}
+.bnppf_contract_content{color: #000000;    font-family: 'BnppSans-l',sans-serif;font-size: 14px;padding:22px 0px; }
+.bnppf_field_input{float: left;height: 15px;position: relative;z-index: 3;padding:20px 15px 20px 20px;}
+button{border:0;}
+.bnppf_identification_lbl_selectcontract{margin:0 0 20px 0px;}
+.bnppf_identification_lbl_selectcontract label{font-family: 'BnppSans-r', sans-serif;color: #231f20; opacity:0.5;}
+.bnppf_select_contract {border-color: #fafbfc;overflow-y:auto; height:107px; text-align: justify;border:1px solid #aeb8c4; font-family: 'BnppSans-r', sans-serif;color: #252429;}
+.bnppf_choice{ border-bottom: 1px solid #aeb8c4;}
+.contract_highlight{  background:rgba(255, 255, 255, 0.3); }
+.bnppf_backlink a{color:#ffffff;}
+.btn_primary_login{background: #f4f5f6;color:#252429;opacity:0.4;font-family: 'BnppSans-r', sans-serif; }
+.right_navigation_btn_back{color:#ffffff; font-size:1em;font-family: 'BnppSans-r', sans-serif;}
+.bnppf_user_summary{padding-bottom:8px;}
+.bnppf_identification_txt{color:#ffffff; font-family: 'BnppSans-r', sans-serif; width:auto!important ;}
+.bnppf_user_txt{color:#ffffff; }
+.bnpp_login_contract_selection{padding:25px;}
+.bnpp_known_profile_cotainer{min-height: 200px;}
+.bnppf_known_fields{padding: 4px 0;overflow: hidden;}
+.bnppf_known_fields .bnppf_known_fields_label{width: 40%;vertical-align: top;margin-right: 10px;float: left;}
+.bnppf_known_fields_content{width: 56%;float: left;}
+.bnpp_login_moreinfo ,.bnpp_known_create_new_profile{color:#ffffff;font-size:1.1em;}
+.bnpp_known_create_new_profile label{text-decoration:underline; cursor:pointer;}
+.clsOverflow{overflow:hidden;}
+.bnppf_content__information{padding:30px 30px 0 0; overflow:hidden;}
+.lnk_primary_identification{ margin-top:44px; float:left; color:#ffffff !important;}
+
+/*Extra Large*/
+@media only screen and (min-width: 1509px){
+
+}
+/*End*/
+
+/*Medium*/
+@media all and (max-width: 1023px){
+
+}
+/*Medium End*/
+
+/*Small*/
+@media all and (max-width: 480px){
+.bnpp_sepa_heading{font-size: 20px;padding-top: 30px;padding: 0 0 5px;font-family: 'BnppSans-l', sans-serif;}
+/*UCR sccreen*/
+.bnpp_sepa_press_container{ padding:12px 0 0 0px; }
+.bnpp_sepa_press_container_ok{ width:100%; padding:12px 0 0 0px; }
+.bnpp_sepa_confirmation_steps_description p{ padding:0px 0 12px; }
+.bnpp_sepa_electronic_signature{ width:100%; }
+.bnpp_sepa_iban_number{  margin: 0 5px 0 0; }
+.bnpp_sepa_press_margin{ padding:12px 0px 0 0;}
+.bnpp_login_enterdetails .bnpp_sepa_amount{ width:100%; }
+/*End*/
+.bnnpf_authentication__interactive{padding-top: 35px;padding-bottom: 45px;}
+.bnnpf_authentication__interactive p{padding-bottom: 15px;}
+.bnppf_information__text{padding-left: 10px;padding-bottom: 30px;}
+.bnppf_known_profile_details{padding-top: 3px;}
+.bnppf_known_fields{padding-bottom:15px;}
+.bnnpf_authentication__inner{margin-bottom:0!important; padding: 10px;}
+.lnk_primary_identification{margin-top:40px!important;}
+.bnppf_select_contract{margin-bottom: 10px;}
+.bnpp_sepa_icon_container,.bnpp_sepa_icon_container_ok,.bnpp_sepa_signature_fields{ float:none;; display:table; }
+}
+@media all and (max-width: 767px){
+.bnnpf_identification__inner {width:auto;margin-bottom:0!important;padding: 10px;}
+.bnnpf_authentication__interactive strong{padding-top: 0;font-size:2em;}
+.bnnpf_authentication__inner{padding: 10px;}
+.bnppf_content__information{ display:none; padding:0!important;}
+.bnpp_login_enterdetails{width:100%;}
+.bnpp_login_Welcome_content p{ margin:0px; padding:10px 0; }
+.bnnpf_content__navigation .right_navigation,.bnppf_identification_btn{width:100%;margin-top:20px;}
+.bnpp_container_btn{width:auto; margin-top:20px; float:right;}
+.bnnpf_content__identification{width:100%;}
+.bnppf_contract_navigation  .right_navigation{width:auto;}
+/*Select Contract*/
+.bnppf_contract_information{display:block;width: 100%; }
+.bnppf_identification_lbl_selectcontract{margin:10px 0 15px 0;}
+.bnpp_login_select_contact{display:block;width:100%}
+.bnpp_user_info_field{padding-left:0px;}
+
+}
+/*Small End*/
+
+
