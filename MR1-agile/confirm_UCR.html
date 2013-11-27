@@ -22,15 +22,6 @@
       <div class="easybanking">
         <div class="wrapper">
           <div class="bnppf_sendmoney">
-          <!-- Alert messages placeholder & Struct -->
-          <div class="ia_alert">
-            <div class="alert_messages fade in messages_warning">
-                <div class="alert_messages__inner clearfix">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque velit sapien.</p>
-                    <span class="fontcon-close icon_dismiss"></span>
-                </div>
-            </div>
-          </div>
             <div class="bnppf_sendmoney_inner">
             <!-- Sepa Header -->
               <div class="bnppf_sendmoney_header">
@@ -52,6 +43,39 @@
                 </div>
               </div>
             <!-- Sepa Content -->
+            <!-- Alert messages placeholder & Struct -->
+          <div class="ia_alert">
+            <div class="alert_messages alert_messages_warning fade in">
+                <div class="alert_messages__inner clearfix">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque velit sapien.</p>
+                    <span class="fontcon-close icon_dismiss"></span>
+                </div>
+            </div>
+          </div>
+           <div class="ia_alert">
+            <div class="alert_messages alert_messages_error fade in">
+                <div class="alert_messages__inner clearfix">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque velit sapien.</p>
+                    <span class="fontcon-close icon_dismiss"></span>
+                </div>
+            </div>
+          </div>
+           <div class="ia_alert">
+            <div class="alert_messages alert_messages_severity fade in">
+                <div class="alert_messages__inner clearfix">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque velit sapien.</p>
+                    <span class="fontcon-close icon_dismiss"></span>
+                </div>
+            </div>
+          </div>
+           <div class="ia_alert">
+            <div class="alert_messages alert_messages_information fade in show_active">
+                <div class="alert_messages__inner clearfix">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque velit sapien.</p>
+                    <span class="fontcon-close icon_dismiss"></span>
+                </div>
+            </div>
+          </div>
               <div class="bnppf_sendmoney_content">
                 
               <!-- Sepa Confirmation -->
@@ -63,12 +87,12 @@
                         <div class="confirmation_details">
                         	<p>Albert Garnier</p>
                             <span>,</span>
-                            <p>BE12 3456 7890 1234</p>	
+                            <p>BE12345678901234</p>	
                         </div>
                     </div>
                     <div class="sepa_confirm_fields confirm_content confirm_amount">
                     	<label class="sepa_confirm_labels">Amount</label>
-                        <div class="confirmation_details">
+                        <div class="confirmation_details ucr_highlight">
                         	<p>10.283,00</p>
                             <span>EUR</span>	
                         </div>
@@ -76,9 +100,20 @@
                     <div class="sepa_confirm_fields confirm_content confirm_to">
                     	<label class="sepa_confirm_labels">To</label>
                         <div class="confirmation_details">
-                        	<p>Albert Garnier</p>
-                            <span>,</span>
-                            <p>BE12 3456 7890 1234</p>	
+                        	<div class="confirmation_details__amount">
+                                <p>Albert Garnier</p>
+                                <span>,</span>
+                                <p>
+                                <span>BE</span>
+                                <span class="amount_highlight">1234567890</span>
+                                <span>1234</span>
+                                </p>
+                                <span class="hello_icon"></span>
+                            </div>
+                            <div class="alias_name">
+                            	<label>Alais:</label>
+                                <p>Yash chopra</p>
+                            </div>	
                         </div>
                     </div>
                     <div class="sepa_confirm_fields confirm_content confirm_date">

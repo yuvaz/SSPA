@@ -21,6 +21,7 @@
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	color:#242529;
 }
 
 .fontcon-youtube:before {
@@ -63,7 +64,7 @@
 .fontcon-refresh:before {
 	content: "\e60b";
 }
-.fontcon-Print:before {
+.fontcon-print:before {
 	content: "\e60c";
 }
 .fontcon-pdf:before {
@@ -144,6 +145,8 @@
 }
 .fontcon-calendar:before {
 	content: "\e625";
+	z-index:999 !important;
+	font-size:22px;
 }
 .fontcon-personage:before {
 	content: "\e626";

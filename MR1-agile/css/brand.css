@@ -1,0 +1,305 @@
+@font-face {
+	font-family: 'BnppSans-l';
+	src: url("../css/fonts/bnpp_sans_light-webfont.eot");
+	src: url("../css/fonts/bnpp_sans_light-webfont.eot?#iefix") format("eot"), url("../css/fonts/bnpp_sans_light-webfont.woff") format("woff"), url("../css/fonts/bnpp_sans_light-webfont.ttf") format("truetype"), url("../css/fonts/bnpp_sans_light-webfont.svg#BnppSans-l") format("svg");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'BnppSans-r';
+	src: url("../css/fonts/bnpp_sans-webfont.eot");
+	src: url("../css/fonts/bnpp_sans-webfont.eot?#iefix") format("eot"), url("../css/fonts/bnpp_sans-webfont.woff") format("woff"), url("../css/fonts/bnpp_sans-webfont.ttf") format("truetype"), url("../css/fonts/bnpp_sans-webfont.svg#BnppSans-r") format("svg");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'BnppSans-b';
+	src: url("../css/fonts/bnpp_sans_bold-webfont.eot");
+	src: url("../css/fonts/bnpp_sans_bold-webfont.eot?#iefix") format("eot"), url("../css/fonts/bnpp_sans_bold-webfont.woff") format("woff"), url("../css/fonts/bnpp_sans_bold-webfont.ttf") format("truetype"), url("../css/fonts/bnpp_sans_bold-webfont.svg#BnppSans-b") format("svg");
+	font-style: normal;
+	font-weight: normal;
+}
+/* Resets */
+caption, th, td {text-align: left;font-weight: normal;vertical-align: middle;}
+button {border: 0;}
+.f_left {float: left;}
+.f_right {float: right;}
+::-moz-selection {background: #b3d4fc;text-shadow: none;}
+::selection {background: #b3d4fc;text-shadow: none;}
+@-ms-viewport {width: device-width;}
+* {-webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;-ms-touch-action: none !important;}
+input:focus, textarea:focus, button {outline: none !important;height: auto;}
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+/* Body styles */
+html, body, .wcm {width: 100%;height: 100%;}
+.easybanking {width: 100%;height: 100%;font-size: 1em;line-height: 1.12em;-webkit-user-select: none !important;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;background: #eef1f5;font-family: 'BnppSans-l', sans-serif;color: #252429;}
+.wrapper {width: 100%;height: 100%;}
+
+/** Standard UI Elements **/
+/* Standard Btns */
+.bnppf_btn {font-size: 1.14em;font-family: 'BnppSans-r', sans-serif;line-height: 1em;padding: 14px 20px;cursor: pointer;height: 44px;}
+.navigation_btns {width: 100%;display: table;}
+
+/* Standard Primary & Secondary Btns */
+.btn_primary {background: #009966;color: #ffffff;background: #009966;color: #ffffff;}
+.btn_primary .fontcon-arrow-right {color: #ffffff;line-height: 13px;position: relative;top: 2px;}
+.btn_primary:hover {background: #008578;}
+.btn_secondary {background: #d2d8e1;}
+.btn_secondary:hover {background: #bec6d0;}
+
+/* Primary & Secondary Arrow Btns */
+.bnppf_btn_arrow_right, .arrow-left {padding-right: 11px;}
+
+/* Btn Right & Left Alignment */
+.right_navigation_btn, .left_navigation_btn {display: table;}
+
+/* standard Links Model */
+.lnk_primary {font-size: 1.2em;font-family: 'BnppSans-r', sans-serif;color: #009966;margin-right: 40px;cursor: pointer;}
+.lnk_primary:hover {color: #008578;text-decoration: underline;}
+
+/* Show Class */
+.show_active {display: block !important;}
+
+/** Dropdown, Inputbox & Textarea **/
+.bnppf_input_field {border: 1px solid #d8dbde;background: #ffffff;position: relative;z-index: 1;width: 100%;padding: 11px 12px;overflow: hidden;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;cursor: pointer;height: 44px;}
+.bnppf_input_field > * {display: -moz-inline-stack;display: inline-block;*display: inline;vertical-align: baseline;zoom: 1;}
+.bnppf_dropdown_box, .bnppf_input_field, .bnppf_input_field input {font-family: inherit;-webkit-font-smoothing: inherit;color: #76767b;font-size: 16px;line-height: 22px;}
+.bnppf_input_control .bnppf_input_field, .bnppf_input_control .bnppf_input_field input {cursor: pointer;}
+.bnppf_input_control .bnppf_input_field.focus, .bnppf_input_control .bnppf_input_field.focus input {cursor: text;}
+.bnppf_input_field.disabled, .bnppf_input_field.disabled * {cursor: default !important;}
+
+/* Slectize dropdown select box with arrow down & Up */
+.bnppf_input_field.dropdown-active:after {border-color: transparent transparent #252429 transparent;margin-top: -4px;border-width: 0 5px 5px 5px;}
+.bnppf_input_field::after {display: block;clear: left;content: ' ';}
+.bnppf_input_field.dropdown-active::before {position: absolute;right: 0;bottom: 0;left: 0;display: block;height: 1px;content: ' ';}
+.bnppf_input_field > input {width: 100% !important;max-height: none !important;min-height: 0 !important;padding: 0 !important;margin: 0 1px !important;text-indent: 0 !important;background: none !important;border: 0 none !important;-webkit-box-shadow: none !important;box-shadow: none !important;-webkit-user-select: auto !important;height: 22px;}
+.bnppf_input_field span {border-left: 1px solid #d8dbde;background: #ffffff;float: right;padding-left: 12px;position: absolute;right: 12px;top: 9px;z-index: -999;}
+
+/* Drop box */
+.bnppf_dropdown_box {background: #ffffff;border: 1px solid #d0d0d0;-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);position: absolute;z-index: 10;margin: -1px 0 0 0;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+.bnppf_dropdown_box [data-selectable] {border-bottom: 1px solid #d8dbde;overflow: hidden;cursor: pointer;padding: 8px 12px;}
+.bnppf_dropdown_content {max-height: 200px;overflow-x: hidden;overflow-y: auto;}
+.highlight {background: #f4f5f6;font-family: 'BnppSans-r', sans-serif;}
+.dropdown_arrow {background: url(./images/dropdown_strip.png) no-repeat right center;}
+.dropdown_arrow:after {border-color: #252429 transparent transparent transparent;position: absolute;top: 50%;right: 15px;display: block;width: 0;height: 0;margin-top: -3px;border-style: solid;border-width: 5px 5px 0 5px;content: ' ';}
+
+/* Drop box groups */
+.bnppf_dropdown_box .main-group {background: #f4f5f6;border-bottom: 1px solid #d8dbde;padding: 8px 12px 6px 12px;}
+.optgroup:first-child {padding-top: 3px;border-top: 0 none;}
+.optgroup-header {color: #76767b;border-bottom: 1px solid #d8dbde;font-size: 16px;font-family: 'BnppSans-l', sans-serif;text-transform: uppercase;cursor: default;padding: 5px 8px;}
+.optgroup-iban {color: #009966;font-size: 14px;font-family: 'BnppSans-r', sans-serif;line-height: 18px;}
+.optgroup-iban:hover {color: #008578;text-decoration: underline;}
+.optgroup-amount {font-size: 14px;color: #76767b;line-height: 18px;float: right;display: inline-block;}
+.optgroup-amount .highlight {background: #ffffff;font-family: 'BnppSans-l', sans-serif;padding: 0;}
+.optgroup-amount span {padding: 0 3px;}
+.optgroup-name {font-size: 14px;color: #76767b;display: inline-block;}
+
+/* Text area */
+.bnppf_text_area {width: 100%;}
+.bnppf_text_area textarea {border: 1px solid #ccc;font-size: 16px;color: #76767b;width: 100%;resize: vertical;padding: 6px;box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;border-radius: 0px;-webkit-border-radius: 0px;-moz-border-radius: 0px;-webkit-appearance: none;}
+.bnppf_text_area textarea:focus {border-color: #ccc;}
+.bnppf_text_area .text_count {color: #76767b;margin-right: 4px;padding: 6px 0;}
+.bnppf_text_area .message_length {float: right;}
+.bnppf_text_area .text_count span {padding-left: 4px;}
+
+/** SEPA Styles **/
+/* SEPA Header */
+.bnppf_sendmoney {background: #ffffff;}
+.bnppf_sendmoney_header {width: 100%;background: #861a61;}
+.bnppf_sendmoney_header_inner {position: relative;padding: 30px 30px 20px 30px;}
+.bnppf_sendmoney_header strong {font-size: 2.25em;text-transform: uppercase;color: white;line-height: 1.14em;font-weight: 100;float: left;min-width: 212px;white-space: nowrap;}
+.top {width: 100%;display: block;}
+/* Sepa Steps */
+.sepa_steps {float: right;display: block;}
+.sepa_steps__digit li {color: #d12668;font-size: 1.25em;font-family: 'BnppSans-r', sans-serif;border: 2px solid #d12668;text-align: center;display: inline-block;padding: 14px 18px;margin-left: 28px;-webkit-border-radius: 2.14em;-moz-border-radius: 2.14em;-o-border-radius: 2.14em;border-top-left-radius: 2.14em;border-top-right-radius: 2.14em;border-bottom-left-radius: 2.14em;border-bottom-right-radius: 2.14em;}
+.sepa_steps__text {margin-top: 10px; }
+.sepa_steps__text li {color: #bec6d0;font-family: 'BnppSans-r', sans-serif;font-size: 1em;display: block;float: left;text-align: center;margin-left: 35px;}
+.sepa_steps__digit li.active_step_digit {color: #ffffff;border-color: #ffffff;}
+.sepa_steps__text li.active_step_text {color: #ffffff;}
+/* Error messages styles */
+.error_summary {width: 80%;margin-left: 20%;color:#e53012;font-family: 'BnppSans-r', sans-serif;}
+.error_summary_items{ list-style:disc; padding-left:20px;}
+.field_error_message {color: #e53012;line-height: 13px;font-size: 1.14em;padding-bottom: 12px;display: none;font-family: 'BnppSans-r', sans-serif; }
+.field_error .field_error_message, .error_summary .field_error_message {display: block; }
+.field_error .bnppf_input_field, .field_error .bnppf_text_area textarea {border: 1px solid #e53012;}
+.message_field.field_error .bnppf_input_field:nth-child(1) {border: 1px solid #d8dbde;}
+.field_error .sepa_labels {margin-top: 35px; }
+.message_field.field_error .sepa_labels {margin-top: 0px; }
+
+/* SEPA Content */
+.bnppf_sendmoney_content {width: 100%; }
+.bnppf_sendmoney_content__inner {padding: 30px;border-bottom: 1px solid #d2d5da;}
+.bnppf_sendmoney_content__inner h5 {text-align: right;width: 80%;padding: 0 0 30px 0;font-weight: normal;font-family: 'BnppSans-l', sans-serif;font-size: 14px; }
+.sepa_fields {width: 100%;display: table;padding-bottom: 30px; }
+.sepa_labels {font-family: 'BnppSans-r', sans-serif;font-size: 16px;width: 20%;padding: 10px 0;float: left;}
+.sendmoney_details {float: left;width: 60%; }
+.selected-item {padding-top: 12px;display: none;color: #76767b;line-height: 1em;}
+.amount_field .bnppf_input_field span {color: #76767b;padding-top: 3px; border:none;}
+.amount_field .bnppf_input_field input {width: 100%;}
+.sepa_fields.to_field {padding-bottom: 0; }
+.to_field .show_active {display: inline-block !important; }
+.to_field .selected_amount {display: none; }
+.sepa_fields.message_field {padding-bottom: 0; }
+.message_field .bnppf_input_field input {width: 100%; }
+.select_message__type input[type="text"] {display: none; }
+.select_message__structured, .select_message__freetext, .select_message__eurostructured {margin-top: 30px; }
+.select_message__struct input {height: 44px; }
+
+/* Specific to TO field SEPA */
+.to_field .optgroup {padding: 0; }
+.to_field .optgroup-header, .to_field .bnppf_dropdown_box [data-selectable] {padding-left: 24px; }
+
+/** Confirm Screen **/
+.sepa_confirm_labels {font-family: 'BnppSans-r', sans-serif;width: 20%;float: left; }
+.sepa_confirm_fields {font-size: 16px;border-bottom: 1px solid #d8dbde;width: 100%;display: table;padding: 20px 0;}
+.confirm_content p, .confirm_content span {float: left;line-height: 22px;display: table;word-break: break-word;}
+.confirm_content span {margin-right: 4px; }
+.confirm_amount span {margin-left: 4px; }
+.confirmation_details {float: left;width: 60%; }
+/**/
+.confirmation_details__amount{ width:100%; display:table;}
+.sendmoney_confirmation .sepa_confirm_fields:nth-child(1) {padding-top: 10px; }
+.sepa_confirm_fields.confirm_lastchild {padding-bottom: 0;border: none; }
+/**/
+.confirmation_details p span{ margin:0;}
+.ucr_highlight p{ color:red; font-family:'BnppSans-r', sans-serif;}
+.amount_highlight{ color:green; font-family:'BnppSans-r', sans-serif;}
+.alias_name{ color:#76767b; display:table;}
+.alias_name label{ margin:2px 4px 0 0; float:left;}
+.hello_icon{ background: url(images/sprite.svg) no-repeat;padding: 10px 11px 12px 11px; background-position:-194px -3px; margin-left:5px;}
+/** Result screen **/
+.border_none {border: none !important;}
+.sendmoney_result h2 {font-size: 36px;display: inline-table;line-height: 36px;font-weight: 100;}
+.sendmoney_result__info.bnppf_sendmoney_content__inner {border: none;}
+.sendmoney_result__info p {font-size: 16px;margin-top: 4px;}
+.sendmoney_result__content {width: 100%;display: inline-table;}
+.sendmoney_result__content_inner {width: 33.333333%;float: left;}
+.result_content {padding: 14px 30px 14px 30px;text-align: center;border-right: 1px dotted #d8dbde;}
+.fontcon-personage, .fontcon-send-money-icon {font-size: 60px;color: #d2d8e1;display: inline-block;}
+.fontcon-circle-done {font-size: 30px;color: #85b909;position: relative;top: 3px;right: 13px;}
+.resultfrom_info {margin-top: 25px;font-size: 16px;line-height: 26px;}
+.resultfrom_info label {font-family: 'BnppSans-r', sans-serif;display: block;}
+.result_btn.navigation_btns {width: auto;float: right;}
+.result_btn div:first-child {margin-right: 10px;}
+.result_navigation {display: inline-block;width: 100%;}
+/**/
+.resultfrom__iban p{ display:inline-block;}
+.resultfrom__iban .hello_icon{ padding:0 11px;}
+/* action Icons */
+.action_icons {float: right;}
+.action_icons__global {border-left: 1px dotted #d8dbde;font-size: 22px;padding: 0 16px 0 20px;}
+.action_icons .action_icons__global:first-child {border: none;}
+/** Unknown **/
+.eb_tabs {width: 100%;margin: 0;padding: 0;display: table;}
+.tab_fst {margin-right: 6px;}
+.eb_tab_txt {width: 186px;border: 1px solid #d2d8e1;float: left;cursor: pointer;border-bottom: none;}
+.eb_tabs .eb_tab_txt__inner {text-decoration: none;color: #009966;padding: 19px 20px 16px 20px;text-transform: uppercase;font-size: 16px;text-align: center;display: block;}
+.eb_tab_txt.active {position: relative;top: 1px;background: #ffffff;color: #252429;}
+.eb_tab_txt.active span {color: #242529;}
+.tabs_eb_content_container {float: left;width: 100%;}
+.eb_tab_content {border: 1px solid #d2d8e1;}
+.eb_tab_content__inner {padding: 20px 12px;}
+.eb_unknown_content {display: table;width: 100%;}
+.eb_unknown_input {width: 50%;float: left;}
+.unknown_name {margin-right: 8px;}
+.unknown_iban {margin-left: 8px;}
+.unknown_alias {width: 100%;}
+.unknown_input input {width: 100%;}
+.save_benefeciary {padding: 10px 0;}
+.save_benefeciary__text {margin-left: 4px;font-size: 16px;}
+.unknown_labels {font-family: 'BnppSans-l', sans-serif;font-size: 16px;padding-bottom: 10px;display: block;}
+.info_message {color: #ffffff;padding: 15px;background: #138ee4;position: relative;display: none;}
+.info_message__text {display: inline-block;width: 95%;}
+.fontcon-close { color:#ffffff;line-height: 13px;}
+.fontcon-calendar{ z-index:999;}
+/* ucr */
+.sendmoney_ucr {background: #f4f5f9;width: 100%;}
+.ucr_title {font-size: 24px;padding-bottom: 12px;line-height: 24px;}
+.ucr_details {font-size: 16px;border-bottom: 1px solid #d8dbde;width: 100%;display: table;padding: 20px 0;position: relative;}
+.ucr_details__numbering {width: 16px;float: left;}
+.ucr_details__content {width: 94%;display: table;}
+.ucr_details__content span {margin-right: 10px;}
+.ucr_details__content p:first-child {font-family: 'BnppSans-r', sans-serif;}
+.ucr_code {display: table;float: left;margin-right: 12px;text-align: center;}
+.ucr_code p:nth-child(2) {font-size: 12px;line-height: 6px;padding-top: 10px;}
+.ucr_code__input {width: auto;display: inline-block;width: auto !important;color: #186495 !important;}
+.ucr_signature {display: inline-block;}
+.bnppf_input_field.ucr_signature__input {width: 250px;}
+.ucr_signature__input input {width: 100%;}
+.last-child {padding-bottom: 0;border: none;}
+.ucr_content {padding: 12px 0;}
+.ucr_content__challenge {display: inline-block;width: 100%;padding-top: 10px;}
+.ucr_challenge__content {display: -webkit-box;}
+.ucr_action_content {font-family: 'BnppSans-r', sans-serif;}
+.ucr_action_1content {position: relative;top: -2px;}
+
+/* Error Messages */
+.alert_messages {width: 100%;color: #ffffff;display: none;}
+.alert_messages__inner {padding: 20px;}
+.alert_messages__inner p {float: left;font-size: 16px;width: 94%;}
+.alert_messages_warning {background: #f66900;}
+.alert_messages_error, .alert_messages_severity {background: #e53012;}
+.alert_messages_information {background: #138ee4;}
+.alert_messages_authentication {background: rgba(255,255,255,0.8);}
+.icon_dismiss {float: right;cursor: pointer;}
+.fade.in {opacity: 1;}
+.fade {opacity: 0;-webkit-transition: opacity .15s linear;transition: opacity .15s linear;}
+
+ @media all and (max-width: 480px) {
+.eb_tab_txt {width: 138px;}
+.result_btn.navigation_btns {width: 100%;}
+.result_btn div:first-child {margin-bottom: 10px;}
+.result_btn div, .result_btn button {width: 100%;}
+.eb_tabs .eb_tab_txt span {font-size: 14px;}
+.ucr_challenge__code {width: 100%;display: table;}
+.ucr_action_1content {top: -6px;line-height: 30px;}
+.fontcon-M2:before {top: 40px;}
+}
+
+@media all and (max-width: 767px) {
+.lnk_primary {margin-right: 20px; }
+.error_summary {
+    margin: 0; }
+.bnppf_sendmoney_header_inner {padding: 20px 10px;}
+.bnppf_sendmoney_header strong {font-size: 18px;min-width: 106px;}
+.sepa_steps__digit {float: right; }
+.sepa_steps__digit li {font-size: 14px;margin-left: 10px;padding: 8px 14px;}
+.sepa_steps__text li {position: absolute;top: 40px;left: 10px;margin: 0;display: none; }
+.sepa_steps__text li.active_step_text {display: block; }
+.sendmoney_result h2 {font-size: 18px;line-height: 18px;}
+.sendmoney_result__content_inner {width: 100%;}
+.bnppf_sendmoney_content__inner {padding: 10px; }
+.bnppf_sendmoney_content__inner h5 {width: 100%; }
+.bnppf_sendmoney_content__inner h5 {padding: 0; }
+.sendmoney_details {width: 100%; }
+.field_error, .field_error .sepa_labels {margin: 0; }
+.sepa_fields {padding-bottom: 20px; }
+.sepa_labels {padding: 0 0 8px 0; }
+.sepa_confirm_labels {width: 30%; }
+.select_type {padding-bottom: 20px; }
+.confirmation_details {width: 70%; }
+.result_content {text-align: left;padding: 12px 0;border-bottom: 1px solid #d8dbde;border-right: none;width: 100%;display: table;}
+.resultfrom_info {margin: 0;line-height: 22px;}
+.resultfrom_info label {width: 25%;float: left;}
+.resultfrom_content {width: 55%;float: left;}
+.unknown_name, .unknown_iban {margin: 0;}
+.unknown_iban label {padding-top: 10px;}
+.eb_unknown_input {width: 100%;}
+.tab_fst {margin-right: 3px;}
+.fontcon-personage {float: right;font-size: 40px;}
+.fontcon-send-money-icon {position: absolute;right: 25px;font-size: 40px;}
+.fontcon-circle-done {float: right;font-size: 25px;top: 16px;right: 0px;}
+.date_picker .bnppf_input_field {width: 100%; }
+.date_picker .bnppf_input_field > input {width: 100%; }
+/* UCR */
+.ucr_signature {width: 100%;}
+.ucr_challenge__content {display: table;width: 100%;}
+.ucr_details__content p:first-child {padding-bottom: 12px;}
+.ucr_content__challenge, .ucr_content {padding-top: 0;}
+}
+
