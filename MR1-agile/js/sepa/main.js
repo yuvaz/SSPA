@@ -35,7 +35,7 @@ define(['selectize', 'underscore','picker.date'], function(selectize, _, datepic
                 },
                 render: {
                     option: function(data, escape) {
-                        return '<div><div class="optgroup-option"><span class="optgroup-iban">' + escape(data.iban) +'</span><span class="optgroup-amount"><span>'+ escape(data.balance) +'</span><span>'+ escape(data.currency) +' </span></div><span class="optgroup-name">' + escape(data.alias) + '</span></div>';
+                        return '<div><div class="optgroup-option"><span class="optgroup-iban">' + escape(data.iban) +'</span><span class="hello_icon"></span><span class="optgroup-amount"><span>'+ escape(data.balance) +'</span><span>'+ escape(data.currency) +' </span></div><span class="optgroup-name">' + escape(data.alias) + '</span></div>';
                     }
                 }
             });

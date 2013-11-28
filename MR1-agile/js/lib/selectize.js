@@ -2165,10 +2165,10 @@
 		searchField: ['text'],
 	
 		mode: null,
-		wrapperClass: 'bnppf_input_control',
-		inputClass: 'bnppf_input_field',
-		dropdownClass: 'bnppf_dropdown_box',
-		dropdownContentClass: 'bnppf_dropdown_content',
+		wrapperClass: 'default_input_control',
+		inputClass: 'default_input_field',
+		dropdownClass: 'default_dropdown_box',
+		dropdownContentClass: 'default_dropdown_content',
 	
 		dropdownParent: null,
 	

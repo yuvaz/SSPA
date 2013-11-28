@@ -32,15 +32,13 @@
 	</head>
 
 	<body>
-    <div class="wcm">
       <div class="easybanking">
-        <div class="wrapper">
-          <div class="bnppf_sendmoney">
-            <div class="bnppf_sendmoney_inner">
+          <div class="sendmoney">
+            <div class="sendmoney_inner">
             <!-- Sepa Header -->
-              <div class="bnppf_sendmoney_header">
-                <div class="bnppf_sendmoney_header_inner">
-                  <div class="top clearfix"> <strong>Send Money</strong> <span class="icon_sendmoney"></span>
+              <div class="sendmoney_header">
+                <div class="sendmoney_header__inner">
+                  <div class="top clearfix"> <strong>Send Money</strong>
                     <div class="sepa_steps active_step">
                       <ul class="sepa_steps__digit">
                         <li>1</li>
@@ -57,10 +55,10 @@
                 </div>
               </div>
             <!-- Sepa Content -->
-              <div class="bnppf_sendmoney_content">
+              <div class="sendmoney_content">
               <!-- Sepa Enter details -->
                 <div class="sendmoney_enterdetails" style="display:none;">
-                  <div class="bnppf_sendmoney_content__inner">
+                  <div class="sendmoney_content__inner">
                     <h5>*Mandatory fields</h5>
                     <div class="error_summary"> </div>
                     <div class="sepa_fields from_field">
@@ -77,8 +75,8 @@
                     <div class="sepa_fields amount_field">
                       <label for="select-account" class="sepa_labels">Amount*</label>
                       <div class="sendmoney_details">
-                        <div class="bnppf_input_control">
-                          <div class="bnppf_input_field input_dropdown">
+                        <div class="default_input_control">
+                          <div class="default_input_field input_dropdown">
                             <input type="text"/>
                             <span>EUR</span> </div>
                         </div>
@@ -96,14 +94,14 @@
                       </div>
                     </div>
                   </div>
-                  <div class="bnppf_sendmoney_content__inner">
+                  <div class="sendmoney_content__inner">
                     <div class="details-content">
                       <div class="sepa_fields date_picker">
                         <label for="select-account" class="sepa_labels">Date</label>
                         <div class="sendmoney_details">
                           <p class="field_error_message">Please select the valid account</p>
-                          <div class="bnppf_input_control">
-                            <div class="bnppf_input_field input_dropdown">
+                          <div class="default_input_control">
+                            <div class="default_input_field input_dropdown">
                               <input type="text" class="trig_datepicker" value="" placeholder="DD/MM/YYYY"/>
                               <span aria-hidden="true" class="icon-calendar-2"></span> </div>
                           </div>
@@ -121,15 +119,15 @@
                           <!-- Struct Message -->
                           <div class="select_message__structured show_active">
                             <p class="field_error_message struct_error">Please select the valid account</p>
-                            <input class="bnppf_input_field"/>
+                            <input class="default_input_field"/>
                           </div>
                           <!-- free Message -->
-                          <div class="bnppf_text_area select_message__freetext show_active">
+                          <div class="default_text_area select_message__freetext show_active">
                             <p class="field_error_message freemessage_error">Please select the valid account</p>
                             <textarea maxlength="140"></textarea>
                             <span class="text_count">characters left<span class="freetext_remaining">23</span></span> </div>
                           <!-- Euro Message -->
-                          <div class="bnppf_text_area select_message__eurostructured">
+                          <div class="default_text_area select_message__eurostructured">
                             <p class="field_error_message struct_error">Please select the valid account</p>
                             <textarea maxlength="23"></textarea>
                             <span class="text_count">characters left<span class="eurostructured_remaining">23</span></span> </div>
@@ -137,16 +135,16 @@
                       </div>
                     </div>
                   </div>
-                  <div class="bnppf_sendmoney_content__inner">
+                  <div class="sendmoney_content__inner">
                     <div class="next_navigation">
-                      <button class="bnppf_btn btn_primary bnppf_btn_arrow_right"><span>Next</span><i class="icon-arrow-right arrow-right"></i></button>
+                      <button class="btn_default btn_primary btn_arrow_right"><span>Next</span><i class="icon-arrow-right arrow-right"></i></button>
                     </div>
                   </div>
                 </div>
               <!-- Sepa Confirmation -->
               <div class="sendmoney_confirmation">
               	<form>
-              	 <div class="bnppf_sendmoney_content__inner">
+              	 <div class="sendmoney_content__inner">
                   	<div class="sepa_confirm_fields confirm_content confirm_from">
                     	<label class="sepa_confirm_labels">From</label>
                         <div class="confirmation_details">
@@ -183,21 +181,19 @@
                         </div>
                     </div>
                  </div>
-                 <div class="bnppf_sendmoney_content__inner">
+                 <div class="sendmoney_content__inner">
                  	<div class="navigation_btns">
                         <div class="left_navigation_btn f_left">
-                            <button class="bnppf_btn btn_secondary"><span>Edit</span></button>
+                            <button class="btn_default btn_secondary"><span>Edit</span></button>
                         </div>
                         <div class="right_navigation_btn f_right">
                         	<span class="lnk_primary">Cancel</span>
-                            <button class="bnppf_btn btn_primary">Confirm</button>
+                            <button class="btn_default btn_primary">Confirm</button>
                         </div>
                     </div>
                  </div>
                  </form>
               </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
