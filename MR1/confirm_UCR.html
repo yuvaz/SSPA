@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Sepa Transfer</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/fonticon.css">
+    <link rel="stylesheet" href="css/brand.css">
+    <link rel="stylesheet" href="css/pattern-lib.css">
+    <link rel="stylesheet" href="css/datepicker.css">
+	<script src="js/lib/sinon.js"></script>
+	<script src="js/stubs/fake-server.js"></script>
+	<script data-main="js/app" src="js/lib/require.js"></script>
+	<script data-main="js/app" src="js/lib/iscroll.js"></script>
+	<script data-main="js/app" src="js/jquery-1.9.1.js"></script>
+	<script src="js/bootstrap-datepicker.js" type="text/javascript"></script>
+	</head>
+	<body>
+      <div class="easybanking">
+          <div class="sendmoney">
+            <div class="sendmoney_inner">
+            <!-- Sepa Header -->
+              <div class="sendmoney_header">
+                <div class="sendmoney_header__inner">
+                  <div class="top clearfix"> <strong>Send Money</strong>
+                    <div class="sepa_steps active_step">
+                      <ul class="sepa_steps__digit">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                      </ul>
+                      <ul class="sepa_steps__text">
+                        <li>Details</li>
+                        <li>Confirm</li>
+                        <li>Result</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- Sepa Content -->
+            <!-- Alert messages placeholder & Struct -->
+          <div class="ia_alert">
+            <div class="alert_messages alert_messages_warning fade in">
+                <div class="alert_messages__inner clearfix">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque velit sapien.</p>
+                    <span class="fontcon-close icon_dismiss"></span>
+                </div>
+            </div>
+          </div>
+           <div class="ia_alert">
+            <div class="alert_messages alert_messages_error fade in">
+                <div class="alert_messages__inner clearfix">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque velit sapien.</p>
+                    <span class="fontcon-close icon_dismiss"></span>
+                </div>
+            </div>
+          </div>
+           <div class="ia_alert">
+            <div class="alert_messages alert_messages_severity fade in">
+                <div class="alert_messages__inner clearfix">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque velit sapien.</p>
+                    <span class="fontcon-close icon_dismiss"></span>
+                </div>
+            </div>
+          </div>
+           <div class="ia_alert">
+            <div class="alert_messages alert_messages_information fade in show_active">
+                <div class="alert_messages__inner clearfix">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque velit sapien.</p>
+                    <span class="fontcon-close icon_dismiss"></span>
+                </div>
+            </div>
+          </div>
+              <div class="sendmoney_content">
+                
+              <!-- Sepa Confirmation -->
+              <div class="sendmoney_confirmation">
+              	<form>
+              	 <div class="sendmoney_content__inner">
+                  	<div class="sepa_confirm_fields confirm_content confirm_from">
+                    	<label class="sepa_confirm_labels">From</label>
+                        <div class="confirmation_details">
+                        	<p>Albert Garnier</p>
+                            <span>,</span>
+                            <p>BE12345678901234</p>	
+                        </div>
+                    </div>
+                    <div class="sepa_confirm_fields confirm_content confirm_amount">
+                    	<label class="sepa_confirm_labels">Amount</label>
+                        <div class="confirmation_details ucr_highlight">
+                        	<p>10.283,00</p>
+                            <span>EUR</span>	
+                        </div>
+                    </div>
+                    <div class="sepa_confirm_fields confirm_content confirm_to">
+                    	<label class="sepa_confirm_labels">To</label>
+                        <div class="confirmation_details">
+                        	<div class="confirmation_details__amount">
+                                <p>Albert Garnier</p>
+                                <span>,</span>
+                                <p>
+                                    <span>BE</span>
+                                    <span class="amount_highlight">1234567890</span>
+                                    <span>1234</span>
+                                </p>
+                                <span class="hello_icon"></span>
+                            </div>
+                            <div class="alias_name">
+                            	<label>Alais:</label>
+                                <p>Yash chopra</p>
+                            </div>	
+                        </div>
+                    </div>
+                    <div class="sepa_confirm_fields confirm_content confirm_date">
+                    	<label class="sepa_confirm_labels">Date</label>
+                        <div class="confirmation_details">
+                        	<p>10.09.2013</p>	
+                        </div>
+                    </div>
+                    <div class="sepa_confirm_fields confirm_content confirm_message confirm_lastchild">
+                    	<label class="sepa_confirm_labels">Message</label>
+                        <div class="confirmation_details">
+                        	<p>AlbertGarnierAlbertGarnierAlbertGarnierAlbertGarnierAlbertGarnierAlbertGarnierAlbertGarnierAlbertGarnierAlbertGarnierAlbertGarnierAlbertGarnier</p>	
+                        </div>
+                    </div>
+                 </div>
+                 <!-- Sepa UCR -->
+              	<div class="sendmoney_ucr">
+                	<div class="sendmoney_content__inner">
+                    	<h4 class="ucr_title">SIGN IN</h4>
+                        <div class="ucr_details">
+                        	<span class="ucr_details__numbering">1.</span>
+                            <div class="ucr_details__content con">
+                                <span class="ucr_action_content ucr_action_1content">Put your bank card in the card reader and press</span>
+                                <span class="fontcon-M2"></span>
+                            </div>
+                            <span></span>
+                        </div>
+                        <div class="ucr_details">
+                        	<span class="ucr_details__numbering">2.</span>
+                            <div class="ucr_details__content">
+                                <p class="ucr_action_content">"Pin?" will appear</p>
+                                <span>Put your bank card in the card reader and press</span>
+                                <span class="fontcon-ucr-ok"></span>
+                            </div>
+                        </div>
+                        <div class="ucr_details">
+                        	<span class="ucr_details__numbering">3.</span>
+                            <div class="ucr_details__content">
+                                <p class="ucr_action_content">"CHALLENGE?" will appear</p>
+                                <div class="ucr_content__challenge">
+                                	<span class="f_left ucr_content">Enter the code</span>
+                                    <div class="ucr_challenge__content">
+                                    <div class="ucr_challenge__code">
+                                        <div class="ucr_code">
+                                           <p class="default_input_field ucr_code__input">10 283 00</p>
+                                           <p>Amount</p>
+                                        </div>
+                                        <span class="fontcon-ucr-ok f_left"></span>
+                                        <!--<span class="f_left ucr_content">--</span>-->
+                                        <div class="ucr_code">
+                                           <p class="default_input_field ucr_code__input">12 3456 7890</p>
+                                           <p>IBAN Numbers</p>
+                                        </div>
+                                    </div>
+                                <span>and press</span>
+                                <span class="fontcon-ucr-ok"></span>
+                                <span class="fontcon-ucr-ok"></span>
+                                </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div class="ucr_details last-child">
+                        	<span class="ucr_details__numbering">3.</span>
+                            <div class="ucr_details__content">
+                                <p class="ucr_action_content">"CHALLENGE?" will appear</p>
+                                <span class="f_left ucr_content">Enter your electronic signature</span>
+                                <div class="ucr_signature">
+                                <p class="field_error_message">Please enter valid amount</p>
+                                  <div class="default_input_field ucr_signature__input">
+                                    <input type="text"/>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="sendmoney_content__inner">
+                 	<div class="navigation_btns">
+                        <div class="left_navigation_btn f_left">
+                            <button class="btn_default btn_secondary">Edit</button>
+                        </div>
+                        <div class="right_navigation_btn f_right">
+                        	<span class="lnk_primary">Cancel</span>
+                            <button class="btn_default btn_primary">Confirm</button>
+                        </div>
+                    </div>
+                 </div>
+                 </form>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
