@@ -1,11 +1,11 @@
 $(document).ready(function() {
 	$('.selected_details__account').on('click', function() {
 		$('.flyout_selection').toggleClass('flyout_active');
-		$('.dropdown_arrow').toggleClass('dropdown-active');
-		$(".flyout_list_items").removeClass('kartyea');
+		$('.selected_details__account.dropdown_arrow').toggleClass('dropdown-active');
+		$(".flyout_list_items").removeClass('show_listitems');
 		setTimeout(function () {
-			$(".flyout_list_items").addClass('kartyea');
-		}, 200);
+			$(".flyout_list_items").addClass('show_listitems');
+		}, 300);
 		
 			
 	});

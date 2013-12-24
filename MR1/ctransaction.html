@@ -15,27 +15,22 @@
 	</head>
 	<body>
 		<div class="easybanking">
-			<div class="zoomit">
-				<div class="zoomit_inner">
+        <!-- IA Code -->
+			<div class="cards_transactions transactions">
+				<div class="accounts_transactions__inner">
 					<!-- -->
 					<div class="module_main_header">
-						<div class="module_header h_zoomit">
+						<div class="module_header h_transactions">
 							<div class="module_header__inner">
 								<div class="h_col">
-									<h2 class="module_title">ZOOMIT</h2>
-									<div class="refresh">
-										<span class="icon_refresh fontcon-refresh"></span>
-										<span class="refresh_txt">Refresh</span>
-									</div>
-								</div>
-								<div class="h_col">
-									<div class="flyout_selection">
-										<div class="yashchopra">
+                                    <div class="flyout_selection f_left">
+										<div class="flyout_container">
 											<div class="selected_details">
-												<div class="selected_details__account">
-													<h2 class="dropdown_arrow">BE12 3456 7890 1234 7</h2>
+												<div class="selected_details__account dropdown_arrow">
+													<h2 class="transactions_title">BE12 3456 7890 1234 7</h2>
+                                                    <span class="hello_icon" style="display:block;"></span>
 												</div>
-												<div class="selected_details__info">
+												<div class="selected_details__info transaction_info">
 													<p>Current Account</p>
 													<p>Yashwanth Gurrapu</p>
 												</div>
@@ -59,15 +54,9 @@
 													<div class="item_group clearfix">
 														<div class="item_group__inner">
 															<div class="group_colone">
-																<span class="fontcon-current-account"></span>
+																<span class="group_icons fontcon-current-account"></span>
 																<h4>Current Accounts</h4>
 															</div>
-															<div class="group_coltwo">
-																<div class="currency_header">
-																	<h4>28.928.774,00</h4>
-																	<span>USD</span>
-																</div>
-															</div>
 														</div>
 													</div>
 													<div class="list_item">
@@ -79,10 +68,10 @@
 																</div>
 																<div class="listiban_detail"> <span>Easy Pack</span> <span> - </span> <span>Yashwanth Kanna</span> </div>
 															</div>
-															<div class="list_content_col2">
-																<h3><span>200,00</span><span>USD</span></h3>
-																<p><span>85</span><span>EUR</span></p>
-															</div>
+                                                            <div class="list_content_col2">
+                                                                <h3><span>200,00</span><span>USD</span></h3>
+                                                                <p><span>85</span><span>EUR</span></p>
+                                                            </div>
 														</div>
 													</div>
 													<div class="list_item">
@@ -94,10 +83,10 @@
 																</div>
 																<div class="listiban_detail"> <span>Easy Pack</span> <span> - </span> <span>Yashwanth Kanna</span> </div>
 															</div>
-															<div class="list_content_col2">
-																<h3><span>200,00</span><span>USD</span></h3>
-																<p><span>85</span><span>EUR</span></p>
-															</div>
+                                                            <div class="list_content_col2">
+                                                                <h3><span>200,00</span><span>USD</span></h3>
+                                                                <p><span>85</span><span>EUR</span></p>
+                                                            </div>
 														</div>
 													</div>
 												</div>
@@ -105,26 +94,50 @@
 										</div>
 									</div>
 								</div>
+								<div class="h_col">
+                                	<div class="module_content f_right">
+                                    	<div class="module_row">
+                                            <div class="module_slected_value">
+                                                <span>23.214,00</span>
+                                                <span>USD</span>
+                                            </div>
+                                        </div>
+                                        <div class="module_semirow">
+                                        	<label>As of:</label>
+                                            <span>28.03.1987</span>
+                                        </div>
+                                        <div class="module_semirow">
+                                        	<label>Avaliable balance:</label>
+                                            <span>23.214,00</span>
+                                            <span>EUR</span>
+                                        </div>
+                                    </div>
+								</div>
 							</div>
 						</div>
-						<div class="tabs_row zoomit_tabs">
+						<div class="tabs_row transaction_tabs">
 							<div class="eb_tabs">
 								<div class="eb_tabs" data-tabtoggle="tab.current">
-									<div class="eb_tab_txt tab_fst active" data-tab-index="1">
+									<div class="eb_tab_txt tab_fst t_module_tab transaction_tab active" data-tab-index="1">
 										<div class="eb_tab_txt__inner">
-											<span>New</span><span>(2)</span>
+											<span>Transactions</span><span>(2)</span>
 										</div>
 									</div>
-									<div class="eb_tab_txt" data-tab-index="2">
+									<div class="eb_tab_txt tab_fst t_module_tab statements_tab" data-tab-index="2">
 										<div class="eb_tab_txt__inner">
-											<span>History</span>
+											<span>Statements</span>
+										</div>
+									</div>
+                                    <div class="eb_tab_txt t_module_tab details_tab" data-tab-index="2">
+										<div class="eb_tab_txt__inner">
+											<span>Details</span>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="module_content c_zoomit">
+					<div class="module_content c_transactions">
 						<div class="module_tab_content">
 							<div class="search_module">
 							</div>
@@ -133,10 +146,21 @@
 									<!-- Level1 Header Clickable with right arrow -->
 									<div class="accordion_header header_l1 dropdown_arrow" data-on-click="accordion:toggle">
 										<div class="accordion_l1__inner">
-											<h4>Invoices</h4>
+											<h4>Pending transactions</h4>
+                                            <span>(30)</span>
 										</div>
 									</div>
 									<div class="accordion_content content_l2">
+                                        <div class="list_wrapper">               
+                                        <!-- Action icons groups -->
+                                            <div class="action_group">
+                                                <div class="action_icons">
+                                                    <span class="action_icons__global fontcon-print"></span>
+                                                    <span class="action_icons__global fontcon-pdf"></span>
+                                                    <span class="action_icons__global fontcon-print"></span>
+                                                </div>
+                                            </div>
+                                        </div>
 										<div class="accordion_list">
 											<div class="list_group">
 												<div class="list_header">
@@ -152,13 +176,70 @@
                                                                 	<span class="list_icon fontcon-transaction-in"></span>
                                                                     <div class=" list_content_details">
                                                                         <div class="listiban_group">
-                                                                            <h3>BE12 3456 7890 1234</h3>
+                                                                            <h3>Transfer from account 295-565423-70</h3>
                                                                             <span class="hello_icon"></span>
                                                                         </div>
                                                                         <div class="listiban_detail">
-                                                                            <span>Easy Pack</span>
-                                                                            <span> - </span>
-                                                                            <span>Yashwanth Kanna</span>
+                                                                            <span>of labouxyz schoubben</span>
+                                                                        </div>
+                                                                    </div>
+																</div>
+																<div class="list_content_col2">
+																	<h3><span>200,00</span><span>USD</span></h3>
+																	<p><span>85</span><span>EUR</span></p>
+																</div>
+															</div>
+															<div class="list_item__content accordion_content content_l3">
+																<div class="list_item__details">
+																	<div class="content_details">
+																		<p>Lorum ipsum dolor sit amit quantum <br>BE68-001200300-0047<br>BIC GEBABEE via mobile banking zonder mededeling.</p>
+																	</div>
+																	<div class="extra_contentdetails">
+																		<ul>
+																			<li>
+																				<label>Exe date</label>
+																				<p>30.09.2013</p>
+																			</li>
+																			<li>
+																				<label>Value date</label>
+																				<p>02.09.3013</p>
+																			</li>
+																			<li>
+																				<label>Seq number</label>
+																				<p>227</p>
+																			</li>
+																		</ul>
+																	</div>
+                                                                    <div class="accordion_main">
+                                                                       <div class="view_more accordion_header header_l4" data-on-click="accordion:toggle">
+                                                                            <span class="icon_arrow dropdown_arrow"></span><p>View more details</p>
+                                                                       </div>
+                                                                       <div class="view_more__content accordion_content content_l4">
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla augue arcu, non dignissim metus tincidunt vel. Praesent vulputate aliquet quam non tempus. Ut ultricies dolor vel est eleifend, fringilla adipiscing metus lacinia. Integer quis blandit lorem. </p>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla augue arcu, non dignissim metus tincidunt vel. Praesent vulputate aliquet quam non tempus. Ut ultricies dolor vel est eleifend, fringilla adipiscing metus lacinia. Integer quis blandit lorem. </p>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla augue arcu, non dignissim metus tincidunt vel. Praesent vulputate aliquet quam non tempus. Ut ultricies dolor vel est eleifend, fringilla adipiscing metus lacinia. Integer quis blandit lorem. </p>
+                                                                       </div>
+                                                                   </div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- List item 2 -->
+												<div class="list_item accordion_main">
+													<div class="list_wrapper">
+														<div class="list_wrapper_inner">
+															<!-- Level3 Header Clickable -->
+															<div class="list_item__header  clearfix accordion_header header_l3" data-on-click="accordion:toggle">
+																<div class="list_content_col1">
+                                                                	<span class="list_icon fontcon-transaction-in"></span>
+                                                                    <div class=" list_content_details">
+                                                                        <div class="listiban_group">
+                                                                            <h3>Transfer from account 295-565423-70</h3>
+                                                                            <span class="hello_icon"></span>
+                                                                        </div>
+                                                                        <div class="listiban_detail">
+                                                                            <span>of labouxyz schoubben</span>
                                                                         </div>
                                                                     </div>
 																</div>
@@ -188,28 +269,80 @@
 																			</li>
 																		</ul>
 																	</div>
-																</div>
-															</div>
-															<!-- Zoom It Buttons -->
-															<div class="action_btns">
-																<div class="navigation_btns">
-																	<div class="left_navigation_btn f_left">
-																		<span class="lnk_primary" style="margin:0">View more details</span>
-																		<span class="fontcon-arrow-right view_more_lnk"></span>
-																	</div>
-																	<div class="right_navigation_btn f_right">
-																		<button class="btn_default btn_primary">Mark as paid</button>
-																		<button class="btn_default btn_primary">Pay now</button>
-																	</div>
+                                                                    <div class="accordion_main">
+                                                                       <div class="view_more accordion_header header_l4" data-on-click="accordion:toggle">
+                                                                            <span class="icon_arrow dropdown_arrow"></span><p>View more details</p>
+                                                                       </div>
+                                                                       <div class="view_more__content accordion_content content_l4 collapse">
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla augue arcu, non dignissim metus tincidunt vel. Praesent vulputate aliquet quam non tempus. Ut ultricies dolor vel est eleifend, fringilla adipiscing metus lacinia. Integer quis blandit lorem. </p>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla augue arcu, non dignissim metus tincidunt vel. Praesent vulputate aliquet quam non tempus. Ut ultricies dolor vel est eleifend, fringilla adipiscing metus lacinia. Integer quis blandit lorem. </p>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla augue arcu, non dignissim metus tincidunt vel. Praesent vulputate aliquet quam non tempus. Ut ultricies dolor vel est eleifend, fringilla adipiscing metus lacinia. Integer quis blandit lorem. </p>
+                                                                       </div>
+                                                                   </div>
 																</div>
 															</div>
 														</div>
 													</div>
 												</div>
-												<!-- List item 2 -->
-												
 												<!-- List item 3 -->
-												
+												<div class="list_item accordion_main">
+													<div class="list_wrapper">
+														<div class="list_wrapper_inner">
+															<!-- Level3 Header Clickable -->
+															<div class="list_item__header  clearfix accordion_header header_l3" data-on-click="accordion:toggle">
+																<div class="list_content_col1">
+                                                                	<span class="list_icon fontcon-transaction-in"></span>
+                                                                    <div class=" list_content_details">
+                                                                        <div class="listiban_group">
+                                                                            <h3>Transfer from account 295-565423-70</h3>
+                                                                            <span class="hello_icon"></span>
+                                                                        </div>
+                                                                        <div class="listiban_detail">
+                                                                            <span>of labouxyz schoubben</span>
+                                                                        </div>
+                                                                    </div>
+																</div>
+																<div class="list_content_col2">
+																	<h3><span>200,00</span><span>USD</span></h3>
+																	<p><span>85</span><span>EUR</span></p>
+																</div>
+															</div>
+															<div class="list_item__content accordion_content content_l3 collapse">
+																<div class="list_item__details">
+																	<div class="content_details">
+																		<p>Lorum ipsum dolor sit amit quantum <br>BE68-001200300-0047<br>BIC GEBABEE via mobile banking zonder mededeling.</p>
+																	</div>
+																	<div class="extra_contentdetails">
+																		<ul>
+																			<li>
+																				<label>Exe date</label>
+																				<p>30.09.2013</p>
+																			</li>
+																			<li>
+																				<label>Value date</label>
+																				<p>02.09.3013</p>
+																			</li>
+																			<li>
+																				<label>Seq number</label>
+																				<p>227</p>
+																			</li>
+																		</ul>
+																	</div>
+                                                                    <div class="accordion_main">
+                                                                       <div class="view_more accordion_header header_l4" data-on-click="accordion:toggle">
+                                                                            <span class="icon_arrow dropdown_arrow"></span><p>View more details</p>
+                                                                       </div>
+                                                                       <div class="view_more__content accordion_content content_l4 collapse">
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla augue arcu, non dignissim metus tincidunt vel. Praesent vulputate aliquet quam non tempus. Ut ultricies dolor vel est eleifend, fringilla adipiscing metus lacinia. Integer quis blandit lorem. </p>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla augue arcu, non dignissim metus tincidunt vel. Praesent vulputate aliquet quam non tempus. Ut ultricies dolor vel est eleifend, fringilla adipiscing metus lacinia. Integer quis blandit lorem. </p>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla augue arcu, non dignissim metus tincidunt vel. Praesent vulputate aliquet quam non tempus. Ut ultricies dolor vel est eleifend, fringilla adipiscing metus lacinia. Integer quis blandit lorem. </p>
+                                                                       </div>
+                                                                   </div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
 											</div>
 											<div class="list_group">
 												<div class="list_header">
@@ -224,13 +357,10 @@
                                                                 	<span class="list_icon fontcon-transaction-in"></span>
                                                                     <div class=" list_content_details">
                                                                         <div class="listiban_group">
-                                                                            <h3>BE12 3456 7890 1234</h3>
-                                                                            <span class="hello_icon"></span>
+                                                                            <h3>Transfer from account 295-565423-70</h3>
                                                                         </div>
                                                                         <div class="listiban_detail">
-                                                                            <span>Easy Pack</span>
-                                                                            <span> - </span>
-                                                                            <span>Yashwanth Kanna</span>
+                                                                            <span>of labouxyz schoubben</span>
                                                                         </div>
                                                                     </div>
 																</div>
@@ -262,15 +392,51 @@
 																	</div>
 																</div>
 															</div>
-															<!-- Zoom It Buttons -->
-															<div class="action_btns">
-																<div class="navigation_btns">
-																	<div class="left_navigation_btn f_left">
-																		<span class="lnk_primary" style="margin:0">View more details</span>
-																		<span class="fontcon-arrow-right view_more_lnk"></span>
+														</div>
+													</div>
+												</div>
+                                                <!-- Item 2 yesterday -->
+                                                <div class="list_item accordion_main">
+													<div class="list_wrapper">
+														<div class="list_wrapper_inner">
+															<!-- Level3 Header Clickable -->
+															<div class="list_item__header  clearfix accordion_header header_l3" data-on-click="accordion:toggle">
+																<div class="list_content_col1">
+                                                                	<span class="list_icon fontcon-transaction-in"></span>
+                                                                    <div class=" list_content_details">
+                                                                        <div class="listiban_group">
+                                                                            <h3>Transfer from account 295-565423-70</h3>
+                                                                        </div>
+                                                                        <div class="listiban_detail">
+                                                                            <span>of labouxyz schoubben</span>
+                                                                        </div>
+                                                                    </div>
+																</div>
+																<div class="list_content_col2">
+																	<h3><span>200,00</span><span>USD</span></h3>
+																	<p><span>85</span><span>EUR</span></p>
+																</div>
+															</div>
+															<div class="list_item__content accordion_content content_l3 collapse">
+																<div class="list_item__details">
+																	<div class="content_details">
+																		<p>Lorum ipsum dolor sit amit quantum <br>BE68-001200300-0047<br>BIC GEBABEE via mobile banking zonder mededeling.</p>
 																	</div>
-																	<div class="right_navigation_btn f_right">
-																		<button class="btn_default btn_primary">Accept</button>
+																	<div class="extra_contentdetails">
+																		<ul>
+																			<li>
+																				<label>Exe date</label>
+																				<p>30.09.2013</p>
+																			</li>
+																			<li>
+																				<label>Value date</label>
+																				<p>02.09.3013</p>
+																			</li>
+																			<li>
+																				<label>Seq number</label>
+																				<p>227</p>
+																			</li>
+																		</ul>
 																	</div>
 																</div>
 															</div>
@@ -285,7 +451,8 @@
 									<!-- Level1 Header Clickable with right arrow -->
 									<div class="accordion_header header_l1 dropdown_arrow" data-on-click="accordion:toggle">
 										<div class="accordion_l1__inner">
-											<h4>Direct debit</h4>
+											<h4>Booked transactions</h4>
+                                            <span>(4)</span>
 										</div>
 									</div>
 									<div class="accordion_content content_l2">
@@ -304,13 +471,10 @@
                                                                 	<span class="list_icon fontcon-transaction-in"></span>
                                                                     <div class=" list_content_details">
                                                                         <div class="listiban_group">
-                                                                            <h3>BE12 3456 7890 1234</h3>
-                                                                            <span class="hello_icon"></span>
+                                                                            <h3>Booked transaction from abc to xyz</h3>
                                                                         </div>
                                                                         <div class="listiban_detail">
-                                                                            <span>Easy Pack</span>
-                                                                            <span> - </span>
-                                                                            <span>Yashwanth Kanna</span>
+                                                                            <span>Will be deliverded by 10th</span>
                                                                         </div>
                                                                     </div>
 																</div>
@@ -339,19 +503,6 @@
 																				<p>227</p>
 																			</li>
 																		</ul>
-																	</div>
-																</div>
-															</div>
-															<!-- Zoom It Buttons -->
-															<div class="action_btns">
-																<div class="navigation_btns">
-																	<div class="left_navigation_btn f_left">
-																		<span class="lnk_primary" style="margin:0">View more details</span>
-																		<span class="fontcon-arrow-right view_more_lnk"></span>
-																	</div>
-																	<div class="right_navigation_btn f_right">
-																		<button class="btn_default btn_primary">Mark as paid</button>
-																		<button class="btn_default btn_primary">Pay now</button>
 																	</div>
 																</div>
 															</div>
@@ -376,13 +527,10 @@
                                                                 	<span class="list_icon fontcon-transaction-in"></span>
                                                                     <div class=" list_content_details">
                                                                         <div class="listiban_group">
-                                                                            <h3>BE12 3456 7890 1234</h3>
-                                                                            <span class="hello_icon"></span>
+                                                                            <h3>Bancontact transfer to XCV</h3>
                                                                         </div>
                                                                         <div class="listiban_detail">
-                                                                            <span>Easy Pack</span>
-                                                                            <span> - </span>
-                                                                            <span>Yashwanth Kanna</span>
+                                                                            <span>to euro caursoel</span>
                                                                         </div>
                                                                     </div>
 																</div>
@@ -411,322 +559,6 @@
 																				<p>227</p>
 																			</li>
 																		</ul>
-																	</div>
-																</div>
-															</div>
-															<!-- Zoom It Buttons -->
-															<div class="action_btns">
-																<div class="navigation_btns">
-																	<div class="left_navigation_btn f_left">
-																		<span class="lnk_primary" style="margin:0">View more details</span>
-																		<span class="fontcon-arrow-right view_more_lnk"></span>
-																	</div>
-																	<div class="right_navigation_btn f_right">
-																		<button class="btn_default btn_primary">Accept</button>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-                                <div class="accordion_main payslips">
-									<!-- Level1 Header Clickable with right arrow -->
-									<div class="accordion_header header_l1 dropdown_arrow" data-on-click="accordion:toggle">
-										<div class="accordion_l1__inner">
-											<h4>Payslips</h4>
-										</div>
-									</div>
-									<div class="accordion_content content_l2">
-										<div class="accordion_list">
-											<div class="list_group">
-												<div class="list_header">
-													<h2>Today</h2>
-												</div>
-												<!-- List item 1 -->
-												<div class="list_item accordion_main">
-													<div class="list_wrapper">
-														<div class="list_wrapper_inner">
-															<!-- Level3 Header Clickable -->
-															<div class="list_item__header  clearfix accordion_header header_l3" data-on-click="accordion:toggle">
-																<div class="list_content_col1">
-                                                                	<span class="list_icon fontcon-transaction-in"></span>
-                                                                    <div class=" list_content_details">
-                                                                        <div class="listiban_group">
-                                                                            <h3>BE12 3456 7890 1234</h3>
-                                                                            <span class="hello_icon"></span>
-                                                                        </div>
-                                                                        <div class="listiban_detail">
-                                                                            <span>Easy Pack</span>
-                                                                            <span> - </span>
-                                                                            <span>Yashwanth Kanna</span>
-                                                                        </div>
-                                                                    </div>
-																</div>
-																<div class="list_content_col2">
-																	<h3><span>200,00</span><span>USD</span></h3>
-																	<p><span>85</span><span>EUR</span></p>
-																</div>
-															</div>
-															<div class="list_item__content accordion_content content_l3 collapse">
-																<div class="list_item__details">
-																	<div class="content_details">
-																		<p>Lorum ipsum dolor sit amit quantum <br>BE68-001200300-0047<br>BIC GEBABEE via mobile banking zonder mededeling.</p>
-																	</div>
-																	<div class="extra_contentdetails">
-																		<ul>
-																			<li>
-																				<label>Exe date</label>
-																				<p>30.09.2013</p>
-																			</li>
-																			<li>
-																				<label>Value date</label>
-																				<p>02.09.3013</p>
-																			</li>
-																			<li>
-																				<label>Seq number</label>
-																				<p>227</p>
-																			</li>
-																		</ul>
-																	</div>
-																</div>
-															</div>
-															<!-- Zoom It Buttons -->
-															<div class="action_btns">
-																<div class="navigation_btns">
-																	<div class="left_navigation_btn f_left">
-																		<span class="lnk_primary" style="margin:0">View more details</span>
-																		<span class="fontcon-arrow-right view_more_lnk"></span>
-																	</div>
-																	<div class="right_navigation_btn f_right">
-																		<button class="btn_default btn_primary">Mark as paid</button>
-																		<button class="btn_default btn_primary">Pay now</button>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-												<!-- List item 2 -->
-												
-												<!-- List item 3 -->
-												
-											</div>
-											<div class="list_group">
-												<div class="list_header">
-													<h2>Yesterday</h2>
-												</div>
-                                                <div class="list_item accordion_main">
-													<div class="list_wrapper">
-														<div class="list_wrapper_inner">
-															<!-- Level3 Header Clickable -->
-															<div class="list_item__header  clearfix accordion_header header_l3" data-on-click="accordion:toggle">
-																<div class="list_content_col1">
-                                                                	<span class="list_icon fontcon-transaction-in"></span>
-                                                                    <div class=" list_content_details">
-                                                                        <div class="listiban_group">
-                                                                            <h3>BE12 3456 7890 1234</h3>
-                                                                            <span class="hello_icon"></span>
-                                                                        </div>
-                                                                        <div class="listiban_detail">
-                                                                            <span>Easy Pack</span>
-                                                                            <span> - </span>
-                                                                            <span>Yashwanth Kanna</span>
-                                                                        </div>
-                                                                    </div>
-																</div>
-																<div class="list_content_col2">
-																	<h3><span>200,00</span><span>USD</span></h3>
-																	<p><span>85</span><span>EUR</span></p>
-																</div>
-															</div>
-															<div class="list_item__content accordion_content content_l3 collapse">
-																<div class="list_item__details">
-																	<div class="content_details">
-																		<p>Lorum ipsum dolor sit amit quantum <br>BE68-001200300-0047<br>BIC GEBABEE via mobile banking zonder mededeling.</p>
-																	</div>
-																	<div class="extra_contentdetails">
-																		<ul>
-																			<li>
-																				<label>Exe date</label>
-																				<p>30.09.2013</p>
-																			</li>
-																			<li>
-																				<label>Value date</label>
-																				<p>02.09.3013</p>
-																			</li>
-																			<li>
-																				<label>Seq number</label>
-																				<p>227</p>
-																			</li>
-																		</ul>
-																	</div>
-																</div>
-															</div>
-															<!-- Zoom It Buttons -->
-															<div class="action_btns">
-																<div class="navigation_btns">
-																	<div class="left_navigation_btn f_left">
-																		<span class="lnk_primary" style="margin:0">View more details</span>
-																		<span class="fontcon-arrow-right view_more_lnk"></span>
-																	</div>
-																	<div class="right_navigation_btn f_right">
-																		<button class="btn_default btn_primary">Accept</button>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-                                <div class="accordion_main senders">
-									<!-- Level1 Header Clickable with right arrow -->
-									<div class="accordion_header header_l1 dropdown_arrow" data-on-click="accordion:toggle">
-										<div class="accordion_l1__inner">
-											<h4>Senders</h4>
-										</div>
-									</div>
-									<div class="accordion_content content_l2">
-										<div class="accordion_list">
-											<div class="list_group">
-												<div class="list_header">
-													<h2>Today</h2>
-												</div>
-												<!-- List item 1 -->
-												<div class="list_item accordion_main">
-													<div class="list_wrapper">
-														<div class="list_wrapper_inner">
-															<!-- Level3 Header Clickable -->
-															<div class="list_item__header  clearfix accordion_header header_l3" data-on-click="accordion:toggle">
-																<div class="list_content_col1">
-                                                                	<span class="list_icon fontcon-transaction-in"></span>
-                                                                    <div class=" list_content_details">
-                                                                        <div class="listiban_group">
-                                                                            <h3>BE12 3456 7890 1234</h3>
-                                                                            <span class="hello_icon"></span>
-                                                                        </div>
-                                                                        <div class="listiban_detail">
-                                                                            <span>Easy Pack</span>
-                                                                            <span> - </span>
-                                                                            <span>Yashwanth Kanna</span>
-                                                                        </div>
-                                                                    </div>
-																</div>
-																<div class="list_content_col2">
-																	<h3><span>200,00</span><span>USD</span></h3>
-																	<p><span>85</span><span>EUR</span></p>
-																</div>
-															</div>
-															<div class="list_item__content accordion_content content_l3 collapse">
-																<div class="list_item__details">
-																	<div class="content_details">
-																		<p>Lorum ipsum dolor sit amit quantum <br>BE68-001200300-0047<br>BIC GEBABEE via mobile banking zonder mededeling.</p>
-																	</div>
-																	<div class="extra_contentdetails">
-																		<ul>
-																			<li>
-																				<label>Exe date</label>
-																				<p>30.09.2013</p>
-																			</li>
-																			<li>
-																				<label>Value date</label>
-																				<p>02.09.3013</p>
-																			</li>
-																			<li>
-																				<label>Seq number</label>
-																				<p>227</p>
-																			</li>
-																		</ul>
-																	</div>
-																</div>
-															</div>
-															<!-- Zoom It Buttons -->
-															<div class="action_btns">
-																<div class="navigation_btns">
-																	<div class="left_navigation_btn f_left">
-																		<span class="lnk_primary" style="margin:0">View more details</span>
-																		<span class="fontcon-arrow-right view_more_lnk"></span>
-																	</div>
-																	<div class="right_navigation_btn f_right">
-																		<button class="btn_default btn_primary">Mark as paid</button>
-																		<button class="btn_default btn_primary">Pay now</button>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-												<!-- List item 2 -->
-												
-												<!-- List item 3 -->
-												
-											</div>
-											<div class="list_group">
-												<div class="list_header">
-													<h2>Yesterday</h2>
-												</div>
-                                                <div class="list_item accordion_main">
-													<div class="list_wrapper">
-														<div class="list_wrapper_inner">
-															<!-- Level3 Header Clickable -->
-															<div class="list_item__header  clearfix accordion_header header_l3" data-on-click="accordion:toggle">
-																<div class="list_content_col1">
-                                                                	<span class="list_icon fontcon-transaction-in"></span>
-                                                                    <div class=" list_content_details">
-                                                                        <div class="listiban_group">
-                                                                            <h3>BE12 3456 7890 1234</h3>
-                                                                            <span class="hello_icon"></span>
-                                                                        </div>
-                                                                        <div class="listiban_detail">
-                                                                            <span>Easy Pack</span>
-                                                                            <span> - </span>
-                                                                            <span>Yashwanth Kanna</span>
-                                                                        </div>
-                                                                    </div>
-																</div>
-																<div class="list_content_col2">
-																	<h3><span>200,00</span><span>USD</span></h3>
-																	<p><span>85</span><span>EUR</span></p>
-																</div>
-															</div>
-															<div class="list_item__content accordion_content content_l3 collapse">
-																<div class="list_item__details">
-																	<div class="content_details">
-																		<p>Lorum ipsum dolor sit amit quantum <br>BE68-001200300-0047<br>BIC GEBABEE via mobile banking zonder mededeling.</p>
-																	</div>
-																	<div class="extra_contentdetails">
-																		<ul>
-																			<li>
-																				<label>Exe date</label>
-																				<p>30.09.2013</p>
-																			</li>
-																			<li>
-																				<label>Value date</label>
-																				<p>02.09.3013</p>
-																			</li>
-																			<li>
-																				<label>Seq number</label>
-																				<p>227</p>
-																			</li>
-																		</ul>
-																	</div>
-																</div>
-															</div>
-															<!-- Zoom It Buttons -->
-															<div class="action_btns">
-																<div class="navigation_btns">
-																	<div class="left_navigation_btn f_left">
-																		<span class="lnk_primary" style="margin:0">View more details</span>
-																		<span class="fontcon-arrow-right view_more_lnk"></span>
-																	</div>
-																	<div class="right_navigation_btn f_right">
-																		<button class="btn_default btn_primary">Accept</button>
 																	</div>
 																</div>
 															</div>
@@ -739,6 +571,13 @@
 								</div>
 							</div>
 						</div>
+                        <!-- Load more-->
+                        <div class="load_more">
+                        	<div class="load_btn">
+                        	<button class="btn_default btn_primary">Load more</button>
+                            </div>
+                        </div>
+                        <!-- -->
 					</div>
 				</div>
 			</div>
