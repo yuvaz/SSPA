@@ -34,7 +34,7 @@
 .datepicker {
   top: 0;
   left: 0;
-  width: 300px; }
+  width: 300px;border: 1px solid #d8dbde; }
 
 .datepicker-orient-top {
   margin-top: 20px; }
@@ -50,14 +50,12 @@
   margin: 0;
   border-spacing: 0; }
 
-.datepicker table thead tr:first-child th {
-  border: 0;
+.datepicker table thead tr th {
   padding: 8px 0;
   font-family: 'BnppSans-r', sans-serif;
   font-size: 16px; }
 
-.datepicker table thead tr th:last-child {
-  border-right: 1px solid #d8dbde; }
+.datepicker table thead tr{border-bottom: 1px solid #d8dbde;}
 
 .datepicker td {
   width: 40px;
@@ -72,8 +70,6 @@
   text-align: center;
   width: 20px;
   height: 20px;
-  border-bottom: 1px solid #d8dbde;
-  border-top: 1px solid #d8dbde;
   padding: 12px 0 4px 0;
   font-family: 'BnppSans-l', sans-serif;
   font-size: 14px; }
@@ -134,7 +130,7 @@
   width: 145px; }
 
 .datepicker th.next, .datepicker th.prev {
-  font-size: 21px; }
+  font-size: 10px; padding:10px 0 6px;}
 
 .datepicker thead tr:first-child th {
   cursor: pointer; }

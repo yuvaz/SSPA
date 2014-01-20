@@ -59,7 +59,7 @@
 		if (this.o.rtl){
 			this.picker.addClass('datepicker-rtl');
 			this.picker.find('.prev i, .next i')
-						.toggleClass('icon-arrow-left icon-arrow-right');
+						.toggleClass('fontcon-calendar-arrow-left fontcon-calendar-arrow-right');
 		}
 
 
@@ -1330,9 +1330,9 @@
 		},
 		headTemplate: '<thead>'+
 							'<tr>'+
-								'<th class="prev">&laquo;</th>'+
+								'<th class="prev"><i class="calendar_icon fontcon-calendar-arrow-left"/></th>'+
 								'<th colspan="5" class="datepicker-switch"></th>'+
-								'<th class="next">&raquo;</th>'+
+								'<th class="next"><i class="calendar_icon fontcon-calendar-arrow-right"/></th>'+
 							'</tr>'+
 						'</thead>',
 		contTemplate: '<tbody><tr><td colspan="7"></td></tr></tbody>',
@@ -1398,6 +1398,13 @@ $(function(){
 			var endDate = new Date();
 				endDate.setDate(endDate.getDate() + 365);
 			$('.trig_datepicker').datepicker({
+				format: 'dd.mm.yyyy',
+				weekStart:1,
+				startDate:new Date(),
+				endDate: endDate,
+				autoclose:true
+			});
+			$('.filter_calendar').datepicker({
 				format: 'dd.mm.yyyy',
 				weekStart:1,
 				startDate:new Date(),

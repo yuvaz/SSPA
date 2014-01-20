@@ -10,7 +10,12 @@ $(document).ready(function() {
 			
 	});
 		
-	
+	$('.show_filters').on('click', function() {
+		  $('.filter_block').slideToggle();
+	 });
+	 $('.filter_period').on('click', function() {
+		  $('.option_period').toggleClass('show_active');
+	 });
 
 
 });
