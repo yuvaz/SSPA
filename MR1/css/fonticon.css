@@ -79,6 +79,10 @@
 }
 .fontcon-M1:before {
 	content: "\e60f";
+	color: #e53012;
+	font-size: 36px;
+	position: relative;
+	top: 5px;
 }
 .fontcon-logout:before {
 	content: "\e610";
