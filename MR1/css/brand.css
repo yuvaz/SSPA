@@ -765,6 +765,11 @@ transition: all .4s ease-in-out;}
 .zoomit .detail_group h5{font-family: 'BnppSans-r', sans-serif; font-size:18px; padding:14px 0;}
 .zoomit .list_details{ padding:6px 0; border:none;}
 
+/* Commons colors/borders/style */
+
+.outflow_amount{ color:#e53012;}
+.has_foreign_currency{ color:#008578;}
+
 
 @media all and (max-width: 479px) {
         /* WCM */
