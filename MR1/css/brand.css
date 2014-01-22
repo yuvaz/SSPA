@@ -84,14 +84,14 @@ html, body {width: 100%;height: 100%;}
 .navigation_inner{ padding-top:18px;}
 .navigation_control{padding-left:60px;}
 .navigation_control li{ box-sizing:border-box; float:left; font-size:1.12em; text-transform:uppercase; padding:0 20px 0 20px; border-left:1px dotted #d8dbde; position: relative;}
-.navigation_control li a{ padding-bottom:15px;border-bottom:5px solid transparent;-webkit-transition: all .4s ease-in-out;
+.navigation_control li a{ padding-bottom:18px;border-bottom:5px solid transparent;-webkit-transition: all .4s ease-in-out;
 -moz-transition: all .4s ease-in-out;
 -o-transition: all .4s ease-in-out;
 transition: all .4s ease-in-out;}
 .navigation_control li a.selected-page{ border-bottom:5px solid #242529;}
 .navigation_control li a:hover{ border-bottom:5px solid #008578; color:#008578;}
 .navigation_control li:nth-child(1){ border:none;}
-.menu_indicator{background:#e53012; border-radius:20px; line-height:16px; position:absolute; left: 86px; top:-12px; color:#ffffff; font-size:12px; padding:1px 6px 0 6px; height:16px; min-width:8px;font-family: 'BnppSans-r', sans-serif;}
+.menu_indicator{background:#e53012; border-radius:20px; line-height:16px; position:absolute; left: 94px; top:-12px; color:#ffffff; font-size:12px; padding:1px 6px 0 6px; height:16px; min-width:8px;font-family: 'BnppSans-r', sans-serif;}
 .menu_icon{ font-size:10px; position:relative; top:-2px; margin-right:5px;}
 
 /*Meta Navigation*/
@@ -207,6 +207,7 @@ transition: all .4s ease-in-out;}
 .teaser_row p{ padding-top:4px;font-size:14px;}
 .teaser_row:hover p, .margin_teaser:hover p{text-decoration:underline;}
 .module_icon{ position:absolute; right:30px;bottom:25px; font-size:62px;color:#d12668 !important;}
+.teaser_image{position: absolute;right: 30px;bottom: 25px; width:75px; height:60px;}
 .margin_teaser:hover .module_icon{ color:#ffffff;}
 .margin_teaser_link{background:#861a61;margin-bottom:20px;min-height:170px; padding:25px;cursor:pointer; position:relative; width:170px; float:left;}
 
@@ -398,8 +399,10 @@ transition: all .4s ease-in-out;}
 .group_coltwo h4{padding:8px 0 8px 0px; display:inline-block;}
 /* Currency Overlay */
 .currency_overlay{ font-size:12px;font-family: 'BnppSans-l', sans-serif; position:absolute; top:17px; right:-11px; text-align:right; border:1px solid #d8dbde;display:none; z-index:999;}
+.savings_accounts .currency_overlay{ top:27px;}
 .currency_overlay h4, .currency_header span{display:inline-block; font-size:18px;font-family: 'BnppSans-r', sans-serif;}
-.currency_header span{ padding-left:5px;}
+.currency_overlay p span{ margin:0 2px;}
+.currency_overlay .currency_header span{ padding-left:2px;}
 .currency_overlay .currency_header h4{ padding:0 0 15px 0;}
 .currency_overlay-active .currency_overlay{ display:block;}
 .currency_overlay-active .currency_header{ color:#008578; cursor:pointer;}
@@ -773,6 +776,16 @@ transition: all .4s ease-in-out;}
 .has_foreign_currency{ color:#008578;}
 
 
+@media all and (min-width: 480px) and (max-width: 767px) {
+        .login_bg .severity_message,.login_bg .wcm-meta_info, .wcm-authentication{  width:365px; margin:auto;}
+        .margin_col .ls-cmp-wrap:nth-child(odd){ padding-right:5px;}
+        .margin_col .ls-cmp-wrap:nth-child(even){ padding-left:5px;}
+}
+@media all and (min-width: 479px) and (max-width: 640px) {
+	.link_senstive{ margin-left:7.5em;}
+	.margin_teaser_link{ width:120px;}
+	.margin_teaser_link .module_icon{ display:none;}
+ }
 @media all and (max-width: 479px) {
         /* WCM */
         .login_bg .severity_message, .login_bg .wcm-meta_info, .wcm-authentication{ width:300px;}
@@ -806,11 +819,7 @@ transition: all .4s ease-in-out;}
         .filter_content__range, .filter_popup .datepicker{ width:280px;}
         .filter_content__specific, .filter_content__range{ padding-top:20px;}
 }
-@media all and (min-width: 480px) and (max-width: 767px) {
-        .login_bg .severity_message,.login_bg .wcm-meta_info, .wcm-authentication{  width:365px; margin:auto;}
-        .margin_col .ls-cmp-wrap:nth-child(odd){ padding-right:5px;}
-        .margin_col .ls-cmp-wrap:nth-child(even){ padding-left:5px;}
-}
+
 @media all and (max-width: 767px) {
         /* Standard elements */
         .lnk_primary {margin-right: 20px; }
@@ -998,7 +1007,7 @@ transition: all .4s ease-in-out;}
         .main_wrapper, .login_bg{ padding-top:60px;}
         .warning_area{ top:60px;}
         .content_col, .fluid{ margin-right:0;}
-        .margin_col{ width:100%; margin:0; padding-top:20px;}.extra_contentdetails
+        .margin_col{ width:100%; margin:0; padding-top:20px;}
         .margin_col .ls-cmp-wrap{ width:50%; float:left; position:relative;}
         .service_col{ display:none;}
 		/* Accordion */
