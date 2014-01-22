@@ -371,8 +371,12 @@ transition: all .4s ease-in-out;}
 .accordion_header{ cursor:pointer;}
 .header_l1.dropdown_arrow:after{ right:30px;}
 .header_l1{ width:100%; border-bottom:2px solid #d8dbde;border-top:2px solid #d8dbde; text-transform:uppercase;font-size:24px; line-height:17px; cursor:pointer; position:relative; padding-top:5px;}
+/* Custome */
 .laccounts .header_l1, .account_transactions .header_l1{ color:#729f08;}
 .lcards .header_l1, .cards_transactions .header_l1{ color:#009966;}
+.laccounts .header_l1.dropdown-active, .account_transactions .header_l1.dropdown-active, .lcards .header_l1.dropdown-active, .cards_transactions .header_l1.dropdown-active, .zoomit .header_l1.dropdown-active{ color:#242425;}
+.zoomit .header_l1{ color:#b0036c;}
+
 .header_l1 h4{ display:inline;}
 .accordion_l1__inner{ padding:25px 30px;display: table;width: 100%;}
 .accordion_main:nth-child(1) .header_l1{ border-top:none;}
@@ -422,7 +426,7 @@ transition: all .4s ease-in-out;}
 /* Content three */
 .content_details{ width:100%;}
 .content_details p{ padding:5px 0 20px 0; text-transform:uppercase; line-height:22px;}
-.extra_contentdetails{ width:50%; border-top:1px solid #d8dbde; border-bottom:1px solid #d8dbde;}
+.extra_contentdetails{ width:90%; border-top:1px solid #d8dbde; border-bottom:1px solid #d8dbde;}
 .extra_contentdetails ul{ padding:2px 45px; position:relative; width:100%;}
 .extra_contentdetails li{display:table;position:relative; width:100%;padding:10px 0;}
 .extra_contentdetails label{ width:40%; float:left;}
@@ -860,7 +864,6 @@ transition: all .4s ease-in-out;}
 	.list_content_col2{ width:100%; padding-top:15px; max-width:none;}
 	.list_content_col2 h3{ font-size:16px;}
 	.list_item__details{ padding-left:34px;}
-	.extra_contentdetails{ width:100%;}
 	.extra_contentdetails ul{ padding:2px 0;}
 	.extra_contentdetails p{ text-align:left !important;}
 	.list_content_details{ width:80%;}
@@ -986,6 +989,7 @@ transition: all .4s ease-in-out;}
 	.content_wrapper{ padding:30px 30px 60px 30px;}
 	.margin_col .ls-cmp-wrap:nth-child(odd){ padding-right:10px;}
 	.margin_col .ls-cmp-wrap:nth-child(even){ padding-left:10px;}
+	
 }
 @media all and (min-width: 1510px) {
 	.meta_nav_user{ display:block;}
