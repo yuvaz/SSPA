@@ -7,7 +7,15 @@ define(['selectize', 'underscore','picker.date', 'rivets','transition', 'collaps
         myApp.Accordion = {
             toggle: function() {
                 var $this = $(this).siblings('.accordion_content');
-				$(this).toggleClass('dropdown-active');
+				var self = $(this);
+				$this.one('shown.bs.collapse', 
+						function() { 
+						self.addClass('dropdown-active'); 
+					});
+				$this.one('hidden.bs.collapse', 
+					function() { 
+					self.removeClass('dropdown-active'); 
+					});
                 $this.collapse('toggle');
                 var $elements = $(this).closest(".accordion_main").siblings(".accordion_main").find('.accordion_content.content_l1.in, .accordion_content.content_l3.in');
                 $elements.each(function() {
