@@ -113,7 +113,7 @@ transition: all .4s ease-in-out;}
 .warning_area{ position:fixed; width:100%; top:5em; z-index:999;}
 .wcm-severity-message{ width:100%;}
 .login_bg .wcm-meta_info{ width:730px; margin:0 auto;}
-.login_bg .user_message{ width:100%; line-height:1.2; color:#ffffff; padding-top:2.2em; text-align:left;}
+.login_bg .user_message{ width:100%; line-height:1.2; color:#ffffff; padding:2.2em 0 0 0; text-align:left;}
 .login_bg .severity_message{ width:730px; margin:auto; padding-bottom:12px;}
 .user_message p{ width:100%; font-size:24px;}
 .user_message h4{ width:100%; font-size:44px;}
@@ -223,7 +223,6 @@ transition: all .4s ease-in-out;}
 .headline_bulletlist li{ list-style: disc; padding-bottom:10px; color:#76767b;}
 .headline_linklist{ padding-top:20px;}
 .headline_linklist li{display:table; width:100%; padding-bottom:10px;}
-.headline_linklist li a{ display:block;}
 .headline_arrow{ font-size:12px; position:relative; top:2px; margin-right:8px; float:left;}
 .headline_link{ float:left; width:86%; color:#009966;}
 .headline_link:hover{ text-decoration:underline !important;}
@@ -242,6 +241,17 @@ transition: all .4s ease-in-out;}
 .hover_content_inner{padding:25px; color:#ffffff;}
 .hover_content p{ line-height:1.5em; font-size:18px;}
 .hoverteaser_icon{ font-size:48px; padding-top:16px; display:block;}
+
+/*Social ad */
+.twitter_icon{ color:#50a8f2;}
+.facebook_icon{ color:#4454a1;}
+.youtube_icon{ color:#be360e;}
+.headline_social{ padding-top:20px;}
+.headline_social li{ display:table; border-bottom:1px dotted #d8dbde; width:100%; padding-bottom:10px; margin-bottom:10px;}
+.headline_social li:last-child{ border-bottom:none;}
+.socialad_icon{ font-size:35px; float:left;}
+.headline_sociallink{ float:left; padding:9px 0 9px 9px; color:#009966;}
+.headline_sociallink:hover{ text-decoration:underline !important;}
 
 /* FAQ Widget */
 .wcm-faq{ position:absolute;width:300px; min-height:400px; right:97px; top:0; display:block; background:gray;}
@@ -278,8 +288,10 @@ transition: all .4s ease-in-out;}
 /* Btn Right & Left Alignment */
 .right_navigation_btn, .left_navigation_btn {display: table;}
 /* standard Links Model */
-.lnk_primary {font-size:1em;color: #009966;margin-right: 30px;cursor: pointer;background: transparent;}
+.lnk_primary {font-size:1em;color: #009966;margin-right: 30px;cursor: pointer;font-family: 'BnppSans-r', sans-serif;}
 .lnk_primary:hover {color: #008578;text-decoration: underline;}
+.login_bg .lnk_primary{ color:#ffffff;padding: 13px 0; display:block;}
+.login_bg .lnk_primary:hover{color:#ffffff;}
 
 /* Standard Input Field */
 .default_input_control .default_input_field, .default_input_control .default_input_field input {cursor: pointer;}
@@ -393,7 +405,8 @@ transition: all .4s ease-in-out;}
 .accordion_main{ width:100%;}
 .accordion_header{ cursor:pointer;}
 .header_l1.dropdown_arrow:after{ right:30px;}
-.header_l1{ width:100%; border-bottom:2px solid #d8dbde;border-top:2px solid #d8dbde; text-transform:uppercase;font-size:24px; line-height:17px; cursor:pointer; position:relative; padding-top:5px;}
+.header_l1{ width:100%; border-top:2px solid #d8dbde; text-transform:uppercase;font-size:24px; line-height:17px; cursor:pointer; position:relative; padding-top:5px;}
+.content_l1{border-top:1px solid #d8dbde;}
 /* Custome */
 .laccounts .header_l1, .account_transactions .header_l1{ color:#729f08;}
 .lcards .header_l1, .cards_transactions .header_l1{ color:#009966;}
@@ -415,7 +428,6 @@ transition: all .2s ease-in-out;}
 .list_wrapper{ padding:0 30px;}
 .item_group{ font-size:18px;font-family: 'BnppSans-r', sans-serif; position:relative;border-bottom:1px solid #d8dbde;}
 .item_group__inner{ padding:20px 0; display:table; width:100%; position:relative;}
-.savings_accounts .item_group__inner{border-top: 1px solid #d8dbde;padding:30px 0 20px 0;}
 
 /* Group Columns*/
 .group_colone{ float:left;}
@@ -452,7 +464,8 @@ transition: all .2s ease-in-out;}
 .list_content_col2 span{ padding-left:5px;}
 .list_item__details{ border-bottom:1px solid #d8dbde; padding-left:50px;}
 .listiban_detail {color: #242529;font-size: 14px;padding-top: 3px;line-height: 20px;}
-.transactions .accordion_main:last-child .list_wrapper_inner,.product_groups .list_item:last-child .list_wrapper_inner{ border-bottom:0;}
+.transactions .accordion_main:last-child .list_wrapper_inner{ border-bottom:0;}
+.product_groups:last-child .list_item:last-child .list_wrapper_inner:last-child{ border-bottom:none;}
 /* Content three */
 .content_details{ width:100%;}
 .content_details p{ padding:5px 0 20px 0; text-transform:uppercase; line-height:22px;}
@@ -647,7 +660,7 @@ transition: all .2s ease-in-out;}
 .search_block{ padding:25px 30px 20px; display:table; width:100%;}
 .search_field{ width:60%;}
 .search_field .default_input_field {padding-right:85px;}
-.search_wipe{border-left: 0;color: #666666;font-size: 10px;right: 48px; position:absolute; top:0; padding:15px 0 10px 0;}
+.search_wipe{border-left: 0;color: #666666;font-size: 10px;right: 48px; position:absolute; top:0; padding:15px 0 10px 0; display:none;}
 .search_wipe span{border-right: 1px solid #D8DBDE; padding:8px 16px;}
 .search_icon {font-size: 22px; color:#363939;right: 12px; position:absolute; top:0;right:0; padding:11px;}
 .search_filter{ position:relative;}
@@ -757,7 +770,7 @@ transition: all .2s ease-in-out;}
 .sendmoney_result__content {width: 100%;display: inline-table;}
 .sendmoney_result__content_inner {width: 33.333333%;float: left;}
 .result_content {padding: 14px 30px 14px 30px;text-align: center;border-right: 1px dotted #d8dbde;}
-.fontcon-personage, .fontcon-send-money-icon {font-size: 60px;color: #d2d8e1;display: inline-block;}
+.result_personicon, .fontcon-send-money-icon {font-size: 60px;color: #d2d8e1;display: inline-block;}
 .fontcon-circle-done {font-size: 30px;color: #85b909;position: relative;top: 3px;right: 13px;}
 .resultfrom_info {margin-top: 25px;font-size: 16px;line-height: 26px;}
 .resultfrom_info label {font-family: 'BnppSans-r', sans-serif;display: block;}
@@ -999,7 +1012,7 @@ transition: all .2s ease-in-out;}
 	.unknown_iban label {padding-top: 10px;}
 	.eb_unknown_input {width: 100%;}
 	.tab_fst {margin-right: 3px;}
-	.fontcon-personage {float: right;font-size: 40px;}
+	.result_personicon {float: right;font-size: 40px;}
 	.fontcon-send-money-icon {position: absolute;right: 25px;font-size: 40px;}
 	.fontcon-circle-done {float: right;font-size: 25px;top: 16px;right: 0px;}
 	.date_picker .default_input_field {width: 100%; }
