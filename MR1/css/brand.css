@@ -870,6 +870,7 @@ transition: all .2s ease-in-out;}
 	.margin_col .ls-cmp-wrap:nth-child(even) {padding: 0;}
 	/* Login */
 	.authentication, .authentication__identification, .identification_contract, .authentication__details, .identification_ucr{ width:300px !important;}
+	.intermediate_messages{ width:300px !important;}
 	.ucr_challenge__code {width: 100%;display: table;}
 	.ucr_action_1content {top: -6px;line-height: 30px;}
 	.fontcon-M2:before {top: 40px;}
@@ -983,6 +984,9 @@ transition: all .2s ease-in-out;}
 	.ucr_content__challenge, .ucr_content {padding-top: 0;}
 	.logout_info{ width:300px;}
 	.logout_info h2 { font-size:1.125em;font-family: 'BnppSans-r', sans-serif;}
+	.intermediate_messages{width:365px;}
+	.intermediate_content{ padding:10px;}
+	.intermediate_content h4{ font-size:18px; padding-bottom:15px;}
 	
 	/* SEPA */
 	.error_summary {margin: 0; }
