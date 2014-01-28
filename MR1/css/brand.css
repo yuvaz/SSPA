@@ -134,11 +134,12 @@ transition: all .4s ease-in-out;}
 .login_bg .service__icon{ color:#ffffff;}
 .service__icon{ font-size:62px;}
 .service_navigation .ls-cmp-wrap:first-child{ width:auto; position:absolute; right:30px; top:170px;}
-.service_cmp{ text-align:center; margin-bottom:13px;cursor:pointer;-webkit-transition: all .6s ease-in-out;-moz-transition: all .6s ease-in-out;-o-transition: all .6s ease-in-out;transition: all .6s ease-in-out;}
-.service_cmp:hover{ color:#008578;}
-.service_cmp:last-child{ margin:0;}
-.service_cmp p{ padding-top:5px;}
-.login_bg .service_cmp p{ display:none;}
+.nav_cmp{ text-align:center; margin-bottom:13px;cursor:pointer;}
+.nav_cmp a{-webkit-transition: all .6s ease-in-out;-moz-transition: all .6s ease-in-out;-o-transition: all .6s ease-in-out;transition: all .6s ease-in-out;}
+.nav_cmp a:hover{ color:#008578;}
+.nav_cmp:last-child{ margin:0;}
+.nav_cmp p{ padding-top:5px;}
+.login_bg .nav_cmp p{ display:none;}
 .login_bg .wcm-faq{ width:300px; float:right; background:white; border:1px solid #d8dbde; min-height:789px; position:absolute; right:0; opacity:0; top:80px; z-index:-999;-webkit-transition: opacity, 325ms;-moz-transition: opacity, 325ms;-o-transition:opacity, 325ms;transition: opacity, 325ms;}
 .login_bg .faq-widget{ opacity:1; z-index:999;}
 .content_row{ width:76.4%;}
@@ -266,13 +267,13 @@ transition: all .4s ease-in-out;}
 
 /* Input error messages styles */
 .error_summary {width: 80%;margin-left: 20%;color:#e53012;font-family: 'BnppSans-r', sans-serif; display:none; padding-bottom:30px;}
-.error_summary_items{ list-style:disc; padding-left:20px;}
+.error_summary_items{ list-style:disc; padding:10px 0 0 20px;}
 .field_error_message {color: #e53012;line-height:1.12;font-size: 1em;padding-bottom: 12px;display: none;}
 .error_summary .field_error_message {display: block; }
 .field_error .default_input_field, .field_error textarea {border: 1px solid #e53012;}
 .message_field.field_error .default_input_field:nth-child(1) {border: 1px solid #d8dbde;}
 .field_error .sepa_labels {margin-top: 35px; }
-.message_field.field_error .sepa_labels {margin-top: 0px; }
+.message_field.field_error .sepa_labels {margin-top: 0px;}
 
 /* Standard Btns */
 .btn_default {font-size:1em; font-family: 'BnppSans-r', sans-serif;line-height: 1em;padding: 16px 20px;cursor: pointer;height: 44px;margin:0 0 0 9px;min-width:90px; text-align:center;}
@@ -560,8 +561,8 @@ transition: all .2s ease-in-out;}
 .information_section_head{ font-family: 'BnppSans-r',sans-serif;}
 
 /* Content Menu */
-.content_block { margin-left:177px; }
-.content_menu { float:left; }
+
+
 .content_list { width:177px; height:177px; cursor:pointer; }
 .content_list_inner { padding:30px 20px; height:100%; position:relative; -webkit-transition:all .6s ease-in-out; -moz-transition:all .6s ease-in-out; -o-transition:all .6s ease-in-out; transition:all .6s ease-in-out; }
 .content_list p { font-size:24px; color:#ffffff; line-height:1; }
@@ -569,6 +570,17 @@ transition: all .2s ease-in-out;}
 .content_menu_cards { background:#009E83; }
 .content_menu_accounts .content_list_inner:hover,.content_menu_accounts.content_menu_active .content_list_inner { background:#668F07; }
 .content_menu_cards .content_list_inner:hover,.content_menu_cards.content_menu_active .content_list_inner { background:#008E76; }
+
+/* Content menu */
+.home .content_block { margin-left:177px; }
+.content_menu { float:left;}
+.content_menu .nav_cmp{width:177px; height:177px; cursor:pointer;margin-bottom:0;}
+.content_menu .nav_cmp__links{padding:30px 20px; height:100%; position:relative; -webkit-transition:all .6s ease-in-out; -moz-transition:all .6s ease-in-out; -o-transition:all .6s ease-in-out; transition:all .6s ease-in-out;}
+.content_menu .nav_cmp p{font-size: 24px;color: #ffffff;line-height: 1; text-transform:uppercase; padding:0; text-align:left;}
+.accounts_menu{background:#729F08;}
+.cards_menu{background:#009E83;}
+.accounts_menu:hover, .accounts_menu.active{background:#668F07;}
+.cards_menu:hover, .cards_menu.active{background:#008E76;}
 
 /* Identification */
 .authentication{ width:730px; background-color:transparent; margin:auto; display:table;}
@@ -1076,6 +1088,10 @@ transition: all .2s ease-in-out;}
 	.msg_overlay_detail_heading{ padding:60px 0;}
 	.msg_overlay_btn{ padding:0 10px 10px;}
 	.msg_overlay_content .information_section p{ margin-top:0;}
+	
+	/* Content menu */
+	.content_menu{ width:100%;}
+	.content_menu .nav_cmp{ width:50%; float:left;}
         
 }
 @media all and (min-width: 768px) and (max-width: 1023px) {
@@ -1122,18 +1138,16 @@ transition: all .2s ease-in-out;}
 	.service_col{ width:300px;}
 	/* Service component */
 	.meta_nav_logout{ float:left;}
-	.main_wrapper .service_cmp{ position:relative; margin-bottom:20px; background:#d1d7e1; text-align:left;height: 170px; overflow:hidden; cursor:pointer;}
-	.main_wrapper .service_cmp:hover{ background:#008578;}
-	.main_wrapper .service_cmp:hover p{ text-decoration:underline; color:#ffffff; padding-bottom:2px;}
-	.main_wrapper .service_cmp.selected_service{ background:#009966;}
-	.main_wrapper .service_cmp.selected_service{ background:#009966;}
-	
-	.main_wrapper .service_cmp:hover .service__icon{ color:#ffffff;}
-	.main_wrapper .service_cmp__links{padding: 25px 15px 15px 25px;display: table;width: 100%;}
+	.main_wrapper .nav_cmp{ position:relative; margin-bottom:20px; background:#d1d7e1; text-align:left;height: 170px; overflow:hidden; cursor:pointer;}
+	.main_wrapper .nav_cmp a:hover{ background:#008578;}
+	.main_wrapper .nav_cmp:hover p{ text-decoration:underline; color:#ffffff; padding-bottom:2px;}
+	.main_wrapper .nav_cmp.selected_service{ background:#009966;}
+	.main_wrapper .nav_cmp:hover .service__icon{ color:#ffffff;}
+	.main_wrapper .nav_cmp__links{padding: 25px 15px 15px 25px;display: table;width: 100%;}
 	.main_wrapper .service__icon{position: absolute; right:15px; bottom:15px;}
-	.main_wrapper .service_cmp p{ position: relative;width: 65%; padding:0; text-transform:uppercase; font-size:24px; line-height:28px;}
-	.main_wrapper .service_cmp.faq p{text-indent: -1000px; display:block;}
-	.main_wrapper .service_cmp.faq p:after{content:'Frequently Asked questions'; text-indent:0; display:block; margin-top:-28px;}
+	.main_wrapper .nav_cmp p{ position: relative;width: 65%; padding:0; text-transform:uppercase; font-size:24px; line-height:28px;}
+	.main_wrapper .content_menu .nav_cmp{ margin-bottom:0;}
+	.main_wrapper .content_menu .nav_cmp:hover p{ text-decoration:none;}
 }
 
 @media print { 
