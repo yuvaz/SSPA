@@ -31,10 +31,6 @@
 }
 .fontcon-ucr-ok:before {
 	content: "\e602";
-	font-size:30px;
-	position:relative;
-	top:8px;
-	color:#138e57;
 }
 .fontcon-twitter:before {
 	content: "\e603";
@@ -78,10 +74,6 @@
 }
 .fontcon-M1:before {
 	content: "\e60f";
-	color: #e53012;
-	font-size: 36px;
-	position: relative;
-	top: 5px;
 }
 .fontcon-logout:before {
 	content: "\e610";
